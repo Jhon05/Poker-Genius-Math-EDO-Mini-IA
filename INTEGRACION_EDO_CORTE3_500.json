@@ -1,0 +1,27 @@
+{
+  "version": "Poker Math EDO v7.1.1 · Genius Math Alpha",
+  "bank": "Banco EDO Corte 3 · 500 preguntas · Formato ECONOMATICA",
+  "source_bank_sha256": "09e840792b37f8dcc5e3666770a5587485ea7783b80521dad55e9beb8a382da1",
+  "integrated_bank_sha256": "09e840792b37f8dcc5e3666770a5587485ea7783b80521dad55e9beb8a382da1",
+  "source_base_sha256": "892de50e6accb802711950e622f026fb0aec57b5265ebf41c2146f984a33f098",
+  "integrated_base_sha256": "892de50e6accb802711950e622f026fb0aec57b5265ebf41c2146f984a33f098",
+  "questions_total": 500,
+  "normal_levels_1_2": 458,
+  "advanced_level_3": 42,
+  "graphic_questions": 75,
+  "unique_svg_graphics": 15,
+  "topics": 6,
+  "source_validate_errors": 0,
+  "scorm": "1.2",
+  "genius_math": {
+    "stage": "alpha",
+    "provider": "guided",
+    "flow": [
+      "independent",
+      "genie",
+      "transfer"
+    ],
+    "off_topic_penalty": 0,
+    "local_model_enabled": false
+  }
+}

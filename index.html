@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#4a0710">
+  <title>Poker Math EDO v7.2 · Genius Math generativo RC · Corte 3 · Banco 500 · SCORM</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="genie/tutor-v72.css">
+<link rel="stylesheet" href="genie/runtime-v721.css">
+  <script>
+    window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true},svg:{fontCache:'global'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code'],renderActions:{addMenu:[]}}};
+  </script>
+  <script defer src="mathjax/tex-svg-full.js"></script>
+</head>
+<body>
+<section id="startScreen" class="screen active start-screen">
+  <div class="start-shell">
+    <section class="start-showcase">
+      <div class="logo-frame"><img src="assets/poker_ecomat_logo.webp" alt="Poker Math EDO" class="main-logo"></div>
+    </section>
+    <aside class="start-menu">
+      <div class="menu-card identity-card">
+        <small id="identityModeLabel">PERFIL</small>
+        <input id="studentName" maxlength="80" placeholder="Nombre · automático en Brightspace">
+      </div>
+      <div class="menu-card static-card">
+        <span class="menu-index">01</span><div><small>BANCO ACADÉMICO</small><b>Ecuaciones Diferenciales · Tercer Corte · 500 preguntas</b></div><span>♣</span>
+      </div>
+      <button id="preloadGeniusBtn" type="button" class="menu-card menu-button genius-menu-card" aria-describedby="preloadGeniusStatus">
+        <span class="menu-index">IA</span><div><small>PREPARAR GENIUS · OPCIONAL</small><b id="preloadGeniusStatus" role="status">Descarga el tutor antes de iniciar el tiempo</b></div><span>🧞</span>
+      </button>
+      <button id="topicsBtn" class="menu-card menu-button topic-menu-button" type="button"><span class="menu-index">02</span><div><small>ELEGIR TEMAS</small><b id="selectedTopicsSummary">Todos los temas del curso</b></div><span>›</span></button>
+      <button id="howBtn" class="menu-card menu-button" type="button"><span class="menu-index">03</span><div><small>CÓMO JUGAR</small><b>Cartas · preguntas · apuestas · rescate</b></div><span>›</span></button>
+      <button id="attemptHistoryBtn" class="menu-card menu-button" type="button"><span class="menu-index">04</span><div><small>HISTORIAL DE INTENTOS</small><b id="attemptHistorySummary">Informes guardados de este perfil</b></div><span>›</span></button>
+      <button id="continueBtn" class="primary-btn hidden" type="button">CONTINUAR PARTIDA GUARDADA</button>
+      <button id="startBtn" class="primary-btn gold" type="button">INICIAR NUEVO JUEGO</button><small class="open-access-note">Estudiante LMS: un intento guardado · Práctica local y docente: intentos libres</small>
+      <div id="teacherBadge" class="teacher-badge hidden">DOCENTE / WITHOUT TRACKING, PREVIEW · INTENTOS ILIMITADOS</div>
+      <div id="completedBox" class="completed-box hidden"></div>
+      <small id="startError" class="error-text"></small>
+    </aside>
+  </div>
+</section>
+
+<div id="topicsModal" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="topicsTitle">
+  <div class="modal-card topics-card">
+    <div class="modal-head">
+      <div><small>BANCO ACADÉMICO</small><h2 id="topicsTitle">Elegir temas del curso</h2></div>
+      <button id="closeTopics" class="icon-btn" type="button" aria-label="Cerrar selección de temas">×</button>
+    </div>
+    <p class="topics-intro">Selecciona uno o varios temas de Ecuaciones Diferenciales del banco de tercer corte. Incluye 500 preguntas: opción múltiple, verdadero/falso, respuesta entera, afirmaciones I–IV, ordenamiento y preguntas con gráfica SVG. Poker usa los niveles 1–2 como retos normales y el nivel 3 para subidas y Rescate.</p>
+    <div class="topics-toolbar">
+      <button id="selectAllTopics" class="secondary-btn" type="button">SELECCIONAR TODOS</button>
+      <button id="clearTopics" class="secondary-btn" type="button">LIMPIAR</button>
+    </div>
+    <div id="topicsGrid" class="topics-grid"></div>
+    <div id="topicsCount" class="topics-count"></div>
+    <div id="topicsError" class="error-text"></div>
+    <div class="modal-actions"><button id="applyTopics" class="primary-btn gold" type="button">APLICAR TEMAS</button></div>
+  </div>
+</div>
+
+<div id="attemptHistoryModal" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="attemptHistoryTitle">
+  <div class="modal-card attempt-history-card">
+    <div class="modal-head">
+      <div><small>ARCHIVO DE INFORMES</small><h2 id="attemptHistoryTitle">Historial de intentos</h2></div>
+      <button id="closeAttemptHistory" class="icon-btn" type="button" aria-label="Cerrar historial">×</button>
+    </div>
+    <p class="attempt-history-intro">Cada intento terminado se archiva por separado para este perfil. Puedes volver a descargar cualquiera de sus informes HTML sin afectar los demás intentos.</p>
+    <div id="attemptHistoryList" class="attempt-history-list"></div>
+    <div id="attemptHistoryError" class="error-text"></div>
+  </div>
+</div>
+
+<div id="howModal" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="howTitle">
+  <div class="modal-card how-card">
+    <div class="modal-head"><div><small>MANUAL RÁPIDO</small><h2 id="howTitle">Cómo jugar Poker Math · EDO</h2></div><button id="closeHow" class="icon-btn" type="button">×</button></div>
+    <div class="how-grid">
+      <section><h3>Objetivo</h3><p>Tú y la Mesa empiezan con <b>2.50</b> en fichas. Las fichas se reparten entre las dos bancas y el banco de apuesta, por lo que el total del sistema se conserva en <b>5.00</b>. Tu banca disponible es tu nota actual. Tienes <b>60 minutos</b> y ganas la carrera si llegas a <b>5.00</b>. Si una banca queda en <b>0.00</b> después de resolver la mano, el juego termina.</p></section>
+      <section><h3>Preguntas = control del azar</h3><p>Las preguntas normales <b>no suman décimas directamente</b>. Antes de responder puedes intentar solo o pedir a Genius Math pistas, fórmulas y orientación. La <b>primera respuesta registrada</b> determina si ganas el derecho de conservar o cambiar al azar la carta objetivo.</p></section>
+      <section><h3>Genius Math · ciclo pedagógico</h3><p>Cada intervención normal sigue <b>1) reto</b>, <b>2) apoyo opcional de Genius Math antes de responder</b> y <b>3) transferencia sin IA</b>. Si no recuerdas una fórmula, puedes pedírsela directamente al Genio. Las preguntas irrelevantes no penalizan: Genius las redirige naturalmente al ejercicio. La nota oficial sigue dependiendo de la primera respuesta registrada.</p></section>
+      <section><h3>Preflop</h3><p>Puedes responder hasta 2 preguntas por tus cartas y hasta 2 por las cartas ocultas de la Mesa. El termómetro psicológico puede ser sincero o estar faroleando. El <b>rostro profesional de la Mesa permanece visible durante toda la partida</b> y cambia mediante una secuencia de sprites según la calle, la fuerza aparente de la mano y la evolución de las cartas.</p></section>
+      <section><h3>Flop · Turn · River</h3><p>Flop: hasta 3 preguntas, una por comunitaria. Turn y river: hasta 1 cada uno. Cambiar una comunitaria puede ayudarte o ayudar a la Mesa.</p></section>
+      <section><h3>Apuestas</h3><p>Las fichas se comprometen en pasos de <b>0.10</b>, con máximo <b>0.50 por jugador y por mano</b>, incluyendo las ciegas. <b>Igualar</b> una apuesta no requiere reto adicional. <b>Abrir o subir</b> una apuesta sí exige superar una pregunta avanzada. Una calle solo puede cerrarse cuando las apuestas quedan igualadas o alguien se retira. La Mesa decide estratégicamente si pasa, apuesta, iguala, resube o se retira según su probabilidad interna.</p></section>
+      <section><h3>Dealer · Small Blind · Big Blind</h3><p>Cada mano comienza con apuestas obligatorias. En heads-up, quien tiene el <b>botón Dealer (D)</b> pone la <b>Small Blind = 0.10</b> y el rival la <b>Big Blind = 0.20</b>. El botón cambia de jugador en cada mano. Estas décimas quedan comprometidas desde el reparto y forman parte del Rescate si pierdes el showdown.</p></section>
+      <section><h3>Rescate de Conocimiento</h3><p>Si pierdes el showdown, respondes exactamente 2 preguntas avanzadas: <b>2/2 salva 100%</b>, <b>1/2 salva 50%</b>, <b>0/2 salva 0%</b> de tus décimas comprometidas.</p></section>
+      <section class="justice-info"><h3>Finalización y perfiles Brightspace</h3><p>El juego termina al cumplirse <b>60 minutos</b>, al alcanzar <b>5.00</b>, si alguna banca queda en <b>0.00</b> después de resolver la mano, o si pulsas <b>Finalizar</b>. La banca actual es la nota final. Poker Math EDO distingue cuatro contextos: <b>Estudiante Brightspace</b> (seguimiento sin bloqueo de intentos, nota al LMS), <b>Docente con seguimiento Brightspace</b> (nota 0–5.0 al LMS para la identidad activa), <b>Docente / Without Tracking, Preview</b> (sin escrituras, commits ni finalización de nota) y <b>Docente / Preview-Review</b> (sin modificar calificaciones). El modo docente con seguimiento se activa cuando Brightspace expone una señal de rol docente en los datos de lanzamiento o cuando el contenedor permite reconocer el contexto de <i>Administrar curso / Course Admin</i>. Si el LMS no expone el rol pero sí abre un intento con seguimiento, la sesión se trata como perfil calificable y la nota se envía normalmente. <b>En toda finalización se descarga automáticamente el informe HTML detallado</b>.</p></section>
+      <section class="latex-reference-section full-span">
+        <h3>Tabla de manos de póker</h3>
+        <p>Referencia rápida para entender el showdown. No necesitas memorizarla completa porque el juego calcula automáticamente la mejor mano, pero puedes consultarla antes y durante la partida.</p>
+        <div class="latex-box">
+          <div class="latex-caption"><strong>Jerarquía de manos</strong><br><span>10 &gt; 9 &gt; ··· &gt; 1</span></div>
+          <table class="latex-table poker-rank-table">
+            <thead>
+              <tr><th>Rango</th><th>Mano</th><th>Ejemplo</th><th>Idea</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>10</td><td>Escalera real</td><td><span class="hand-sample"><span class="ref-card club">10♣</span><span class="ref-card club">J♣</span><span class="ref-card club">Q♣</span><span class="ref-card club">K♣</span><span class="ref-card club">A♣</span></span></td><td>10-J-Q-K-A del mismo palo.</td></tr>
+              <tr><td>9</td><td>Escalera de color</td><td><span class="hand-sample"><span class="ref-card diamond">5♦</span><span class="ref-card diamond">6♦</span><span class="ref-card diamond">7♦</span><span class="ref-card diamond">8♦</span><span class="ref-card diamond">9♦</span></span></td><td>Cinco consecutivas del mismo palo.</td></tr>
+              <tr><td>8</td><td>Póker</td><td><span class="hand-sample"><span class="ref-card club">5♣</span><span class="ref-card diamond">5♦</span><span class="ref-card spade">5♠</span><span class="ref-card heart">5♥</span><span class="ref-card club">J♣</span></span></td><td>Cuatro cartas del mismo valor.</td></tr>
+              <tr><td>7</td><td>Full house</td><td><span class="hand-sample"><span class="ref-card club">K♣</span><span class="ref-card diamond">K♦</span><span class="ref-card heart">K♥</span><span class="ref-card club">9♣</span><span class="ref-card spade">9♠</span></span></td><td>Un trío y una pareja.</td></tr>
+              <tr><td>6</td><td>Color</td><td><span class="hand-sample"><span class="ref-card club">3♣</span><span class="ref-card club">9♣</span><span class="ref-card club">Q♣</span><span class="ref-card club">A♣</span><span class="ref-card club">2♣</span></span></td><td>Cinco cartas del mismo palo.</td></tr>
+              <tr><td>5</td><td>Escalera</td><td><span class="hand-sample"><span class="ref-card diamond">A♦</span><span class="ref-card club">2♣</span><span class="ref-card spade">3♠</span><span class="ref-card heart">4♥</span><span class="ref-card club">5♣</span></span></td><td>Cinco valores consecutivos.</td></tr>
+              <tr><td>4</td><td>Trío</td><td><span class="hand-sample"><span class="ref-card club">8♣</span><span class="ref-card diamond">8♦</span><span class="ref-card spade">8♠</span><span class="ref-card heart">5♥</span><span class="ref-card club">Q♣</span></span></td><td>Tres cartas del mismo valor.</td></tr>
+              <tr><td>3</td><td>Doble pareja</td><td><span class="hand-sample"><span class="ref-card diamond">Q♦</span><span class="ref-card heart">Q♥</span><span class="ref-card club">7♣</span><span class="ref-card heart">7♥</span><span class="ref-card club">A♣</span></span></td><td>Dos parejas distintas.</td></tr>
+              <tr><td>2</td><td>Pareja</td><td><span class="hand-sample"><span class="ref-card diamond">J♦</span><span class="ref-card heart">J♥</span><span class="ref-card club">9♣</span><span class="ref-card club">2♣</span><span class="ref-card spade">5♠</span></span></td><td>Dos cartas del mismo valor.</td></tr>
+              <tr><td>1</td><td>Carta alta</td><td><span class="hand-sample"><span class="ref-card club">A♣</span><span class="ref-card diamond">5♦</span><span class="ref-card heart">7♥</span><span class="ref-card spade">2♠</span><span class="ref-card club">J♣</span></span></td><td>Sin otra combinación.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <div class="modal-actions"><button id="closeHow2" class="primary-btn gold" type="button">Entendido</button></div>
+  </div>
+</div>
+
+<main id="gameScreen" class="game hidden">
+  <header class="topbar">
+    <div class="brand"><img src="assets/poker_ecomat_logo.webp" alt="Poker Math EDO"><div><b>Poker Math · EDO</b><span id="hudStudent">Estudiante</span></div></div>
+    <div class="stat hero-stat"><span>Tu nota</span><b id="gradeText">2.50 / 5.00</b></div>
+    <div class="stat"><span>Mesa</span><b id="dealerScoreText">2.50 / 5.00</b></div>
+    <div class="stat"><span>Tiempo</span><b id="timeText">01:00:00</b></div>
+    <div class="stat"><span>C / I</span><b id="ciText">0 / 0</b></div>
+    <div class="stat"><span>Mano</span><b id="handText">1</b></div>
+    <button id="assistantBtn" class="secondary-btn assistant-open-btn" type="button">🧭 Asistente</button>
+    <div class="more-wrap"><button id="moreBtn" class="secondary-btn" type="button" aria-expanded="false">☰ Más ▾</button><div id="moreMenu" class="more-menu hidden"><button id="saveBtn" type="button">💾 Guardar</button><button id="hierarchyBtn" type="button">🂡 Jerarquía</button><button id="soundBtn" type="button">🔊 Sonido</button><button id="howBtnGame" type="button">❔ Cómo jugar</button><button id="assistantMenuBtn" type="button">🧭 Abrir asistente</button></div></div>
+    <button id="finishBtn" class="danger-btn" type="button">⏹ Finalizar</button>
+  </header>
+
+  <section id="guideBand" class="guide-band floating-guide" aria-label="Asistente guiado por fases">
+    <div id="phaseTrack" class="phase-track"></div>
+    <div class="guide-band-main">
+      <div class="guide-assistant-card">
+        <div class="assistant-panel-head">
+          <div class="assistant-head">
+            <div class="phase-chip" id="phaseChip">PREFLOP</div>
+            <div class="assistant-copy">
+              <small>¿QUÉ HAGO AHORA?</small>
+              <h2 id="phaseTitle">Intervención académica</h2>
+              <p id="phaseHelp">El asistente te indica una sola acción a la vez.</p>
+            </div>
+          </div>
+          <button id="closeGuideBtn" class="icon-btn close-guide-btn" type="button" aria-label="Cerrar asistente">×</button>
+        </div>
+        <div id="phaseSecondary" class="phase-secondary-inline"></div>
+      </div>
+    </div>
+  </section>
+  <button id="floatingPhaseActionBtn" class="primary-btn gold floating-phase-btn hidden" type="button">IR A LA APUESTA PREFLOP</button>
+
+  <section class="poker-layout">
+    <div class="table-stage">
+      <div class="guide-emotion-card mesa-face-card" aria-live="polite">
+        <div class="guide-emotion-top">
+          <div id="opponentSpriteShell" class="opponent-sprite-shell compact" aria-label="Rostro emocional de la Mesa">
+            <div class="sprite-halo" aria-hidden="true"></div>
+            <img id="psychSpriteA" class="opponent-sprite active" src="assets/emotions/preflop_01.webp" alt="Jugadora de Poker Math EDO">
+            <img id="psychSpriteB" class="opponent-sprite" src="assets/emotions/preflop_01.webp" alt="" aria-hidden="true">
+            <span class="live-opponent-badge">MESA · EN VIVO</span>
+          </div>
+          <div class="guide-emotion-copy">
+            <small>MESA</small>
+            <b id="psychLabel">Analítica</b>
+            <span id="psychTell">Observando la mano.</span>
+            <div class="mini-meta"><b id="machineDockLabel">Analítica</b><span id="machineDockPhase">PREFLOP</span></div>
+          </div>
+        </div>
+        <div class="gauge-wrap">
+          <div class="gauge"><i id="psychFill"></i></div>
+          <div class="gauge-scale"><span>Presión</span><span>Lectura</span><span>Control</span></div>
+          <small id="emotionFrameLabel" class="emotion-frame-label">Neutral profesional</small>
+        </div>
+      </div>
+      <div class="felt-table">
+        <div id="tableFX" class="table-fx" aria-hidden="true"></div>
+        <div id="dealerChipRack" class="chip-rack dealer-chip-rack" aria-live="polite"></div>
+        <div id="tablePot" class="pot-display" aria-live="polite"><div class="pot-title">POZO</div><div id="potChipStack" class="pot-chip-stack"></div><div id="potText" class="pot-text">0.00</div></div>
+        <div id="studentChipRack" class="chip-rack student-chip-rack" aria-live="polite"></div>
+        <div class="dealer-zone">
+          <div class="zone-label"><span>LA MESA</span></div>
+          <div class="role-strip dealer-role-strip">
+            <div id="dealerRoleChips" class="role-chip-cluster" aria-label="Rol de la Mesa en esta mano"></div>
+          </div>
+          <div id="dealerCards" class="card-row"></div>
+        </div>
+
+        <div class="community-zone">
+          <div class="zone-label"><span>CARTAS COMUNITARIAS</span><b id="streetLabel">PREFLOP</b></div>
+          <div id="boardCards" class="card-row board-row"></div>
+        </div>
+
+        <div class="student-zone">
+          <div class="zone-label"><span>TUS CARTAS</span></div>
+          <div class="role-strip student-role-strip">
+            <div id="studentRoleChips" class="role-chip-cluster" aria-label="Tu rol en esta mano"></div>
+          </div>
+          <div id="studentCards" class="card-row"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="questionModal" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="qTitle">
+  <div class="modal-card question-card genius-question-card">
+    <div class="modal-head"><div><small id="qMeta">Pregunta</small><h2 id="qTitle">Reto matemático</h2></div><button id="qClose" class="icon-btn" type="button" aria-label="Cerrar pregunta">×</button></div>
+    <div id="qLearningTrack" class="genius-phase-track" aria-label="Fases pedagógicas">
+      <div data-qphase="independent"><span>1</span><b>RETO</b></div>
+      <div data-qphase="genie"><span>2</span><b>APRENDIZAJE</b></div>
+      <div data-qphase="transfer"><span>3</span><b>TRANSFERENCIA</b></div>
+    </div>
+    <div id="qPhaseNote" class="genius-phase-note">Puedes responder directamente o pedir ayuda a Genius Math antes de contestar.</div>
+    <div class="question-tools"><button id="calcBtn" class="tool-btn" data-open-reino-calc type="button">🧮 Calculadora Reino Integral</button><button id="hintBtn" class="tool-btn genius-tool-btn" type="button">🧞 PEDIR PISTA A GENIUS MATH</button></div>
+    <div id="qPrompt" class="math-prompt"></div>
+    <div id="qHint" class="hint-box hidden"></div>
+    <form id="answerForm">
+      <div id="answerArea"></div>
+      <label class="confidence-row">¿Qué tan seguro estás de tu respuesta?
+        <select id="qConfidence"><option value="low">Baja</option><option value="medium" selected>Media</option><option value="high">Alta</option></select>
+      </label>
+      <button id="answerBtn" class="primary-btn gold" type="submit">REGISTRAR MI RESPUESTA</button>
+    </form>
+    <div id="qFeedback" class="feedback hidden"></div>
+
+    <section id="geniePanel" class="genius-panel hidden" aria-labelledby="genieHeading">
+      <header class="genius-panel-head"><span class="genius-orb" aria-hidden="true">✦</span><div><b id="genieHeading">Genius Math</b><small>Trabajemos tu ejercicio de EDO</small></div><span id="genieHelpBadge" class="genius-help-badge">IA no activada</span><button id="genieCloseBtn" class="icon-btn" type="button" aria-label="Cerrar Genius y volver al ejercicio">✕</button></header>
+      <p id="genieEngineNote" class="genius-engine-note"></p>
+      <details id="genieModeDetails" class="genius-model-details" open><summary>Modelo y conexión</summary>
+        <p>El tutor local genera respuestas en este equipo. Su primera activación descarga el programa y los pesos desde servidores externos; requiere HTTPS, WebGPU y memoria suficiente. La caché puede ser eliminada por el navegador.</p>
+        <label for="genieProfile">Perfil del modelo</label><select id="genieProfile"><option value="light">Ligero · Qwen3 0.6B</option><option value="standard">Estándar · Qwen3 1.7B</option><option value="advanced">Avanzado · Qwen3 4B</option></select>
+        <p class="genius-download-note">Descarga orientativa, no medida: 0,5 / 1,2 / 2,6 GB. No está incluida en este ZIP. Elegir un modelo mayor no garantiza mayor exactitud.</p>
+        <button id="genieLoadBtn" type="button" class="primary-btn">ACTIVAR IA LOCAL</button><button id="genieCloudBtn" type="button" class="secondary-btn hidden">CONECTAR IA REMOTA</button>
+      </details>
+      <div class="genius-reference-toggle"><button id="genieGuideBtn" type="button" class="secondary-btn">Consultar fórmulas sin IA</button></div>
+      <div id="genieReference" class="genius-reference hidden"></div>
+      <div id="genieChat" class="genius-chat" role="log" aria-live="polite" aria-relevant="additions" aria-label="Conversación con Genius"></div>
+      <form id="genieForm" class="genius-form"><label for="genieInput">Tu duda o procedimiento</label><textarea id="genieInput" rows="3" maxlength="2400" placeholder="Puedes empezar con: no sé cómo comenzar…" aria-describedby="genieKeyboardNote"></textarea><small id="genieKeyboardNote">Enter envía · Shift+Enter añade una línea</small><div class="genius-form-actions"><button id="genieSendBtn" type="submit" class="primary-btn">ENVIAR</button><button id="genieCancelBtn" type="button" class="secondary-btn hidden">CANCELAR</button></div></form>
+      <div id="genieStatus" class="genius-status" role="status"></div><button id="genieReadyBtn" type="button" class="secondary-btn">VOLVER A MI RESPUESTA</button>
+    </section>
+
+    <section id="transferPanel" class="transfer-panel hidden" aria-label="Prueba de transferencia">
+      <div class="transfer-head"><span>3</span><div><b>Prueba de transferencia</b><small>Genius Math se retira. Resuelve sin IA.</small></div></div>
+      <div id="transferMeta" class="transfer-meta"></div>
+      <div id="transferPrompt" class="math-prompt"></div>
+      <form id="transferForm"><div id="transferAnswerArea"></div><button class="primary-btn gold" type="submit">RESPONDER TRANSFERENCIA</button></form>
+      <div id="transferFeedback" class="feedback hidden"></div>
+    </section>
+
+    <div id="changeDecision" class="change-decision hidden"><h3 id="decisionTitle">Ganaste el derecho de intervenir la carta</h3><p id="decisionText"></p><div class="modal-actions"><button id="keepCardBtn" class="secondary-btn" type="button">CONSERVAR</button><button id="changeCardBtn" class="primary-btn gold" type="button">CAMBIAR AL AZAR</button></div></div>
+    <div id="wrongCloseWrap" class="modal-actions hidden"><button id="wrongCloseBtn" class="primary-btn" type="button">VOLVER A LA MESA</button></div>
+  </div>
+</div>
+
+<div id="betModal" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="betTitle">
+  <div class="modal-card bet-card">
+    <div class="modal-head"><div><small id="betStreet">APUESTA</small><h2 id="betTitle">Decide cuánto comprometer</h2></div></div>
+    <div class="ai-bet-box"><span>Decisión estratégica de la Mesa</span><b id="aiBetText">La Mesa pasa.</b><small id="aiBetReason">Evalúa su mano con información legítima.</small></div>
+    <div id="betBlindInfo" class="blind-info">Ciegas obligatorias activas.</div>
+    <div class="bet-scores"><div><span>Tu banca disponible</span><b id="betGrade">2.50</b></div><div><span>Tú en el banco de apuesta</span><b id="betCurrent">0.00</b></div><div><span>Mesa en el banco de apuesta</span><b id="betDealerCurrent">0.00</b></div></div>
+    <label class="bet-label">Cantidad que quieres poner ahora</label>
+    <div id="betRoundStatus" class="bet-round-status"></div>
+    <div id="betChoices" class="bet-choices"></div>
+    <div class="bet-preview-box"><span>Vista previa de tus fichas</span><div id="betPreview" class="bet-preview"></div><b id="betSelectedText">0.00</b></div>
+    <button id="foldBetBtn" class="danger-btn bet-fold-btn hidden" type="button">RETIRARME DE LA MANO</button>
+    <p class="bet-note">Las ciegas SB/BB ya son parte del compromiso. <b>Igualar</b> una apuesta no exige reto adicional. <b>Abrir o subir</b> exige una pregunta avanzada; el máximo total sigue siendo <b>0.50 por jugador en toda la mano</b>. La expresión de la Mesa puede ser deliberadamente engañosa.</p>
+    <button id="confirmBetBtn" class="primary-btn gold" type="button">CONFIRMAR Y CONTINUAR</button>
+  </div>
+</div>
+
+
+<div id="raiseChallengeModal" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="raiseChallengeTitle">
+  <div class="modal-card raise-challenge-card">
+    <div class="rescue-banner raise-banner">RETO PARA SUBIR</div>
+    <h2 id="raiseChallengeTitle">La subida se gana con conocimiento</h2>
+    <p id="raiseChallengeRisk">Para aumentar la apuesta debes superar una pregunta avanzada.</p>
+    <div id="raiseChallengeMeta" class="raise-challenge-meta"></div>
+    <div id="raiseChallengePrompt" class="math-prompt"></div><div class="question-tools"><button class="tool-btn" data-open-reino-calc type="button">🧮 Calculadora Reino Integral</button></div>
+    <form id="raiseChallengeForm">
+      <div id="raiseChallengeAnswerArea"></div>
+      <button class="primary-btn gold" type="submit">RESPONDER PARA AUTORIZAR LA SUBIDA</button>
+    </form>
+    <div id="raiseChallengeFeedback" class="feedback hidden"></div>
+    <div class="modal-actions raise-challenge-actions">
+      <button id="raiseCancelBtn" class="secondary-btn" type="button">NO SUBIR · IGUALAR / PASAR</button>
+      <button id="raiseNextBtn" class="primary-btn gold hidden" type="button">CONTINUAR</button>
+    </div>
+  </div>
+</div>
+
+<div id="resultModal" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="resultTitle">
+  <div class="modal-card result-card"><div id="resultIcon" class="result-icon">♠</div><h2 id="resultTitle">Showdown</h2><div id="showdownCards" class="showdown-view"></div><div id="resultText" class="result-text"></div><button id="resultContinueBtn" class="primary-btn gold" type="button">CONTINUAR</button></div>
+</div>
+
+<div id="rescueModal" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="rescueTitle">
+  <div class="modal-card rescue-card"><div class="rescue-banner">RESCATE DE CONOCIMIENTO</div><h2 id="rescueTitle">Tu conocimiento todavía puede salvar la apuesta</h2><p id="rescueRiskText"></p><div class="rescue-progress"><span id="rescueStep">Pregunta 1 de 2</span><b id="rescueSavedPreview">Puedes salvar 100%</b></div><div id="rescuePrompt" class="math-prompt"></div><div class="question-tools"><button class="tool-btn" data-open-reino-calc type="button">🧮 Calculadora Reino Integral</button></div><form id="rescueForm"><div id="rescueAnswerArea"></div><button class="primary-btn gold" type="submit">RESPONDER</button></form><div id="rescueFeedback" class="feedback hidden"></div><button id="rescueNextBtn" class="primary-btn hidden" type="button">SIGUIENTE</button></div>
+</div>
+
+<div id="hierarchyModal" class="overlay hidden">
+  <div class="modal-card hierarchy-card">
+    <div class="modal-head"><div><small>REFERENCIA</small><h2>Jerarquía y puntaje de manos</h2></div><button id="closeHierarchy" class="icon-btn" type="button">×</button></div>
+    <p class="hierarchy-intro">La Mesa y el estudiante usan la jerarquía estándar de Texas Hold'em. El sistema compara automáticamente las mejores 5 cartas de entre 7 y decide la mano ganadora.</p>
+    <div class="latex-box hierarchy-latex-box">
+      <div class="latex-caption"><strong>Tabla de puntaje del póker</strong><br><span>Fuerza mayor ⇒ mejor mano</span></div>
+      <table class="latex-table poker-rank-table">
+        <thead>
+          <tr><th>Puntaje</th><th>Mano</th><th>Estructura</th><th>Ejemplo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>10</td><td>Escalera real</td><td>\(10,J,Q,K,A\) del mismo palo</td><td><span class="hand-sample"><span class="ref-card club">10♣</span><span class="ref-card club">J♣</span><span class="ref-card club">Q♣</span><span class="ref-card club">K♣</span><span class="ref-card club">A♣</span></span></td></tr>
+          <tr><td>9</td><td>Escalera de color</td><td>5 consecutivas del mismo palo</td><td><span class="hand-sample"><span class="ref-card diamond">5♦</span><span class="ref-card diamond">6♦</span><span class="ref-card diamond">7♦</span><span class="ref-card diamond">8♦</span><span class="ref-card diamond">9♦</span></span></td></tr>
+          <tr><td>8</td><td>Póker</td><td>\(a,a,a,a,b\)</td><td><span class="hand-sample"><span class="ref-card club">5♣</span><span class="ref-card diamond">5♦</span><span class="ref-card spade">5♠</span><span class="ref-card heart">5♥</span><span class="ref-card club">J♣</span></span></td></tr>
+          <tr><td>7</td><td>Full house</td><td>\(a,a,a,b,b\)</td><td><span class="hand-sample"><span class="ref-card club">K♣</span><span class="ref-card diamond">K♦</span><span class="ref-card heart">K♥</span><span class="ref-card club">9♣</span><span class="ref-card spade">9♠</span></span></td></tr>
+          <tr><td>6</td><td>Color</td><td>Mismo palo, no consecutivas</td><td><span class="hand-sample"><span class="ref-card club">3♣</span><span class="ref-card club">9♣</span><span class="ref-card club">Q♣</span><span class="ref-card club">A♣</span><span class="ref-card club">2♣</span></span></td></tr>
+          <tr><td>5</td><td>Escalera</td><td>5 consecutivas, sin exigir palo</td><td><span class="hand-sample"><span class="ref-card diamond">A♦</span><span class="ref-card club">2♣</span><span class="ref-card spade">3♠</span><span class="ref-card heart">4♥</span><span class="ref-card club">5♣</span></span></td></tr>
+          <tr><td>4</td><td>Trío</td><td>\(a,a,a,b,c\)</td><td><span class="hand-sample"><span class="ref-card club">8♣</span><span class="ref-card diamond">8♦</span><span class="ref-card spade">8♠</span><span class="ref-card heart">5♥</span><span class="ref-card club">Q♣</span></span></td></tr>
+          <tr><td>3</td><td>Doble pareja</td><td>\(a,a,b,b,c\)</td><td><span class="hand-sample"><span class="ref-card diamond">Q♦</span><span class="ref-card heart">Q♥</span><span class="ref-card club">7♣</span><span class="ref-card heart">7♥</span><span class="ref-card club">A♣</span></span></td></tr>
+          <tr><td>2</td><td>Pareja</td><td>\(a,a,b,c,d\)</td><td><span class="hand-sample"><span class="ref-card diamond">J♦</span><span class="ref-card heart">J♥</span><span class="ref-card club">9♣</span><span class="ref-card club">2♣</span><span class="ref-card spade">5♠</span></span></td></tr>
+          <tr><td>1</td><td>Carta alta</td><td>Sin repeticiones ni secuencia</td><td><span class="hand-sample"><span class="ref-card club">A♣</span><span class="ref-card diamond">5♦</span><span class="ref-card heart">7♥</span><span class="ref-card spade">2♠</span><span class="ref-card club">J♣</span></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="hierarchy-notes">
+      <div><b>Desempates:</b> cuando dos manos tienen el mismo tipo, gana la de mayor valor; si persiste, se comparan los kickers.</div>
+      <div><b>Importante:</b> la escalera \(A,2,3,4,5\) sí cuenta como escalera y es la más baja de ese tipo.</div>
+    </div>
+  </div>
+</div>
+
+<div id="reinoCalcModal" class="reino-calc-modal hidden" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Calculadora Reino Integral">
+  <div class="reino-calc-shell" role="document">
+    <iframe id="reinoCalcFrame" class="reino-calc-frame" src="reino_calculator/calculator.html" title="Calculadora Reino Integral"></iframe>
+  </div>
+</div>
+
+
+<section id="endScreen" class="screen end-screen hidden">
+  <div class="end-card">
+    <img src="assets/poker_ecomat_logo.webp" alt="Poker Math EDO">
+    <img id="endEmotion" class="end-emotion hidden" src="assets/emotions/special_41.webp" alt="Jugadora Poker Math EDO celebrando recuperación">
+    <small id="endStageLabel">INTENTO TERMINADO · INFORME PREPARADO</small>
+    <h1 id="endGrade">0.00 / 5.00</h1>
+    <h2 id="endTitle">Resultado del intento</h2>
+    <p id="endText"></p>
+    <div id="reportArchiveStatus" class="report-archive-status">Preparando y guardando el informe…</div>
+    <div class="end-actions">
+      <button id="viewReportBtn" class="secondary-btn" type="button">VER INFORME</button>
+      <button id="downloadReportBtn" class="primary-btn gold" type="button" disabled>DESCARGAR INFORME HTML</button>
+      <button id="finalizeAttemptBtn" class="danger-btn" type="button" disabled>FINALIZAR INTENTO</button>
+      <button id="teacherNewBtn" class="secondary-btn hidden" type="button">VOLVER AL MENÚ</button>
+    </div>
+    <div id="endScorm" class="scorm-status"></div>
+  </div>
+</section>
+
+<script src="scorm.js"></script>
+<script src="poker.js"></script>
+<script src="bank/base_bank.js"></script>
+<script src="bank/extended_bank.js"></script>
+<script src="interactive_graphs.js"></script>
+<script src="questions.js"></script>
+<script src="genie/config.js"></script>
+<script src="genie/FormulaCatalog.js"></script>
+<script src="genie/QuestionMetadata.js"></script>
+<script src="genie/FormulaCoach.js"></script>
+<script src="genie/PedagogyEngine.js"></script>
+<script src="genie/TransferCatalog.js"></script>
+<script src="genie/StudentModel.js"></script>
+<script src="genie/GenieMemory.js"></script>
+<script src="genie/AlgebraVerifier.js"></script>
+<script src="genie/EvaluatorBridge.js"></script>
+<script src="genie/ContextBridge.js"></script>
+<script src="genie/PromptContract.js"></script>
+<script src="genie/ToolRegistry.js"></script>
+<script src="genie/LoopDetector.js"></script>
+<script src="genie/OutputGuard.js"></script>
+<script src="genie/GuidedProvider.js"></script>
+<script src="genie/GenieCapabilityProbe.js"></script>
+<script src="genie/RuntimeDiagnostics.js"></script>
+<script src="genie/LocalModelProvider.js"></script>
+<script src="genie/CloudModelProvider.js"></script>
+<script src="genie/ModelProvider.js"></script>
+<script src="genie/GenieEngine.js"></script>
+<script src="genie/TutorPanel.js"></script>
+<script src="genie/ReportBridge.js"></script>
+<script src="genie/PreloadPanel.js"></script>
+<script src="genie/ReportViewer.js"></script>
+<script src="reino_calculator_bridge.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

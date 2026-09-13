@@ -1,0 +1,85 @@
+{
+  "version": "7.2.0-rc1",
+  "date": "2026-09-13",
+  "releaseStatus": "release_candidate_for_controlled_testing",
+  "allUserAcceptanceCriteriaCertified": false,
+  "liveModelInferenceExecuted": false,
+  "realBrightspaceExecuted": false,
+  "summary": {
+    "core": {
+      "total": 2686,
+      "passed": 2686,
+      "failed": 0,
+      "categories": {
+        "unit": 2521,
+        "exact_math": 162,
+        "provider_fixture_not_inference": 3
+      }
+    },
+    "browserIntegration": {
+      "total": 541,
+      "passed": 541,
+      "failed": 0,
+      "method": "Actual DOM and application JS with explicit LMS/localStorage/provider transport fixtures; not live inference"
+    },
+    "independentBankMath": {
+      "verifiedQuestionKeys": 158,
+      "notIndependentlyAuditedQuestionKeys": 342,
+      "failures": 0,
+      "auxiliarySymbolicCertificates": 8
+    },
+    "mathjax": {
+      "totalUniqueExpressions": 889,
+      "errors": []
+    },
+    "staticPackage": {
+      "total": 308,
+      "passed": 308,
+      "failed": 0,
+      "preservedSourceFiles": 76
+    },
+    "transfer": {
+      "originalBankSize": 500,
+      "transferOnlySupplements": 4,
+      "selectionCoverage": 500
+    },
+    "modelBenchmark": {
+      "status": "not_run_environment_blocked",
+      "studentProfilesPrepared": 20,
+      "familiesPrepared": 8,
+      "conversationsPerModelPrepared": 160,
+      "longConversationTurnsPrepared": 22
+    },
+    "suspendData": {
+      "maxBytesAcross500Transitions": 2709,
+      "completeBankStress": {
+        "name": "All_504_used_questions_suspend_bounded",
+        "pass": true,
+        "bytes": 2433,
+        "restored": 504,
+        "unique": 504,
+        "checks": 2,
+        "legacyCount": 3
+      }
+    }
+  },
+  "notCertified": [
+    "Live mathematical/pedagogical quality of configured generative models",
+    "Real WebGPU worker/runtime/weights in target browser",
+    "Successful IndexedDB persistence/reload on real origin",
+    "SCORM score/identity/finalization in real Brightspace",
+    "Full mathematical audit of all 500 keys and alternative orderings",
+    "General proof of all generated mathematics or adversarial prompt safety",
+    "Cloud server integration",
+    "ADL/XSD conformance certification"
+  ],
+  "evidenceFiles": [
+    "validation/CORE_TEST_RESULTS.json",
+    "validation/BROWSER_INTEGRATION_RESULTS.json",
+    "validation/MATH_AUDIT_RESULTS.json",
+    "validation/MATHJAX_WORKER_RESULTS.json",
+    "validation/PACKAGE_TEST_RESULTS.json",
+    "validation/MODEL_BENCHMARK_RESULTS.json",
+    "validation/FILE_INVENTORY_V72.json"
+  ]
+}

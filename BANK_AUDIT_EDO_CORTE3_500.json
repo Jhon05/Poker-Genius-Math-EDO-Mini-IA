@@ -1,0 +1,20 @@
+{
+  "total": 500,
+  "types": {
+    "multiple_choice": 125,
+    "true_false": 75,
+    "numeric": 75,
+    "statements": 75,
+    "ordering": 75,
+    "graphic": 75
+  },
+  "topics": {
+    "laplace": 85,
+    "pvi_convolucion": 84,
+    "sistemas_laplace": 78,
+    "sistemas_homogeneos": 100,
+    "sistemas_no_homogeneos": 73,
+    "aplicaciones": 80
+  },
+  "graphics": 15
+}

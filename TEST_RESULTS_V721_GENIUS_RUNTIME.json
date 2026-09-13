@@ -1,0 +1,107 @@
+{
+  "version": "7.2.1-rc1",
+  "releaseKind": "runtime_release_candidate",
+  "builtAt": "2026-09-13T21:26:23.967411+00:00",
+  "delivery": "complete_SCORM_package_for_controlled_testing",
+  "liveInferenceExecuted": false,
+  "realBrightspaceExecuted": false,
+  "modelBenchmarkExecuted": false,
+  "modelCacheReloadExecuted": false,
+  "recommendedDefault": null,
+  "runtimeBundled": false,
+  "testSuites": [
+    {
+      "file": "validation/CORE_TEST_RESULTS.json",
+      "kind": "infrastructure_and_exact_math",
+      "executed": true,
+      "total": 2686,
+      "passed": 2686,
+      "failed": 0
+    },
+    {
+      "file": "validation/RUNTIME_UNIT_RESULTS_V721.json",
+      "kind": "UNIT_API_FIXTURES_ONLY",
+      "executed": true,
+      "total": 87,
+      "passed": 87,
+      "failed": 0
+    },
+    {
+      "file": "validation/BROWSER_INTEGRATION_RESULTS.json",
+      "kind": "Chromium offline DOM injection. localStorage and LMS are explicit fixtures. No navigation/reload on a real origin, no real model, no real Brightspace.",
+      "executed": true,
+      "total": 541,
+      "passed": 541,
+      "failed": 0
+    },
+    {
+      "file": "validation/BROWSER_RUNTIME_TEST_RESULTS.json",
+      "kind": "BROWSER_DOM_WITH_EXPLICIT_STORAGE_AND_LMS_FIXTURES",
+      "executed": true,
+      "total": 64,
+      "passed": 64,
+      "failed": 0
+    },
+    {
+      "file": "validation/SCORM_API_TEST_RESULTS_V721.json",
+      "kind": "EXACT_ADAPTER_WITH_EXPLICIT_LMS_API_FIXTURES",
+      "executed": true,
+      "total": 34,
+      "passed": 34,
+      "failed": 0
+    },
+    {
+      "file": "validation/MATHEMATICAL_REGRESSION_V721.json",
+      "kind": "EXACT_SYMBOLIC_CERTIFICATES_NOT_LLM",
+      "executed": true,
+      "total": 24,
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "file": "validation/REVIEW_SERVER_TEST_RESULTS_V721.json",
+      "kind": "REVIEW_DOM_EXPLICIT_FIXTURE_AND_LOOPBACK_HTTP",
+      "executed": true,
+      "total": 17,
+      "passed": 17,
+      "failed": 0
+    },
+    {
+      "file": "validation/PACKAGE_TEST_RESULTS_V721.json",
+      "kind": "STATIC_PACKAGE_AND_SOURCE_REGRESSION",
+      "executed": true,
+      "total": 465,
+      "passed": 465,
+      "failed": 0
+    }
+  ],
+  "independentBankAudit": {
+    "originalQuestions": 500,
+    "verifiedAnswers": 158,
+    "discrepancies": 0,
+    "notIndependentlyReviewed": 342,
+    "symbolicCertificates": 8
+  },
+  "mathjax": {
+    "totalUniqueExpressions": 889,
+    "errors": []
+  },
+  "realBrowserWorkerPing": {
+    "status": "blocked",
+    "message": null
+  },
+  "limitations": [
+    "Chromium navigation to localhost was blocked by ERR_BLOCKED_BY_ADMINISTRATOR. Remote runtime fetch failed with temporary DNS resolution failure. No usable authorized WebGPU/LLM execution was obtained. Opaque-context capability results do not identify the physical host GPU.",
+    "Runtime JavaScript is still external; see EXTERNAL_DEPENDENCIES.md.",
+    "Unit/DOM fixture success is not live model performance or real LMS acceptance.",
+    "Independent SymPy audit covers 158/500 bank answers, not all 500.",
+    "Client-side output guards and answer secrecy are not guarantees against an advanced client user."
+  ],
+  "requiredTargetTests": [
+    "real inference and multi-turn dialogue",
+    "two-session model cache",
+    "Worker responsiveness, cancel and recovery during generation",
+    "independent model quality comparison",
+    "real Brightspace learner attempt, note and resume"
+  ]
+}
