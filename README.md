@@ -38,3 +38,7 @@ El `imsmanifest.xml` está en la raíz. Sube el ZIP como **una actividad nueva d
 ## Desarrollo y reproducción
 
 `genie/config.js` centraliza modelo, perfiles y configuración. Las pruebas de desarrollo usan Node.js, Python, Playwright/Chromium y SymPy según cada suite; estas herramientas no son necesarias para el estudiante. `tools/package_scorm.py` regenera el manifiesto y el ZIP sin bibliotecas externas. `tools/vendor_runtime.py` permite incorporar el runtime solo después de descargar y verificar sus archivos reales y su licencia. No incluye claves privadas.
+
+
+## v7.2.1.1 RC2 — smoke JSON fix
+Se corrigió el parámetro `enable_thinking` de WebLLM y se robusteció el parser de salida estructurada tras una prueba real en GitHub Pages donde Qwen3 0.6B alcanzó el smoke test pero devolvió JSON no parseable. Ver `VALIDACION_V7211_SMOKE_JSON_FIX.md`.
