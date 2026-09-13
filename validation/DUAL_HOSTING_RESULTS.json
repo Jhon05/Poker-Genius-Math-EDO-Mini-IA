@@ -1,0 +1,62 @@
+{
+  "kind": "DUAL_GITHUB_PAGES_AND_SCORM_STATIC_VALIDATION",
+  "executed": true,
+  "total": 13,
+  "passed": 13,
+  "failed": [],
+  "results": [
+    {
+      "name": "index_has_no_root_absolute_static_urls",
+      "pass": true,
+      "bad": []
+    },
+    {
+      "name": "package_root_resolves_from_config_script",
+      "pass": true
+    },
+    {
+      "name": "probe_accepts_https",
+      "pass": true
+    },
+    {
+      "name": "probe_accepts_localhost",
+      "pass": true
+    },
+    {
+      "name": "probe_remedy_mentions_https",
+      "pass": true
+    },
+    {
+      "name": "standalone_https_label",
+      "pass": true
+    },
+    {
+      "name": "scorm_adapter_present",
+      "pass": true
+    },
+    {
+      "name": "github_nojekyll_present",
+      "pass": true
+    },
+    {
+      "name": "github_checklist_present",
+      "pass": true
+    },
+    {
+      "name": "dual_readme_present",
+      "pass": true
+    },
+    {
+      "name": "scorm_launch_index",
+      "pass": true
+    },
+    {
+      "name": "scorm_type_sco",
+      "pass": true
+    },
+    {
+      "name": "manifest_root",
+      "pass": true
+    }
+  ]
+}

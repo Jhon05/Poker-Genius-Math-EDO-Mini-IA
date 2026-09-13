@@ -1,0 +1,68 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "LIVE_PEDAGOGICAL_MODEL_COMPARISON",
+  "executed": false,
+  "liveInferenceExecuted": false,
+  "status": "not_run_environment_blocked",
+  "recommendedDefault": null,
+  "qualityJudge": "independent_human_review_required",
+  "candidates": [
+    {
+      "profile": "light",
+      "modelId": "Qwen3-0.6B-q4f16_1-MLC",
+      "alternativeWithoutF16": "Qwen3-0.6B-q4f32_1-MLC",
+      "executed": false,
+      "conversationsExecuted": 0,
+      "mathematicalCorrectness": null,
+      "continuity": null,
+      "adaptation": null,
+      "latencyMs": null
+    },
+    {
+      "profile": "standard",
+      "modelId": "Qwen3-1.7B-q4f16_1-MLC",
+      "alternativeWithoutF16": "Qwen3-1.7B-q4f32_1-MLC",
+      "executed": false,
+      "conversationsExecuted": 0,
+      "mathematicalCorrectness": null,
+      "continuity": null,
+      "adaptation": null,
+      "latencyMs": null
+    },
+    {
+      "profile": "advanced",
+      "modelId": "Qwen3-4B-q4f16_1-MLC",
+      "alternativeWithoutF16": "Qwen3-4B-q4f32_1-MLC",
+      "executed": false,
+      "conversationsExecuted": 0,
+      "mathematicalCorrectness": null,
+      "continuity": null,
+      "adaptation": null,
+      "latencyMs": null
+    }
+  ],
+  "preparedStages": {
+    "A": {
+      "families": 8,
+      "profiles": 3,
+      "conversationsPerModel": 24
+    },
+    "B": {
+      "families": 8,
+      "profiles": 20,
+      "conversationsPerFinalist": 160
+    },
+    "C": {
+      "conversations": 20,
+      "turnsPerConversation": 24
+    },
+    "REGRESSION": {
+      "conversations": 8,
+      "turnsPerConversation": 7
+    }
+  },
+  "measurementUnavailableReason": "Chromium navigation to localhost was blocked by ERR_BLOCKED_BY_ADMINISTRATOR. Remote runtime fetch failed with temporary DNS resolution failure. No usable authorized WebGPU/LLM execution was obtained. Opaque-context capability results do not identify the physical host GPU.",
+  "scope": "The counts are test inputs, not completed live model runs.",
+  "rubric": "validation/BENCHMARK_RUBRIC.md",
+  "reviewForm": "validation/review.html"
+}

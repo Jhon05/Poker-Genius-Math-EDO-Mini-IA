@@ -1,0 +1,213 @@
+{
+  "version": "7.1.1-alpha-audit",
+  "generatedAt": "2026-09-13T17:34:26.994Z",
+  "counts": {
+    "normal": 458,
+    "rescue": 42,
+    "total": 500,
+    "graphics": 75,
+    "withoutGraphics": 425
+  },
+  "checks": [
+    {
+      "name": "Banco total 500",
+      "pass": true,
+      "detail": "500"
+    },
+    {
+      "name": "Normales 458",
+      "pass": true,
+      "detail": "458"
+    },
+    {
+      "name": "Avanzadas 42",
+      "pass": true,
+      "detail": "42"
+    },
+    {
+      "name": "Todas las respuestas de referencia son aceptadas",
+      "pass": true,
+      "detail": "500/500"
+    },
+    {
+      "name": "Una respuesta alternativa incorrecta se rechaza en todo el banco",
+      "pass": true,
+      "detail": "500/500"
+    },
+    {
+      "name": "Respuesta correcta siempre se reconoce como presente",
+      "pass": true,
+      "detail": "500/500"
+    },
+    {
+      "name": "Numéricas admiten fracción equivalente",
+      "pass": true,
+      "detail": "75/75"
+    },
+    {
+      "name": "458 perfiles pedagógicos completos",
+      "pass": true,
+      "detail": "458/458"
+    },
+    {
+      "name": "Metadatos pedagógicos no revelan la respuesta",
+      "pass": true,
+      "detail": "458/458"
+    },
+    {
+      "name": "ContextBridge no contiene claves/respuesta oculta",
+      "pass": true,
+      "detail": "458/458"
+    },
+    {
+      "name": "Clasificador entiende 46 formas naturales/irrelevantes/adversariales",
+      "pass": true,
+      "detail": "46/46"
+    },
+    {
+      "name": "3.206 respuestas de GuidedProvider sin penalización",
+      "pass": true,
+      "detail": "3206/3206"
+    },
+    {
+      "name": "3.206 respuestas respetan ayuda 0–3",
+      "pass": true,
+      "detail": "3206/3206"
+    },
+    {
+      "name": "458 consultas irrelevantes se redirigen al aprendizaje",
+      "pass": true,
+      "detail": "458/458"
+    },
+    {
+      "name": "3.206 respuestas simuladas sin fuga literal/semántica simple de respuesta",
+      "pass": true,
+      "detail": "0/3206"
+    },
+    {
+      "name": "Progresión de ayuda correcta en las 458 preguntas",
+      "pass": true,
+      "detail": "458/458"
+    },
+    {
+      "name": "22.900 selecciones de transferencia siempre disponibles",
+      "pass": true,
+      "detail": "faltantes 0/22900"
+    },
+    {
+      "name": "22.900 transferencias conservan macrotema",
+      "pass": true,
+      "detail": "22900/22900"
+    },
+    {
+      "name": "22.900 transferencias son distintas de la base",
+      "pass": true,
+      "detail": "22900/22900"
+    },
+    {
+      "name": "22.900 transferencias son normales",
+      "pass": true,
+      "detail": "22900/22900"
+    },
+    {
+      "name": "Fase III sigue disponible aun si ya se usaron todas las alternativas del tema",
+      "pass": true,
+      "detail": "458/458"
+    },
+    {
+      "name": "50.000 simulaciones completas I→II→III mantienen invariantes",
+      "pass": true,
+      "detail": "50000/50000"
+    },
+    {
+      "name": "50.000 ciclos mantienen penalización conversacional en cero",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "name": "2.000 snapshots I/II/III/completo caben en SCORM 1.2",
+      "pass": true,
+      "detail": "2000/2000, máximo 3703 bytes"
+    },
+    {
+      "name": "2.000 snapshots reanudan en la fase exacta",
+      "pass": true,
+      "detail": "2000/2000"
+    },
+    {
+      "name": "1.000 conversaciones largas producen resumen <=650 caracteres",
+      "pass": true,
+      "detail": "1000/1000"
+    },
+    {
+      "name": "Sintaxis JS app + módulos Genius",
+      "pass": true,
+      "detail": "12/12"
+    },
+    {
+      "name": "Todos los recursos del imsmanifest existen",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "metrics": {
+    "adaptedTypes": {
+      "mcq": 425,
+      "numeric": 75
+    },
+    "contextsSuppressedForSafety": 6,
+    "scope": {
+      "passed": 46,
+      "total": 46,
+      "scopeFail": []
+    },
+    "provider": {
+      "responses": 3206,
+      "zeroPenalty": 3206,
+      "helpBounds": 3206,
+      "redirect": 458,
+      "classOK": 3206,
+      "pLeaks": 0
+    },
+    "transfer": {
+      "total": 22900,
+      "none": 0,
+      "diffContextRate": 1,
+      "diffFamilyRate": 1
+    },
+    "cycles": {
+      "cycles": 50000,
+      "cyclePass": 50000,
+      "penalties": 0,
+      "phaseTally": {
+        "independent": 50000,
+        "genie": 50000,
+        "transfer": 50000,
+        "complete": 50000
+      }
+    },
+    "persistence": {
+      "totalSnap": 2000,
+      "fits": 2000,
+      "resumes": 2000,
+      "maxBytes": 3703
+    }
+  },
+  "issuesFixed": [
+    {
+      "issue": "Metadatos contextuales que coincidían con la respuesta en preguntas de retrato de fase",
+      "fix": "Se suprimieron 6 subtemas sensibles antes de construir el contexto o saludo de Genius."
+    },
+    {
+      "issue": "Mensajes vagos como “no entiendo”, “¿por qué?”, “ayúdame” eran tratados como fuera de tema",
+      "fix": "Se ampliaron patrones metacognitivos y se separó coincidencia con conceptos de coincidencia con prerrequisitos."
+    },
+    {
+      "issue": "Si un tema agotaba todas sus preguntas no usadas, la Fase III podía cerrarse sin transferencia",
+      "fix": "Se añadió reutilización segura de una variante del mismo macrotema, nunca de la pregunta base."
+    }
+  ],
+  "failures": [],
+  "warnings": [],
+  "allPassed": true
+}

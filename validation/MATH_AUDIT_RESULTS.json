@@ -1,0 +1,1126 @@
+{
+  "version": "7.2.1-rc1",
+  "tool": "sympy 1.14.0",
+  "originalQuestions": 500,
+  "independentChecksPassed": 158,
+  "failures": [],
+  "parserLimits": [],
+  "unreviewedByThisIndependentScript": 342,
+  "checks": [
+    {
+      "id": "EDO-C3-001",
+      "status": "passed",
+      "method": "laplace_exponential"
+    },
+    {
+      "id": "EDO-C3-002",
+      "status": "passed",
+      "method": "laplace_exponential"
+    },
+    {
+      "id": "EDO-C3-003",
+      "status": "passed",
+      "method": "laplace_exponential"
+    },
+    {
+      "id": "EDO-C3-004",
+      "status": "passed",
+      "method": "laplace_exponential"
+    },
+    {
+      "id": "EDO-C3-005",
+      "status": "passed",
+      "method": "laplace_exponential"
+    },
+    {
+      "id": "EDO-C3-006",
+      "status": "passed",
+      "method": "laplace_sine"
+    },
+    {
+      "id": "EDO-C3-007",
+      "status": "passed",
+      "method": "laplace_sine"
+    },
+    {
+      "id": "EDO-C3-008",
+      "status": "passed",
+      "method": "laplace_sine"
+    },
+    {
+      "id": "EDO-C3-009",
+      "status": "passed",
+      "method": "laplace_sine"
+    },
+    {
+      "id": "EDO-C3-010",
+      "status": "passed",
+      "method": "laplace_power"
+    },
+    {
+      "id": "EDO-C3-011",
+      "status": "passed",
+      "method": "laplace_power"
+    },
+    {
+      "id": "EDO-C3-012",
+      "status": "passed",
+      "method": "laplace_power"
+    },
+    {
+      "id": "EDO-C3-013",
+      "status": "passed",
+      "method": "laplace_power"
+    },
+    {
+      "id": "EDO-C3-014",
+      "status": "passed",
+      "method": "laplace_shift_sign"
+    },
+    {
+      "id": "EDO-C3-015",
+      "status": "passed",
+      "method": "laplace_shift_sign"
+    },
+    {
+      "id": "EDO-C3-016",
+      "status": "passed",
+      "method": "laplace_shift_sign"
+    },
+    {
+      "id": "EDO-C3-017",
+      "status": "passed",
+      "method": "laplace_shift_sign"
+    },
+    {
+      "id": "EDO-C3-018",
+      "status": "passed",
+      "method": "inverse_repeated_pole"
+    },
+    {
+      "id": "EDO-C3-019",
+      "status": "passed",
+      "method": "inverse_repeated_pole"
+    },
+    {
+      "id": "EDO-C3-020",
+      "status": "passed",
+      "method": "inverse_repeated_pole"
+    },
+    {
+      "id": "EDO-C3-021",
+      "status": "passed",
+      "method": "inverse_repeated_pole"
+    },
+    {
+      "id": "EDO-C3-022",
+      "status": "passed",
+      "method": "inverse_repeated_pole"
+    },
+    {
+      "id": "EDO-C3-023",
+      "status": "passed",
+      "method": "initial_conditions_laplace"
+    },
+    {
+      "id": "EDO-C3-024",
+      "status": "passed",
+      "method": "initial_conditions_laplace"
+    },
+    {
+      "id": "EDO-C3-025",
+      "status": "passed",
+      "method": "initial_conditions_laplace"
+    },
+    {
+      "id": "EDO-C3-026",
+      "status": "passed",
+      "method": "initial_conditions_laplace"
+    },
+    {
+      "id": "EDO-C3-027",
+      "status": "passed",
+      "method": "initial_conditions_laplace"
+    },
+    {
+      "id": "EDO-C3-033",
+      "status": "passed",
+      "method": "impulse_jump"
+    },
+    {
+      "id": "EDO-C3-034",
+      "status": "passed",
+      "method": "impulse_jump"
+    },
+    {
+      "id": "EDO-C3-035",
+      "status": "passed",
+      "method": "impulse_jump"
+    },
+    {
+      "id": "EDO-C3-036",
+      "status": "passed",
+      "method": "impulse_jump"
+    },
+    {
+      "id": "EDO-C3-037",
+      "status": "passed",
+      "method": "convolution_product"
+    },
+    {
+      "id": "EDO-C3-038",
+      "status": "passed",
+      "method": "convolution_product"
+    },
+    {
+      "id": "EDO-C3-039",
+      "status": "passed",
+      "method": "convolution_product"
+    },
+    {
+      "id": "EDO-C3-040",
+      "status": "passed",
+      "method": "convolution_product"
+    },
+    {
+      "id": "EDO-C3-041",
+      "status": "passed",
+      "method": "ODE_and_initial_conditions"
+    },
+    {
+      "id": "EDO-C3-042",
+      "status": "passed",
+      "method": "ODE_and_initial_conditions"
+    },
+    {
+      "id": "EDO-C3-043",
+      "status": "passed",
+      "method": "ODE_and_initial_conditions"
+    },
+    {
+      "id": "EDO-C3-044",
+      "status": "passed",
+      "method": "ODE_and_initial_conditions"
+    },
+    {
+      "id": "EDO-C3-045",
+      "status": "passed",
+      "method": "system_laplace_signs"
+    },
+    {
+      "id": "EDO-C3-046",
+      "status": "passed",
+      "method": "system_laplace_signs"
+    },
+    {
+      "id": "EDO-C3-047",
+      "status": "passed",
+      "method": "system_laplace_signs"
+    },
+    {
+      "id": "EDO-C3-048",
+      "status": "passed",
+      "method": "system_laplace_signs"
+    },
+    {
+      "id": "EDO-C3-049",
+      "status": "passed",
+      "method": "system_laplace_signs"
+    },
+    {
+      "id": "EDO-C3-050",
+      "status": "passed",
+      "method": "system_laplace_signs"
+    },
+    {
+      "id": "EDO-C3-051",
+      "status": "passed",
+      "method": "diagonal_system_solution"
+    },
+    {
+      "id": "EDO-C3-052",
+      "status": "passed",
+      "method": "diagonal_system_solution"
+    },
+    {
+      "id": "EDO-C3-053",
+      "status": "passed",
+      "method": "diagonal_system_solution"
+    },
+    {
+      "id": "EDO-C3-054",
+      "status": "passed",
+      "method": "diagonal_system_solution"
+    },
+    {
+      "id": "EDO-C3-055",
+      "status": "passed",
+      "method": "diagonal_system_solution"
+    },
+    {
+      "id": "EDO-C3-056",
+      "status": "passed",
+      "method": "diagonal_system_solution"
+    },
+    {
+      "id": "EDO-C3-057",
+      "status": "passed",
+      "method": "vector_impulse_jump"
+    },
+    {
+      "id": "EDO-C3-058",
+      "status": "passed",
+      "method": "vector_impulse_jump"
+    },
+    {
+      "id": "EDO-C3-059",
+      "status": "passed",
+      "method": "vector_impulse_jump"
+    },
+    {
+      "id": "EDO-C3-060",
+      "status": "passed",
+      "method": "vector_impulse_jump"
+    },
+    {
+      "id": "EDO-C3-061",
+      "status": "passed",
+      "method": "integral_laplace"
+    },
+    {
+      "id": "EDO-C3-062",
+      "status": "passed",
+      "method": "integral_laplace"
+    },
+    {
+      "id": "EDO-C3-063",
+      "status": "passed",
+      "method": "integral_laplace"
+    },
+    {
+      "id": "EDO-C3-064",
+      "status": "passed",
+      "method": "integral_laplace"
+    },
+    {
+      "id": "EDO-C3-065",
+      "status": "passed",
+      "method": "spectral_classification"
+    },
+    {
+      "id": "EDO-C3-066",
+      "status": "passed",
+      "method": "spectral_classification"
+    },
+    {
+      "id": "EDO-C3-067",
+      "status": "passed",
+      "method": "spectral_classification"
+    },
+    {
+      "id": "EDO-C3-068",
+      "status": "passed",
+      "method": "spectral_classification"
+    },
+    {
+      "id": "EDO-C3-069",
+      "status": "passed",
+      "method": "spectral_classification"
+    },
+    {
+      "id": "EDO-C3-070",
+      "status": "passed",
+      "method": "spectral_classification"
+    },
+    {
+      "id": "EDO-C3-071",
+      "status": "passed",
+      "method": "spectral_classification"
+    },
+    {
+      "id": "EDO-C3-072",
+      "status": "passed",
+      "method": "spectral_classification"
+    },
+    {
+      "id": "EDO-C3-073",
+      "status": "passed",
+      "method": "spectral_classification"
+    },
+    {
+      "id": "EDO-C3-074",
+      "status": "passed",
+      "method": "spectral_classification"
+    },
+    {
+      "id": "EDO-C3-075",
+      "status": "passed",
+      "method": "eigenvector_equation"
+    },
+    {
+      "id": "EDO-C3-076",
+      "status": "passed",
+      "method": "eigenvector_equation"
+    },
+    {
+      "id": "EDO-C3-077",
+      "status": "passed",
+      "method": "eigenvector_equation"
+    },
+    {
+      "id": "EDO-C3-078",
+      "status": "passed",
+      "method": "eigenvector_equation"
+    },
+    {
+      "id": "EDO-C3-079",
+      "status": "passed",
+      "method": "eigenvector_equation"
+    },
+    {
+      "id": "EDO-C3-080",
+      "status": "passed",
+      "method": "matrix_exponential_IVP"
+    },
+    {
+      "id": "EDO-C3-081",
+      "status": "passed",
+      "method": "matrix_exponential_IVP"
+    },
+    {
+      "id": "EDO-C3-082",
+      "status": "passed",
+      "method": "matrix_exponential_IVP"
+    },
+    {
+      "id": "EDO-C3-083",
+      "status": "passed",
+      "method": "matrix_exponential_IVP"
+    },
+    {
+      "id": "EDO-C3-098",
+      "status": "passed",
+      "method": "jordan_matrix_IVP"
+    },
+    {
+      "id": "EDO-C3-099",
+      "status": "passed",
+      "method": "jordan_matrix_IVP"
+    },
+    {
+      "id": "EDO-C3-100",
+      "status": "passed",
+      "method": "jordan_matrix_IVP"
+    },
+    {
+      "id": "EDO-C3-101",
+      "status": "passed",
+      "method": "jordan_matrix_IVP"
+    },
+    {
+      "id": "EDO-C3-102",
+      "status": "passed",
+      "method": "jordan_matrix_IVP"
+    },
+    {
+      "id": "EDO-C3-201",
+      "status": "passed",
+      "method": "power_laplace",
+      "expected": "1",
+      "reference": 1
+    },
+    {
+      "id": "EDO-C3-202",
+      "status": "passed",
+      "method": "power_laplace",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-203",
+      "status": "passed",
+      "method": "power_laplace",
+      "expected": "6",
+      "reference": 6
+    },
+    {
+      "id": "EDO-C3-204",
+      "status": "passed",
+      "method": "power_laplace",
+      "expected": "24",
+      "reference": 24
+    },
+    {
+      "id": "EDO-C3-205",
+      "status": "passed",
+      "method": "power_laplace",
+      "expected": "120",
+      "reference": 120
+    },
+    {
+      "id": "EDO-C3-206",
+      "status": "passed",
+      "method": "power_laplace",
+      "expected": "720",
+      "reference": 720
+    },
+    {
+      "id": "EDO-C3-207",
+      "status": "passed",
+      "method": "exponential_abscissa",
+      "expected": "-3",
+      "reference": -3
+    },
+    {
+      "id": "EDO-C3-208",
+      "status": "passed",
+      "method": "exponential_abscissa",
+      "expected": "-2",
+      "reference": -2
+    },
+    {
+      "id": "EDO-C3-209",
+      "status": "passed",
+      "method": "exponential_abscissa",
+      "expected": "-1",
+      "reference": -1
+    },
+    {
+      "id": "EDO-C3-210",
+      "status": "passed",
+      "method": "exponential_abscissa",
+      "expected": "1",
+      "reference": 1
+    },
+    {
+      "id": "EDO-C3-211",
+      "status": "passed",
+      "method": "inverse_sine",
+      "expected": "1",
+      "reference": 1
+    },
+    {
+      "id": "EDO-C3-212",
+      "status": "passed",
+      "method": "inverse_sine",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-213",
+      "status": "passed",
+      "method": "inverse_sine",
+      "expected": "3",
+      "reference": 3
+    },
+    {
+      "id": "EDO-C3-214",
+      "status": "passed",
+      "method": "inverse_sine",
+      "expected": "4",
+      "reference": 4
+    },
+    {
+      "id": "EDO-C3-215",
+      "status": "passed",
+      "method": "impulse_jump",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-216",
+      "status": "passed",
+      "method": "impulse_jump",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-217",
+      "status": "passed",
+      "method": "impulse_jump",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-218",
+      "status": "passed",
+      "method": "impulse_jump",
+      "expected": "4",
+      "reference": 4
+    },
+    {
+      "id": "EDO-C3-219",
+      "status": "passed",
+      "method": "impulse_jump",
+      "expected": "3",
+      "reference": 3
+    },
+    {
+      "id": "EDO-C3-220",
+      "status": "passed",
+      "method": "impulse_jump",
+      "expected": "3",
+      "reference": 3
+    },
+    {
+      "id": "EDO-C3-221",
+      "status": "passed",
+      "method": "initial_derivative_sign",
+      "expected": "-1",
+      "reference": -1
+    },
+    {
+      "id": "EDO-C3-222",
+      "status": "passed",
+      "method": "initial_derivative_sign",
+      "expected": "-2",
+      "reference": -2
+    },
+    {
+      "id": "EDO-C3-223",
+      "status": "passed",
+      "method": "initial_derivative_sign",
+      "expected": "-3",
+      "reference": -3
+    },
+    {
+      "id": "EDO-C3-224",
+      "status": "passed",
+      "method": "initial_derivative_sign",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-225",
+      "status": "passed",
+      "method": "time_delay",
+      "expected": "1",
+      "reference": 1
+    },
+    {
+      "id": "EDO-C3-226",
+      "status": "passed",
+      "method": "time_delay",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-227",
+      "status": "passed",
+      "method": "time_delay",
+      "expected": "3",
+      "reference": 3
+    },
+    {
+      "id": "EDO-C3-228",
+      "status": "passed",
+      "method": "matrix_trace",
+      "expected": "0",
+      "reference": 0
+    },
+    {
+      "id": "EDO-C3-229",
+      "status": "passed",
+      "method": "matrix_trace",
+      "expected": "3",
+      "reference": 3
+    },
+    {
+      "id": "EDO-C3-230",
+      "status": "passed",
+      "method": "matrix_trace",
+      "expected": "-2",
+      "reference": -2
+    },
+    {
+      "id": "EDO-C3-231",
+      "status": "passed",
+      "method": "matrix_trace",
+      "expected": "0",
+      "reference": 0
+    },
+    {
+      "id": "EDO-C3-232",
+      "status": "passed",
+      "method": "matrix_trace",
+      "expected": "4",
+      "reference": 4
+    },
+    {
+      "id": "EDO-C3-233",
+      "status": "passed",
+      "method": "matrix_trace",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-234",
+      "status": "passed",
+      "method": "determinant",
+      "expected": "-2",
+      "reference": -2
+    },
+    {
+      "id": "EDO-C3-235",
+      "status": "passed",
+      "method": "determinant",
+      "expected": "3",
+      "reference": 3
+    },
+    {
+      "id": "EDO-C3-236",
+      "status": "passed",
+      "method": "determinant",
+      "expected": "1",
+      "reference": 1
+    },
+    {
+      "id": "EDO-C3-237",
+      "status": "passed",
+      "method": "determinant",
+      "expected": "5",
+      "reference": 5
+    },
+    {
+      "id": "EDO-C3-238",
+      "status": "passed",
+      "method": "determinant",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-239",
+      "status": "passed",
+      "method": "determinant",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-240",
+      "status": "passed",
+      "method": "eigenvalue_sum",
+      "expected": "-3",
+      "reference": -3
+    },
+    {
+      "id": "EDO-C3-241",
+      "status": "passed",
+      "method": "eigenvalue_sum",
+      "expected": "3",
+      "reference": 3
+    },
+    {
+      "id": "EDO-C3-242",
+      "status": "passed",
+      "method": "eigenvalue_sum",
+      "expected": "-1",
+      "reference": -1
+    },
+    {
+      "id": "EDO-C3-243",
+      "status": "passed",
+      "method": "eigenvalue_sum",
+      "expected": "-4",
+      "reference": -4
+    },
+    {
+      "id": "EDO-C3-244",
+      "status": "passed",
+      "method": "eigenvalue_sum",
+      "expected": "6",
+      "reference": 6
+    },
+    {
+      "id": "EDO-C3-245",
+      "status": "passed",
+      "method": "eigenvalue_sum",
+      "expected": "3",
+      "reference": 3
+    },
+    {
+      "id": "EDO-C3-246",
+      "status": "passed",
+      "method": "eigenvalue_product",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-247",
+      "status": "passed",
+      "method": "eigenvalue_product",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-248",
+      "status": "passed",
+      "method": "eigenvalue_product",
+      "expected": "-2",
+      "reference": -2
+    },
+    {
+      "id": "EDO-C3-249",
+      "status": "passed",
+      "method": "eigenvalue_product",
+      "expected": "3",
+      "reference": 3
+    },
+    {
+      "id": "EDO-C3-250",
+      "status": "passed",
+      "method": "eigenvalue_product",
+      "expected": "8",
+      "reference": 8
+    },
+    {
+      "id": "EDO-C3-251",
+      "status": "passed",
+      "method": "eigenvalue_product",
+      "expected": "0",
+      "reference": 0
+    },
+    {
+      "id": "EDO-C3-252",
+      "status": "passed",
+      "method": "eigenvalue_product",
+      "expected": "4",
+      "reference": 4
+    },
+    {
+      "id": "EDO-C3-253",
+      "status": "passed",
+      "method": "jordan_nilpotent",
+      "expected": "1",
+      "reference": 1
+    },
+    {
+      "id": "EDO-C3-254",
+      "status": "passed",
+      "method": "jordan_nilpotent",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-255",
+      "status": "passed",
+      "method": "jordan_nilpotent",
+      "expected": "1",
+      "reference": 1
+    },
+    {
+      "id": "EDO-C3-256",
+      "status": "passed",
+      "method": "jordan_nilpotent",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-257",
+      "status": "passed",
+      "method": "jordan_nilpotent",
+      "expected": "3",
+      "reference": 3
+    },
+    {
+      "id": "EDO-C3-258",
+      "status": "passed",
+      "method": "jordan_nilpotent",
+      "expected": "1",
+      "reference": 1
+    },
+    {
+      "id": "EDO-C3-259",
+      "status": "passed",
+      "method": "oscillator_frequency",
+      "expected": "1",
+      "reference": 1
+    },
+    {
+      "id": "EDO-C3-260",
+      "status": "passed",
+      "method": "oscillator_frequency",
+      "expected": "2",
+      "reference": 2
+    },
+    {
+      "id": "EDO-C3-261",
+      "status": "passed",
+      "method": "oscillator_frequency",
+      "expected": "3",
+      "reference": 3
+    },
+    {
+      "id": "EDO-C3-262",
+      "status": "passed",
+      "method": "oscillator_frequency",
+      "expected": "4",
+      "reference": 4
+    },
+    {
+      "id": "EDO-C3-263",
+      "status": "passed",
+      "method": "oscillator_frequency",
+      "expected": "5",
+      "reference": 5
+    },
+    {
+      "id": "EDO-C3-264",
+      "status": "passed",
+      "method": "oscillator_frequency",
+      "expected": "6",
+      "reference": 6
+    },
+    {
+      "id": "EDO-C3-265",
+      "status": "passed",
+      "method": "residence_time",
+      "expected": "20",
+      "reference": 20
+    },
+    {
+      "id": "EDO-C3-266",
+      "status": "passed",
+      "method": "residence_time",
+      "expected": "20",
+      "reference": 20
+    },
+    {
+      "id": "EDO-C3-267",
+      "status": "passed",
+      "method": "residence_time",
+      "expected": "20",
+      "reference": 20
+    },
+    {
+      "id": "EDO-C3-268",
+      "status": "passed",
+      "method": "residence_time",
+      "expected": "10",
+      "reference": 10
+    },
+    {
+      "id": "EDO-C3-269",
+      "status": "passed",
+      "method": "residence_time",
+      "expected": "20",
+      "reference": 20
+    },
+    {
+      "id": "EDO-C3-270",
+      "status": "passed",
+      "method": "matrix_trace",
+      "expected": "-2",
+      "reference": -2
+    },
+    {
+      "id": "EDO-C3-271",
+      "status": "passed",
+      "method": "matrix_trace",
+      "expected": "-5",
+      "reference": -5
+    },
+    {
+      "id": "EDO-C3-272",
+      "status": "passed",
+      "method": "matrix_trace",
+      "expected": "-5",
+      "reference": -5
+    },
+    {
+      "id": "EDO-C3-273",
+      "status": "passed",
+      "method": "matrix_trace",
+      "expected": "-5",
+      "reference": -5
+    },
+    {
+      "id": "EDO-C3-274",
+      "status": "passed",
+      "method": "matrix_trace",
+      "expected": "-7",
+      "reference": -7
+    },
+    {
+      "id": "EDO-C3-275",
+      "status": "passed",
+      "method": "matrix_trace",
+      "expected": "-7",
+      "reference": -7
+    }
+  ],
+  "symbolicCertificates": [
+    {
+      "name": "partial_fractions_1_2",
+      "passed": true,
+      "decomposition": "-1/(s + 2) + 1/(s + 1)"
+    },
+    {
+      "name": "partial_fractions_2_3",
+      "passed": true,
+      "decomposition": "-1/(s + 3) + 1/(s + 2)"
+    },
+    {
+      "name": "partial_fractions_-1_3",
+      "passed": true,
+      "decomposition": "-1/(4*(s + 3)) + 1/(4*(s - 1))"
+    },
+    {
+      "name": "partial_fractions_0_4",
+      "passed": true,
+      "decomposition": "-1/(4*(s + 4)) + 1/(4*s)"
+    },
+    {
+      "name": "closed_two_tanks_conservation",
+      "passed": true
+    },
+    {
+      "name": "tank_mode_0",
+      "passed": true
+    },
+    {
+      "name": "tank_mode_-2",
+      "passed": true
+    },
+    {
+      "name": "step_and_duhamel_graph_IVP",
+      "passed": true
+    }
+  ],
+  "sourceDuplicatePromptGroups": [
+    [
+      "EDO-C3-061",
+      "EDO-C3-062",
+      "EDO-C3-063",
+      "EDO-C3-064"
+    ],
+    [
+      "EDO-C3-093",
+      "EDO-C3-094",
+      "EDO-C3-095",
+      "EDO-C3-096",
+      "EDO-C3-097"
+    ],
+    [
+      "EDO-C3-302",
+      "EDO-C3-303",
+      "EDO-C3-304",
+      "EDO-C3-305",
+      "EDO-C3-306",
+      "EDO-C3-307",
+      "EDO-C3-308",
+      "EDO-C3-309",
+      "EDO-C3-310",
+      "EDO-C3-311",
+      "EDO-C3-312",
+      "EDO-C3-313"
+    ],
+    [
+      "EDO-C3-351",
+      "EDO-C3-352",
+      "EDO-C3-353",
+      "EDO-C3-354",
+      "EDO-C3-355",
+      "EDO-C3-356",
+      "EDO-C3-357",
+      "EDO-C3-358",
+      "EDO-C3-359",
+      "EDO-C3-360",
+      "EDO-C3-361",
+      "EDO-C3-362",
+      "EDO-C3-363"
+    ],
+    [
+      "EDO-C3-364",
+      "EDO-C3-365",
+      "EDO-C3-366",
+      "EDO-C3-367",
+      "EDO-C3-368",
+      "EDO-C3-369",
+      "EDO-C3-370",
+      "EDO-C3-371",
+      "EDO-C3-372",
+      "EDO-C3-373",
+      "EDO-C3-374",
+      "EDO-C3-375",
+      "EDO-C3-376"
+    ],
+    [
+      "EDO-C3-377",
+      "EDO-C3-378",
+      "EDO-C3-379",
+      "EDO-C3-380",
+      "EDO-C3-381",
+      "EDO-C3-382",
+      "EDO-C3-383",
+      "EDO-C3-384",
+      "EDO-C3-385",
+      "EDO-C3-386",
+      "EDO-C3-387",
+      "EDO-C3-388"
+    ],
+    [
+      "EDO-C3-389",
+      "EDO-C3-390",
+      "EDO-C3-391",
+      "EDO-C3-392",
+      "EDO-C3-393",
+      "EDO-C3-394",
+      "EDO-C3-395",
+      "EDO-C3-396",
+      "EDO-C3-397",
+      "EDO-C3-398",
+      "EDO-C3-399",
+      "EDO-C3-400",
+      "EDO-C3-401"
+    ],
+    [
+      "EDO-C3-414",
+      "EDO-C3-415",
+      "EDO-C3-416",
+      "EDO-C3-417",
+      "EDO-C3-418",
+      "EDO-C3-419",
+      "EDO-C3-420",
+      "EDO-C3-421",
+      "EDO-C3-422",
+      "EDO-C3-423",
+      "EDO-C3-424",
+      "EDO-C3-425"
+    ],
+    [
+      "EDO-C3-458",
+      "EDO-C3-473",
+      "EDO-C3-478",
+      "EDO-C3-469"
+    ],
+    [
+      "EDO-C3-468",
+      "EDO-C3-477"
+    ],
+    [
+      "EDO-C3-471",
+      "EDO-C3-476"
+    ],
+    [
+      "EDO-C3-402",
+      "EDO-C3-403",
+      "EDO-C3-404",
+      "EDO-C3-405",
+      "EDO-C3-406",
+      "EDO-C3-407",
+      "EDO-C3-408",
+      "EDO-C3-409",
+      "EDO-C3-410",
+      "EDO-C3-411",
+      "EDO-C3-412",
+      "EDO-C3-413"
+    ],
+    [
+      "EDO-C3-470",
+      "EDO-C3-474",
+      "EDO-C3-479"
+    ]
+  ],
+  "duplicatePolicy": "Original 500 and answer keys preserved. Repeated labels/variants are not counted as independent new concepts.",
+  "scope": "Independent checks for the listed families only; not a proof of mathematical correctness of all 500, graphics or alternative orderings."
+}

@@ -1,0 +1,14 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "MathJax_parse_only_not_mathematical_proof",
+  "mathjax": {
+    "totalUniqueExpressions": 889,
+    "errors": []
+  },
+  "worker_ping": {
+    "status": "blocked",
+    "message": null
+  },
+  "pageErrors": [],
+  "liveModelInference": false
+}

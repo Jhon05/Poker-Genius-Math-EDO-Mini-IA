@@ -1,0 +1,2023 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "STATIC_PACKAGE_AND_SOURCE_REGRESSION",
+  "executed": true,
+  "liveInferenceExecuted": false,
+  "realBrightspaceExecuted": false,
+  "xmlSchemaXSDValidation": "not_run_no_official_local_xsd_supplied",
+  "total": 470,
+  "passed": 470,
+  "failed": [],
+  "preservedResourceCount": 76,
+  "packageFileCount": 213,
+  "results": [
+    {
+      "name": "one_SCORM12_sco",
+      "pass": true
+    },
+    {
+      "name": "launch_index_root",
+      "pass": true
+    },
+    {
+      "name": "scorm12_metadata",
+      "pass": true
+    },
+    {
+      "name": "manifest_version",
+      "pass": true
+    },
+    {
+      "name": "organization_links_one_sco",
+      "pass": true
+    },
+    {
+      "name": "manifest_unique",
+      "pass": true
+    },
+    {
+      "name": "manifest_complete",
+      "pass": true,
+      "missing": [],
+      "extra": []
+    },
+    {
+      "name": "manifest_resource:BANCO_EDO_CORTE3_500_README.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:BANK_AUDIT_EDO_CORTE3_500.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:BRIGHTSPACE_TEST_CHECKLIST.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:CALCULADORA_REINO_INTEGRAL.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:DUAL_DEPLOYMENT_README.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:EXTERNAL_DEPENDENCIES.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:GITHUB_PAGES_TEST_CHECKLIST.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:INTEGRACION_EDO_CORTE3_500.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:LOCAL_TEST_INSTRUCTIONS.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:MODEL_SELECTION_REPORT.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:README.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:TEST_RESULTS_V721_GENIUS_RUNTIME.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:TEST_RESULTS_V72_GENIUS_GENERATIVE.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:VALIDACION_DUAL_GITHUB_BRIGHTSPACE.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:VALIDACION_V721_GENIUS_RUNTIME.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:VALIDACION_V72_GENIUS_GENERATIVE.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:app.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/chips/chip_0_10.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/chips/chip_0_20.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/chips/chip_0_50.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/chips/chip_1_00.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/flop_01.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/flop_02.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/flop_03.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/flop_04.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/flop_05.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/flop_06.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/flop_07.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/flop_08.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/flop_09.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/flop_10.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/preflop_01.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/preflop_02.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/preflop_03.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/preflop_04.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/preflop_05.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/preflop_06.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/preflop_07.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/preflop_08.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/preflop_09.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/preflop_10.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/recovery_01.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/recovery_02.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/recovery_03.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/recovery_04.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/recovery_05.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/river_01.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/river_02.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/river_03.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/river_04.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/river_05.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/showdown_01.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/showdown_02.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/showdown_03.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/showdown_04.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/showdown_05.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/special_41.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/turn_01.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/turn_02.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/turn_03.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/turn_04.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/emotions/turn_05.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/poker_ecomat_logo.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/poker_ecomat_red_table.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/roles/big_blind_blue.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/roles/dealer_white.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/roles/small_blind_yellow.webp",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_CENTER.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_CIRCUIT_DECAY.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_COUPLED_MODES.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_DUHAMEL_FORCED.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_IMPULSE_RESPONSE.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_LAP_PERIODIC.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_LAP_PIECEWISE.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_NODE_STABLE.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_SADDLE.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_SPIRAL_STABLE.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_SPIRAL_UNSTABLE.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_STEP_RESPONSE.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_SYSTEM_IMPULSE.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_SYSTEM_RESPONSE.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:assets/tikz/svg/G_TWO_TANKS.svg",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:bank/base_bank.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:bank/extended_bank.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/AlgebraVerifier.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/CONCEPT_INVENTORY.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/CapabilityWorker.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/CloudModelProvider.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/ContextBridge.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/EvaluatorBridge.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/FormulaCatalog.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/FormulaCoach.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/GenieCapabilityProbe.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/GenieEngine.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/GenieMemory.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/GenieWorker.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/GuidedProvider.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/LocalModelProvider.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/LoopDetector.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/ModelProvider.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/OutputGuard.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/PedagogyEngine.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/PreloadPanel.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/PromptContract.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/QuestionMetadata.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/README_GENIUS_GENERATIVE.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/ReportBridge.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/ReportViewer.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/RuntimeDiagnostics.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/StudentModel.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/ToolRegistry.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/TransferCatalog.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/TutorPanel.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/config.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/runtime-v721.css",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:genie/tutor-v72.css",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:index.html",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:interactive_graphs.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/GENIUS_ALPHA_CONFIG.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/README.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/README_GENIUS_ALPHA.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/ScopeClassifier.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/TEST_RESULTS_V711_DEEP_SIMULATION.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/TEST_RESULTS_V712_INTEGRATION_STATIC.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/TEST_RESULTS_V712_PREANSWER_GENIUS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/TEST_RESULTS_V71_GENIUS_ALPHA.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/VALIDACION_V69_BANCO_EDO_CORTE3_500.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/VALIDACION_V70_PORTADA_POKER_EDO.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/VALIDACION_V711_GENIUS_ALPHA_AUDITADA.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/VALIDACION_V712_GENIUS_PISTAS_PREVIAS.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:legacy_validation/VALIDACION_V71_GENIUS_ALPHA.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:mathjax/LICENSE",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:mathjax/tex-svg-full.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:poker.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:questions.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:reino_calculator/calculator.html",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:reino_calculator_bridge.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:scorm.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:serve_local.bat",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:serve_local.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:styles.css",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:tools/package_scorm.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:tools/vendor_runtime.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/BENCHMARK_CASES.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/BENCHMARK_RUBRIC.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/BROWSER_INTEGRATION_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/BROWSER_RUNTIME_TEST_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/CACHE_TEST_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/CONVERSATION_TEST_RESULTS_V721.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/CORE_TEST_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/DUAL_HOSTING_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/FILE_INVENTORY_V72.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/FILE_INVENTORY_V721.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/GENIUS_CAPABILITY_TEST_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/LIVE_INFERENCE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/LOOP_TEST_RESULTS_V721.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/MATHEMATICAL_REGRESSION_V721.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/MATHJAX_WORKER_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/MATH_AUDIT_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/MODEL_BENCHMARK_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/MODEL_BENCHMARK_RESULTS_V721.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/PACKAGE_TEST_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/PACKAGE_TEST_RESULTS_V721.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/RELEASE_SOURCE_HASHES_V721.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/REVIEW_SERVER_TEST_RESULTS_V721.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/RUNTIME_UNIT_RESULTS_V721.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/SAMPLE_REPORT_TEST_FIXTURE.html",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/SCORM_API_TEST_RESULTS_V721.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/SCORM_REGRESSION_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/WORKER_TEST_RESULTS_V721.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_math.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/AUDIT_BEFORE_CHANGE.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/INVENTORY_V72_SHA256.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/original/README.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/original/TEST_RESULTS_V72_GENIUS_GENERATIVE.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/original/VALIDACION_V72_GENIUS_GENERATIVE.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/original/validation/BENCHMARK_CASES.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/original/validation/BROWSER_INTEGRATION_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/original/validation/CORE_TEST_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/original/validation/FILE_INVENTORY_V72.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/original/validation/MATHJAX_WORKER_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/original/validation/MATH_AUDIT_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/original/validation/MODEL_BENCHMARK_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/audit_v72/original/validation/PACKAGE_TEST_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/benchmark.html",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/benchmark_cases.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/benchmark_runner.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/benchmark_v721_cases.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/browser_harness.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/environment/ENVIRONMENT_PROBE.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/environment/VENDOR_ATTEMPT.log",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/environment/environment.log",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/evidence/browser_partial.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/evidence/mobile_guide.png",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/evidence/panel_conversation_fixture.png",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/evidence_v721/desktop_compatibility.png",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/evidence_v721/local_pending_report.png",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/evidence_v721/mobile_compatibility.png",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/evidence_v721/runtime_partial.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/review.html",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/review.js",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/test_browser_integration.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/test_browser_runtime_v721.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/test_core.cjs",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/test_dual_hosting.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/test_math_runtime_v721.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/test_mathjax.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/test_package.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/test_package_v721.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/test_review_server_v721.py",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/test_runtime_v721.cjs",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/test_scorm_v721.cjs",
+      "pass": true
+    },
+    {
+      "name": "html_resource:index.html:styles.css",
+      "pass": true,
+      "path": "styles.css"
+    },
+    {
+      "name": "html_resource:index.html:genie/tutor-v72.css",
+      "pass": true,
+      "path": "genie/tutor-v72.css"
+    },
+    {
+      "name": "html_resource:index.html:genie/runtime-v721.css",
+      "pass": true,
+      "path": "genie/runtime-v721.css"
+    },
+    {
+      "name": "html_resource:index.html:mathjax/tex-svg-full.js",
+      "pass": true,
+      "path": "mathjax/tex-svg-full.js"
+    },
+    {
+      "name": "html_resource:index.html:assets/poker_ecomat_logo.webp",
+      "pass": true,
+      "path": "assets/poker_ecomat_logo.webp"
+    },
+    {
+      "name": "html_resource:index.html:assets/poker_ecomat_logo.webp",
+      "pass": true,
+      "path": "assets/poker_ecomat_logo.webp"
+    },
+    {
+      "name": "html_resource:index.html:assets/emotions/preflop_01.webp",
+      "pass": true,
+      "path": "assets/emotions/preflop_01.webp"
+    },
+    {
+      "name": "html_resource:index.html:assets/emotions/preflop_01.webp",
+      "pass": true,
+      "path": "assets/emotions/preflop_01.webp"
+    },
+    {
+      "name": "html_resource:index.html:reino_calculator/calculator.html",
+      "pass": true,
+      "path": "reino_calculator/calculator.html"
+    },
+    {
+      "name": "html_resource:index.html:assets/poker_ecomat_logo.webp",
+      "pass": true,
+      "path": "assets/poker_ecomat_logo.webp"
+    },
+    {
+      "name": "html_resource:index.html:assets/emotions/special_41.webp",
+      "pass": true,
+      "path": "assets/emotions/special_41.webp"
+    },
+    {
+      "name": "html_resource:index.html:scorm.js",
+      "pass": true,
+      "path": "scorm.js"
+    },
+    {
+      "name": "html_resource:index.html:poker.js",
+      "pass": true,
+      "path": "poker.js"
+    },
+    {
+      "name": "html_resource:index.html:bank/base_bank.js",
+      "pass": true,
+      "path": "bank/base_bank.js"
+    },
+    {
+      "name": "html_resource:index.html:bank/extended_bank.js",
+      "pass": true,
+      "path": "bank/extended_bank.js"
+    },
+    {
+      "name": "html_resource:index.html:interactive_graphs.js",
+      "pass": true,
+      "path": "interactive_graphs.js"
+    },
+    {
+      "name": "html_resource:index.html:questions.js",
+      "pass": true,
+      "path": "questions.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/config.js",
+      "pass": true,
+      "path": "genie/config.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/FormulaCatalog.js",
+      "pass": true,
+      "path": "genie/FormulaCatalog.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/QuestionMetadata.js",
+      "pass": true,
+      "path": "genie/QuestionMetadata.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/FormulaCoach.js",
+      "pass": true,
+      "path": "genie/FormulaCoach.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/PedagogyEngine.js",
+      "pass": true,
+      "path": "genie/PedagogyEngine.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/TransferCatalog.js",
+      "pass": true,
+      "path": "genie/TransferCatalog.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/StudentModel.js",
+      "pass": true,
+      "path": "genie/StudentModel.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/GenieMemory.js",
+      "pass": true,
+      "path": "genie/GenieMemory.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/AlgebraVerifier.js",
+      "pass": true,
+      "path": "genie/AlgebraVerifier.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/EvaluatorBridge.js",
+      "pass": true,
+      "path": "genie/EvaluatorBridge.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/ContextBridge.js",
+      "pass": true,
+      "path": "genie/ContextBridge.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/PromptContract.js",
+      "pass": true,
+      "path": "genie/PromptContract.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/ToolRegistry.js",
+      "pass": true,
+      "path": "genie/ToolRegistry.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/LoopDetector.js",
+      "pass": true,
+      "path": "genie/LoopDetector.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/OutputGuard.js",
+      "pass": true,
+      "path": "genie/OutputGuard.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/GuidedProvider.js",
+      "pass": true,
+      "path": "genie/GuidedProvider.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/GenieCapabilityProbe.js",
+      "pass": true,
+      "path": "genie/GenieCapabilityProbe.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/RuntimeDiagnostics.js",
+      "pass": true,
+      "path": "genie/RuntimeDiagnostics.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/LocalModelProvider.js",
+      "pass": true,
+      "path": "genie/LocalModelProvider.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/CloudModelProvider.js",
+      "pass": true,
+      "path": "genie/CloudModelProvider.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/ModelProvider.js",
+      "pass": true,
+      "path": "genie/ModelProvider.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/GenieEngine.js",
+      "pass": true,
+      "path": "genie/GenieEngine.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/TutorPanel.js",
+      "pass": true,
+      "path": "genie/TutorPanel.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/ReportBridge.js",
+      "pass": true,
+      "path": "genie/ReportBridge.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/PreloadPanel.js",
+      "pass": true,
+      "path": "genie/PreloadPanel.js"
+    },
+    {
+      "name": "html_resource:index.html:genie/ReportViewer.js",
+      "pass": true,
+      "path": "genie/ReportViewer.js"
+    },
+    {
+      "name": "html_resource:index.html:reino_calculator_bridge.js",
+      "pass": true,
+      "path": "reino_calculator_bridge.js"
+    },
+    {
+      "name": "html_resource:index.html:app.js",
+      "pass": true,
+      "path": "app.js"
+    },
+    {
+      "name": "html_resource:reino_calculator/calculator.html:../mathjax/tex-svg-full.js",
+      "pass": true,
+      "path": "mathjax/tex-svg-full.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/runtime-v721.css",
+      "pass": true,
+      "path": "genie/runtime-v721.css"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:validation/BENCHMARK_RUBRIC.md",
+      "pass": true,
+      "path": "validation/BENCHMARK_RUBRIC.md"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:validation/review.html",
+      "pass": true,
+      "path": "validation/review.html"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:bank/base_bank.js",
+      "pass": true,
+      "path": "bank/base_bank.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:bank/extended_bank.js",
+      "pass": true,
+      "path": "bank/extended_bank.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:questions.js",
+      "pass": true,
+      "path": "questions.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/config.js",
+      "pass": true,
+      "path": "genie/config.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/FormulaCatalog.js",
+      "pass": true,
+      "path": "genie/FormulaCatalog.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/QuestionMetadata.js",
+      "pass": true,
+      "path": "genie/QuestionMetadata.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/FormulaCoach.js",
+      "pass": true,
+      "path": "genie/FormulaCoach.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/PedagogyEngine.js",
+      "pass": true,
+      "path": "genie/PedagogyEngine.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/TransferCatalog.js",
+      "pass": true,
+      "path": "genie/TransferCatalog.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/StudentModel.js",
+      "pass": true,
+      "path": "genie/StudentModel.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/GenieMemory.js",
+      "pass": true,
+      "path": "genie/GenieMemory.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/AlgebraVerifier.js",
+      "pass": true,
+      "path": "genie/AlgebraVerifier.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/EvaluatorBridge.js",
+      "pass": true,
+      "path": "genie/EvaluatorBridge.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/ContextBridge.js",
+      "pass": true,
+      "path": "genie/ContextBridge.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/PromptContract.js",
+      "pass": true,
+      "path": "genie/PromptContract.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/ToolRegistry.js",
+      "pass": true,
+      "path": "genie/ToolRegistry.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/LoopDetector.js",
+      "pass": true,
+      "path": "genie/LoopDetector.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/OutputGuard.js",
+      "pass": true,
+      "path": "genie/OutputGuard.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/GuidedProvider.js",
+      "pass": true,
+      "path": "genie/GuidedProvider.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/GenieCapabilityProbe.js",
+      "pass": true,
+      "path": "genie/GenieCapabilityProbe.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/RuntimeDiagnostics.js",
+      "pass": true,
+      "path": "genie/RuntimeDiagnostics.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/LocalModelProvider.js",
+      "pass": true,
+      "path": "genie/LocalModelProvider.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/CloudModelProvider.js",
+      "pass": true,
+      "path": "genie/CloudModelProvider.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/ModelProvider.js",
+      "pass": true,
+      "path": "genie/ModelProvider.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/GenieEngine.js",
+      "pass": true,
+      "path": "genie/GenieEngine.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:validation/benchmark_cases.js",
+      "pass": true,
+      "path": "validation/benchmark_cases.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:validation/benchmark_v721_cases.js",
+      "pass": true,
+      "path": "validation/benchmark_v721_cases.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:genie/PreloadPanel.js",
+      "pass": true,
+      "path": "genie/PreloadPanel.js"
+    },
+    {
+      "name": "html_resource:validation/benchmark.html:validation/benchmark_runner.js",
+      "pass": true,
+      "path": "validation/benchmark_runner.js"
+    },
+    {
+      "name": "html_resource:validation/review.html:BENCHMARK_RUBRIC.md",
+      "pass": true,
+      "path": "validation/BENCHMARK_RUBRIC.md"
+    },
+    {
+      "name": "html_resource:validation/review.html:benchmark.html",
+      "pass": true,
+      "path": "validation/benchmark.html"
+    },
+    {
+      "name": "html_resource:validation/review.html:review.js",
+      "pass": true,
+      "path": "validation/review.js"
+    },
+    {
+      "name": "javascript_parse:app.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:bank/base_bank.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:bank/extended_bank.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/AlgebraVerifier.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/CapabilityWorker.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/CloudModelProvider.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/ContextBridge.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/EvaluatorBridge.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/FormulaCatalog.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/FormulaCoach.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/GenieCapabilityProbe.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/GenieEngine.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/GenieMemory.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/GenieWorker.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/GuidedProvider.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/LocalModelProvider.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/LoopDetector.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/ModelProvider.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/OutputGuard.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/PedagogyEngine.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/PreloadPanel.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/PromptContract.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/QuestionMetadata.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/ReportBridge.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/ReportViewer.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/RuntimeDiagnostics.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/StudentModel.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/ToolRegistry.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/TransferCatalog.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/TutorPanel.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:genie/config.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:interactive_graphs.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:mathjax/tex-svg-full.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:poker.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:questions.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:reino_calculator_bridge.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:scorm.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:validation/benchmark_cases.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:validation/benchmark_runner.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:validation/benchmark_v721_cases.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:validation/review.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:validation/test_core.cjs",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:validation/test_runtime_v721.cjs",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:validation/test_scorm_v721.cjs",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "no_test_hooks_in_production",
+      "pass": true
+    },
+    {
+      "name": "no_native_confirm_in_preload",
+      "pass": true
+    },
+    {
+      "name": "chat_local_uses_shared_preload",
+      "pass": true
+    },
+    {
+      "name": "runtime_pinned",
+      "pass": true
+    },
+    {
+      "name": "actual_runtime_import_and_model_engine",
+      "pass": true
+    },
+    {
+      "name": "no_unsubstantiated_winner",
+      "pass": true
+    },
+    {
+      "name": "local_default_not_cloud",
+      "pass": true
+    },
+    {
+      "name": "real_smoke_gate",
+      "pass": true
+    },
+    {
+      "name": "cancel_barrier",
+      "pass": true
+    },
+    {
+      "name": "no_private_api_keys",
+      "pass": true
+    },
+    {
+      "name": "no_model_weights_bundled",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:VALIDACION_V721_GENIUS_RUNTIME.md",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:TEST_RESULTS_V721_GENIUS_RUNTIME.json",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:LOCAL_TEST_INSTRUCTIONS.md",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:BRIGHTSPACE_TEST_CHECKLIST.md",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:MODEL_SELECTION_REPORT.md",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:EXTERNAL_DEPENDENCIES.md",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:validation/GENIUS_CAPABILITY_TEST_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:validation/LIVE_INFERENCE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:validation/MODEL_BENCHMARK_RESULTS_V721.json",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:validation/CACHE_TEST_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:validation/BROWSER_RUNTIME_TEST_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:validation/PACKAGE_TEST_RESULTS_V721.json",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:validation/SCORM_REGRESSION_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:validation/BENCHMARK_RUBRIC.md",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:validation/benchmark.html",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:validation/review.html",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:serve_local.bat",
+      "pass": true
+    },
+    {
+      "name": "required_delivery:serve_local.py",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/chips/chip_0_10.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/chips/chip_0_20.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/chips/chip_0_50.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/chips/chip_1_00.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_01.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_02.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_03.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_04.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_05.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_06.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_07.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_08.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_09.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_10.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_01.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_02.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_03.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_04.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_05.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_06.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_07.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_08.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_09.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_10.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/recovery_01.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/recovery_02.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/recovery_03.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/recovery_04.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/recovery_05.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/river_01.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/river_02.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/river_03.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/river_04.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/river_05.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/showdown_01.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/showdown_02.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/showdown_03.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/showdown_04.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/showdown_05.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/special_41.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/turn_01.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/turn_02.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/turn_03.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/turn_04.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/turn_05.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/poker_ecomat_logo.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/poker_ecomat_red_table.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/roles/big_blind_blue.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/roles/dealer_white.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/roles/small_blind_yellow.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_CENTER.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_CIRCUIT_DECAY.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_COUPLED_MODES.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_DUHAMEL_FORCED.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_IMPULSE_RESPONSE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_LAP_PERIODIC.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_LAP_PIECEWISE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_NODE_STABLE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_SADDLE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_SPIRAL_STABLE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_SPIRAL_UNSTABLE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_STEP_RESPONSE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_SYSTEM_IMPULSE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_SYSTEM_RESPONSE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_TWO_TANKS.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:bank/base_bank.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:bank/extended_bank.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:interactive_graphs.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:mathjax/LICENSE",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:mathjax/tex-svg-full.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:poker.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:questions.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:reino_calculator/calculator.html",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:reino_calculator_bridge.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:scorm.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:styles.css",
+      "pass": true
+    },
+    {
+      "name": "all_original_paths_retained",
+      "pass": true,
+      "removed": []
+    },
+    {
+      "name": "rule_function_found:resolveFold",
+      "pass": true
+    },
+    {
+      "name": "unchanged_rule_function:resolveFold",
+      "pass": true
+    },
+    {
+      "name": "rule_function_found:confirmBet",
+      "pass": true
+    },
+    {
+      "name": "unchanged_rule_function:confirmBet",
+      "pass": true
+    },
+    {
+      "name": "rule_function_found:decisionCard",
+      "pass": true
+    },
+    {
+      "name": "unchanged_rule_function:decisionCard",
+      "pass": true
+    },
+    {
+      "name": "rule_function_found:newHand",
+      "pass": true
+    },
+    {
+      "name": "unchanged_rule_function:newHand",
+      "pass": true
+    },
+    {
+      "name": "rule_function_found:resolveRescue",
+      "pass": true
+    },
+    {
+      "name": "unchanged_rule_function:resolveRescue",
+      "pass": true
+    },
+    {
+      "name": "rule_function_found:parseNumeric",
+      "pass": true
+    },
+    {
+      "name": "unchanged_rule_function:parseNumeric",
+      "pass": true
+    },
+    {
+      "name": "rule_function_found:orderIsCorrect",
+      "pass": true
+    },
+    {
+      "name": "unchanged_rule_function:orderIsCorrect",
+      "pass": true
+    },
+    {
+      "name": "rule_function_found:finishIfTerminalAfterSettlement",
+      "pass": true
+    },
+    {
+      "name": "unchanged_rule_function:finishIfTerminalAfterSettlement",
+      "pass": true
+    },
+    {
+      "name": "rule_function_found:terminalBankReason",
+      "pass": true
+    },
+    {
+      "name": "unchanged_rule_function:terminalBankReason",
+      "pass": true
+    },
+    {
+      "name": "unchanged_entire_answerCorrect",
+      "pass": true
+    },
+    {
+      "name": "unchanged_final_grade_expression",
+      "pass": true
+    }
+  ]
+}

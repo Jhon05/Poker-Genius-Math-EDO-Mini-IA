@@ -1,0 +1,447 @@
+{
+  "version": "7.2.1-rc1",
+  "executed": true,
+  "kind": "UNIT_API_FIXTURES_ONLY",
+  "liveInferenceExecuted": false,
+  "realBrowserGPU": false,
+  "total": 87,
+  "passed": 87,
+  "failed": [],
+  "results": [
+    {
+      "name": "capability_file",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_remedy_file",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "no_init_on_probe_file",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_insecure",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_remedy_insecure",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "no_init_on_probe_insecure",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_no_gpu",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_remedy_no_gpu",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "no_init_on_probe_no_gpu",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_no_adapter",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_remedy_no_adapter",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "no_init_on_probe_no_adapter",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_worker_blocked",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_remedy_worker_blocked",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "no_init_on_probe_worker_blocked",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_worker_gpu_missing",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_remedy_worker_gpu_missing",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "no_init_on_probe_worker_gpu_missing",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_idb_blocked",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_remedy_idb_blocked",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "no_init_on_probe_idb_blocked",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_idb_throw",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_remedy_idb_throw",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "no_init_on_probe_idb_throw",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_idb_corruption",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "capability_remedy_idb_corruption",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "no_init_on_probe_idb_corruption",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "allowed_origin_https://example.test",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "allowed_origin_http://localhost:8000",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "allowed_origin_http://127.0.0.1:8000",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "allowed_origin_http://[::1]:8000",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "idb_lifecycle_invoked",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "probe_no_grade_fields",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "unknown_vram_not_measured",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "profile_not_pedagogical_default",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "moderate_hardware_profile",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "unknown_hardware_conservative",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "high_hardware_trial",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "offline_distinguished",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "cancel_probe",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "idb_timeout_bounded",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_network",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_action_network",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_weights",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_action_weights",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_storage",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_action_storage",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_device",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_action_device",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_time",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_action_time",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_protocol",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_action_protocol",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_cancel",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "diagnostic_action_cancel",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "network_offline_specific",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "reject_incomplete_proof_liveInference",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "reject_incomplete_proof_providerKind",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "reject_incomplete_proof_modelId",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "reject_incomplete_proof_worker",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "reject_incomplete_proof_adapterObtained",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "reject_incomplete_proof_smoke.responseNonEmpty",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "reject_incomplete_proof_smoke.schemaValid",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "reject_incomplete_proof_smoke.encodingValid",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "f32_fallback_selected",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "ready_after_proof_only",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "worker_module_requested",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "no_ready_during_loading",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "complete_transport",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "provider_remains_ready_after_complete",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "reuse_ready_instance",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "dispose_clears_inference",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "cancel_barrier_no_early_ready",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "no_parallel_after_cancel",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "cancel_ack_waited",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "stuck_worker_terminated",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "init_cancel_does_not_activate",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "runtime_error_cause_visible",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "error_does_not_activate",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "benchmark_count_A",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "benchmark_count_B",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "benchmark_count_C",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "benchmark_count_REGRESSION",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "benchmark_long_24",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "formula_regression_included",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "benchmark_no_fake_gate",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "human_scores_not_invented",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    }
+  ]
+}

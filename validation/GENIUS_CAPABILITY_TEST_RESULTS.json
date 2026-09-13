@@ -1,0 +1,213 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "actual_browser_capability_probe",
+  "executed": true,
+  "at": "2026-09-13T22:16:35.226Z",
+  "environment": {
+    "protocol": "about:",
+    "origin": "null",
+    "secureContext": false,
+    "topEqualsSelf": true,
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36",
+    "platform": "Linux x86_64",
+    "parentOrigin": "null"
+  },
+  "deviceMemoryGB": null,
+  "adapter": null,
+  "storage": null,
+  "checks": [
+    {
+      "id": "origin",
+      "label": "HTTPS / localhost",
+      "status": "fail",
+      "message": "El origen no es HTTPS ni localhost.",
+      "required": true,
+      "code": "UNSUPPORTED_ORIGIN",
+      "value": null,
+      "impact": "El runtime modular y el almacenamiento del modelo necesitan un origen web válido.",
+      "remedy": "Usa un origen web válido: HTTPS (por ejemplo GitHub Pages o Brightspace) o localhost. Para prueba local, extrae el ZIP y abre http://localhost:8000/ mediante serve_local.py; no abras index.html con doble clic.",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "secureContext",
+      "label": "Contexto seguro",
+      "status": "fail",
+      "message": "El navegador no reconoce un contexto seguro.",
+      "required": true,
+      "code": "SECURECONTEXT",
+      "value": null,
+      "impact": "",
+      "remedy": "Usa HTTPS o localhost; el administrador debe comprobar también el contexto del iframe.",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "webgpu",
+      "label": "WebGPU",
+      "status": "fail",
+      "message": "Este navegador no expone navigator.gpu.",
+      "required": true,
+      "code": "WEBGPU_UNAVAILABLE",
+      "value": null,
+      "impact": "No se puede ejecutar este proveedor local sin WebGPU.",
+      "remedy": "Prueba un navegador actualizado con aceleración gráfica habilitada. Consulta el diagnóstico GPU del navegador; también puedes jugar con la Guía compatible.",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "adapter",
+      "label": "Adaptador GPU",
+      "status": "fail",
+      "message": "No se obtuvo un adaptador: WebGPU no está disponible.",
+      "required": true,
+      "code": "ADAPTER_UNAVAILABLE",
+      "value": null,
+      "impact": "",
+      "remedy": "Revisa aceleración gráfica, controladores y políticas del navegador. No hay información suficiente para atribuirlo a una GPU concreta.",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "worker",
+      "label": "Worker de inferencia",
+      "status": "fail",
+      "message": "Failed to construct 'Worker': Script at 'http://localhost/genie/CapabilityWorker.js' cannot be accessed from origin 'null'.",
+      "required": true,
+      "code": "WORKER_UNAVAILABLE",
+      "value": null,
+      "impact": "",
+      "remedy": "Revisa worker-src/CSP, rutas y archivos .js servidos correctamente. El iframe debe permitir cargar el Worker de este origen.",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "indexedDB",
+      "label": "IndexedDB · escribir / leer / borrar",
+      "status": "fail",
+      "message": "Failed to execute 'open' on 'IDBFactory': access to the Indexed Database API is denied in this context.",
+      "required": true,
+      "code": "INDEXEDDB_BLOCKED",
+      "value": null,
+      "impact": "No se puede garantizar almacenamiento de pesos y conversación.",
+      "remedy": "Permite almacenamiento para este origen. Revisa modo privado y restricciones del iframe. No borres el historial de Poker.",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "storage",
+      "label": "Espacio del navegador",
+      "status": "unknown",
+      "message": "StorageManager.estimate no disponible.",
+      "required": false,
+      "code": "STORAGE_ESTIMATE_UNAVAILABLE",
+      "value": null,
+      "impact": "",
+      "remedy": "La carga seguirá sujeta al espacio que realmente conceda el navegador.",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "persistence",
+      "label": "Persistencia de almacenamiento",
+      "status": "unknown",
+      "message": "API de persistencia no disponible.",
+      "required": false,
+      "code": "PERSISTENCE",
+      "value": null,
+      "impact": "",
+      "remedy": "",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "online",
+      "label": "Conectividad",
+      "status": "pass",
+      "message": "El navegador declara conexión; esto no prueba acceso a los servidores.",
+      "required": false,
+      "code": "OFFLINE",
+      "value": true,
+      "impact": "",
+      "remedy": "Para la primera descarga necesitas red. Una caché parcial no garantiza funcionamiento sin conexión.",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "iframe",
+      "label": "Entorno / iframe",
+      "status": "pass",
+      "message": "Pestaña independiente.",
+      "required": false,
+      "code": "IFRAME",
+      "value": {
+        "protocol": "about:",
+        "origin": "null",
+        "secureContext": false,
+        "topEqualsSelf": true,
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36",
+        "platform": "Linux x86_64",
+        "parentOrigin": "null"
+      },
+      "impact": "",
+      "remedy": "Compara el diagnóstico en una pestaña de prueba y en el reproductor LMS. El administrador debe revisar políticas y almacenamiento de terceros.",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "policy",
+      "label": "Políticas detectables",
+      "status": "unknown",
+      "message": "CSP completa y políticas del padre no siempre son legibles; se registrarán los bloqueos observados.",
+      "required": false,
+      "code": "POLICY",
+      "value": {
+        "inspectionAvailable": true,
+        "webgpuPolicy": null,
+        "sandbox": null
+      },
+      "impact": "",
+      "remedy": "Revisa consola, CSP connect-src/script-src/worker-src, WebAssembly y permisos efectivos; no se presupone una directiva WebGPU universal.",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "runtime",
+      "label": "Runtime JavaScript",
+      "status": "unknown",
+      "message": "Se importará y comprobará después de autorizar la preparación; aún no se han descargado pesos.",
+      "required": false,
+      "code": "RUNTIME_PENDING",
+      "value": null,
+      "impact": "",
+      "remedy": "",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "modelConfig",
+      "label": "Servidor y configuración del modelo",
+      "status": "unknown",
+      "message": "El acceso a configuración, registro y servidor de pesos se comprobará durante la preparación.",
+      "required": false,
+      "code": "MODEL_RESOURCES_PENDING",
+      "value": null,
+      "impact": "",
+      "remedy": "",
+      "continueWithoutAI": true
+    }
+  ],
+  "policies": {
+    "inspectionAvailable": true,
+    "webgpuPolicy": null,
+    "sandbox": null
+  },
+  "supported": false,
+  "recommendation": {
+    "profile": "light",
+    "rule": "unknown_or_conservative",
+    "kind": "conservative_hardware_trial_not_quality_selection",
+    "recommendedDefault": null,
+    "inputs": {
+      "deviceMemoryGB": null,
+      "limits": {},
+      "availableBytes": null
+    },
+    "reason": "Prueba conservadora: memoria GPU libre no medible o recursos limitados. Puedes elegir otro perfil.",
+    "policy": "PROFILE_POLICY.md"
+  },
+  "durationMs": 3,
+  "measurementUnavailableReason": {
+    "freeVRAM": "WebGPU no expone una medida portátil de VRAM libre.",
+    "peakMemory": "No se ha medido RAM/VRAM pico."
+  },
+  "testContext": "Actual probe inside DOM-injected opaque-origin Chromium. Not a localhost or target-device test."
+}

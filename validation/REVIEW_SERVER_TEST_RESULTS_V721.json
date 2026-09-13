@@ -1,0 +1,81 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "REVIEW_DOM_EXPLICIT_FIXTURE_AND_LOOPBACK_HTTP",
+  "executed": true,
+  "liveInferenceExecuted": false,
+  "realBrightspaceExecuted": false,
+  "total": 17,
+  "passed": 17,
+  "failed": [],
+  "results": [
+    {
+      "name": "empty_review_has_no_scores",
+      "pass": true
+    },
+    {
+      "name": "false_inference_remains_visible",
+      "pass": true
+    },
+    {
+      "name": "untrusted_text_not_html",
+      "pass": true
+    },
+    {
+      "name": "all_scores_start_unreviewed",
+      "pass": true
+    },
+    {
+      "name": "reviewer_required",
+      "pass": true
+    },
+    {
+      "name": "count_updates",
+      "pass": true
+    },
+    {
+      "name": "export_keeps_live_false",
+      "pass": true
+    },
+    {
+      "name": "export_preserves_transcript",
+      "pass": true
+    },
+    {
+      "name": "review_source_not_generated",
+      "pass": true
+    },
+    {
+      "name": "review_saved_scores",
+      "pass": true
+    },
+    {
+      "name": "no_uncaught_ui_errors",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "helper_serves_index",
+      "pass": true
+    },
+    {
+      "name": "helper_worker_javascript_mime",
+      "pass": true
+    },
+    {
+      "name": "helper_nosniff_header",
+      "pass": true
+    },
+    {
+      "name": "helper_rejects_nonlocal_host",
+      "pass": true
+    },
+    {
+      "name": "helper_does_not_accept_uploads",
+      "pass": true
+    },
+    {
+      "name": "helper_serves_benchmark",
+      "pass": true
+    }
+  ]
+}

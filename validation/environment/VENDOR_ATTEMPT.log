@@ -1,0 +1,2 @@
+No se completo el vendoring: <urlopen error [Errno -3] Temporary failure in name resolution>
+No se declara runtimeBundled=true. Revisa red y documentacion; no se inventa un bundle.

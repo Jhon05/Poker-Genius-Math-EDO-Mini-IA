@@ -1,0 +1,32 @@
+{
+  "product": "Poker Math EDO",
+  "version": "7.1.2-alpha",
+  "feature": "Genius Math",
+  "flow": [
+    "challenge",
+    "optional_genius_before_answer",
+    "transfer_without_ai"
+  ],
+  "provider_active": "GuidedProvider",
+  "local_model_enabled": false,
+  "off_topic_policy": {
+    "action": "natural_redirect",
+    "penalty": 0
+  },
+  "official_grade_policy": "The first submitted base answer keeps the original Poker consequence. Genius may provide hints/formulas before that answer; transfer remains diagnostic in Alpha.",
+  "modules": [
+    "FormulaCoach",
+    "PedagogyEngine",
+    "ContextBridge",
+    "EvaluatorBridge",
+    "ScopeClassifier",
+    "GuidedProvider",
+    "GenieMemory",
+    "ModelProvider",
+    "LocalModelProvider",
+    "GenieEngine",
+    "GenieWorker"
+  ],
+  "pre_answer_help": true,
+  "formula_requests": "allowed_and_contextual"
+}

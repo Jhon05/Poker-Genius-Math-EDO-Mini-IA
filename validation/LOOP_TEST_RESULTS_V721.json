@@ -1,0 +1,27 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "GUARD_LOGIC_WITH_EXPLICIT_PROVIDER_FIXTURES",
+  "executed": true,
+  "liveInferenceExecuted": false,
+  "source": "CORE_TEST_RESULTS.json",
+  "checks": [
+    {
+      "name": "loop_exact",
+      "pass": true,
+      "category": "unit"
+    },
+    {
+      "name": "loop_semantic_rpc_fixture",
+      "pass": true,
+      "category": "provider_fixture_not_inference"
+    },
+    {
+      "name": "loop_regenerate_transport_fixture",
+      "pass": true,
+      "category": "provider_fixture_not_inference"
+    }
+  ],
+  "semanticQualityMeasured": false,
+  "quality": null,
+  "scope": "Exact duplication, semantic-request transport and regeneration are exercised with fixtures. Long-conversation efficacy requires real benchmark C."
+}

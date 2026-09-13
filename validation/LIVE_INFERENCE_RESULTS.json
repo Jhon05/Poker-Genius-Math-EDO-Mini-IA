@@ -1,0 +1,43 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "LIVE_MODEL_TEST",
+  "executed": false,
+  "status": "not_run_environment_blocked",
+  "provider": "local-llm",
+  "model": null,
+  "runtime": "WebLLM",
+  "runtimeVersion": "0.2.85",
+  "runtimeBundled": false,
+  "secureContext": false,
+  "webgpu": false,
+  "adapterObtained": false,
+  "worker": false,
+  "promptExecuted": false,
+  "responseNonEmpty": false,
+  "cancelTest": false,
+  "multiTurnTest": false,
+  "cacheReloadTest": false,
+  "liveInferenceExecuted": false,
+  "measurementScope": "False capabilities describe the blocked/opaque test page, not the target device or physical GPU.",
+  "modelLoadMs": null,
+  "firstTokenMs": null,
+  "totalGenerationMs": null,
+  "tokensPerSecond": null,
+  "warmGenerationMs": null,
+  "cacheReloadMs": null,
+  "peakRAMBytes": null,
+  "peakVRAMBytes": null,
+  "bytesDownloaded": null,
+  "measurementUnavailableReason": "Chromium navigation to localhost was blocked by ERR_BLOCKED_BY_ADMINISTRATOR. Remote runtime fetch failed with temporary DNS resolution failure. No usable authorized WebGPU/LLM execution was obtained. Opaque-context capability results do not identify the physical host GPU.",
+  "limitations": [
+    "No actual model responses were generated.",
+    "No real Brightspace session was executed.",
+    "Unit provider fixtures and injected DOM are not inference.",
+    "Required target-device procedure is executable in validation/benchmark.html."
+  ],
+  "evidence": [
+    "environment/ENVIRONMENT_PROBE.json",
+    "environment/VENDOR_ATTEMPT.log",
+    "GENIUS_CAPABILITY_TEST_RESULTS.json"
+  ]
+}

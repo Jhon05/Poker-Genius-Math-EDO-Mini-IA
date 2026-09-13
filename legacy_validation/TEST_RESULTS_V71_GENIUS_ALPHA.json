@@ -1,0 +1,136 @@
+{
+  "version": "7.1-alpha",
+  "all_passed": true,
+  "checks": [
+    {
+      "test": "JS syntax app.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "JS syntax genie/ContextBridge.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "JS syntax genie/EvaluatorBridge.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "JS syntax genie/GenieEngine.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "JS syntax genie/GenieMemory.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "JS syntax genie/GenieWorker.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "JS syntax genie/GuidedProvider.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "JS syntax genie/LocalModelProvider.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "JS syntax genie/ModelProvider.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "JS syntax genie/PedagogyEngine.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "JS syntax genie/ScopeClassifier.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "JS syntax genie/config.js",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "imsmanifest XML parse",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "imsmanifest resources exist",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "index resource paths exist",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "UI element #qLearningTrack",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "UI element #geniePanel",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "UI element #genieInput",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "UI element #genieReadyBtn",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "UI element #transferPanel",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "UI element #transferForm",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Off-topic explicitly non-penalized",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "Local model disabled in Alpha",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "test": "SHA256 app.js",
+      "ok": true,
+      "detail": "1f38e656ad8aa99d8e091143bf197ece6e0a8dd5bc546977ca1b6649494bb545"
+    },
+    {
+      "test": "SHA256 index.html",
+      "ok": true,
+      "detail": "59a88ff6db5eb0f62c458c72879a385b9487385e9c1663525c3e31560dcb6bc0"
+    },
+    {
+      "test": "SHA256 genie/GenieEngine.js",
+      "ok": true,
+      "detail": "7e3b33f6173b15e02d00dd3d3cd2d7506f44c30897714a62e6f4b08dac8f723b"
+    }
+  ]
+}

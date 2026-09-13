@@ -1,0 +1,283 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "BROWSER_DOM_WITH_EXPLICIT_STORAGE_AND_LMS_FIXTURES",
+  "executed": true,
+  "liveInferenceExecuted": false,
+  "realBrightspaceExecuted": false,
+  "total": 64,
+  "passed": 64,
+  "failed": [],
+  "results": [
+    {
+      "name": "probe_actually_ran",
+      "pass_": true
+    },
+    {
+      "name": "opaque_origin_not_claimed_compatible",
+      "pass_": true
+    },
+    {
+      "name": "idle_no_attempt_no_deadline",
+      "pass_": true
+    },
+    {
+      "name": "no_native_confirm_for_preload",
+      "pass_": true
+    },
+    {
+      "name": "integrated_dialog_visible",
+      "pass_": true
+    },
+    {
+      "name": "aria_modal_and_title",
+      "pass_": true
+    },
+    {
+      "name": "background_inert",
+      "pass_": true
+    },
+    {
+      "name": "preparation_disabled_when_incompatible",
+      "pass_": true
+    },
+    {
+      "name": "cause_visible",
+      "pass_": true
+    },
+    {
+      "name": "no_generic_only_failure",
+      "pass_": true
+    },
+    {
+      "name": "all_profiles_selectable",
+      "pass_": true
+    },
+    {
+      "name": "not_blind_standard",
+      "pass_": true
+    },
+    {
+      "name": "download_estimate_labeled",
+      "pass_": true
+    },
+    {
+      "name": "model_memory_not_fake_measurement",
+      "pass_": true
+    },
+    {
+      "name": "manual_model_switch",
+      "pass_": true
+    },
+    {
+      "name": "profile_synced_with_chat",
+      "pass_": true
+    },
+    {
+      "name": "focus_trapped",
+      "pass_": true
+    },
+    {
+      "name": "escape_closes",
+      "pass_": true
+    },
+    {
+      "name": "focus_restored",
+      "pass_": true
+    },
+    {
+      "name": "background_restored",
+      "pass_": true
+    },
+    {
+      "name": "simulated_diagnostic_runtime",
+      "pass_": true,
+      "fixture": true
+    },
+    {
+      "name": "simulated_diagnostic_weights",
+      "pass_": true,
+      "fixture": true
+    },
+    {
+      "name": "simulated_diagnostic_quota",
+      "pass_": true,
+      "fixture": true
+    },
+    {
+      "name": "simulated_diagnostic_memory",
+      "pass_": true,
+      "fixture": true
+    },
+    {
+      "name": "simulated_diagnostic_protocol",
+      "pass_": true,
+      "fixture": true
+    },
+    {
+      "name": "game_starts_after_diagnostics",
+      "pass_": true
+    },
+    {
+      "name": "academic_hour_starts_only_now",
+      "pass_": true
+    },
+    {
+      "name": "chat_load_uses_same_panel",
+      "pass_": true
+    },
+    {
+      "name": "chat_load_no_native_confirm",
+      "pass_": true
+    },
+    {
+      "name": "fallback_clearly_not_llm",
+      "pass_": true
+    },
+    {
+      "name": "fallback_has_no_chat_send",
+      "pass_": true
+    },
+    {
+      "name": "no_grade_penalty_for_failed_or_guided_use",
+      "pass_": true
+    },
+    {
+      "name": "report_before_local_closure",
+      "pass_": true
+    },
+    {
+      "name": "local_end_explains_new_trial",
+      "pass_": true
+    },
+    {
+      "name": "local_end_not_pending_Brightspace",
+      "pass_": true
+    },
+    {
+      "name": "local_close_action_named",
+      "pass_": true
+    },
+    {
+      "name": "report_viewer_is_sandboxed",
+      "pass_": true
+    },
+    {
+      "name": "report_viewer_received_generated_html",
+      "pass_": true
+    },
+    {
+      "name": "report_viewer_exposes_all_sections_without_scripts",
+      "pass_": true
+    },
+    {
+      "name": "report_viewer_blocks_external_requests",
+      "pass_": true
+    },
+    {
+      "name": "report_viewer_returns_to_result",
+      "pass_": true
+    },
+    {
+      "name": "report_evidence_in_storage",
+      "pass_": true
+    },
+    {
+      "name": "pending_resume_action_visible",
+      "pass_": true
+    },
+    {
+      "name": "pending_report_restored",
+      "pass_": true
+    },
+    {
+      "name": "local_close_returns_menu_without_reload",
+      "pass_": true
+    },
+    {
+      "name": "local_new_attempt_enabled",
+      "pass_": true
+    },
+    {
+      "name": "local_close_did_not_delete_reports",
+      "pass_": true
+    },
+    {
+      "name": "local_history_preserved",
+      "pass_": true
+    },
+    {
+      "name": "new_local_game_fresh",
+      "pass_": true
+    },
+    {
+      "name": "local_restore_no_uncaught_errors",
+      "pass_": true,
+      "errors": []
+    },
+    {
+      "name": "student_scorm_finished",
+      "pass_": true
+    },
+    {
+      "name": "student_single_attempt_locked",
+      "pass_": true
+    },
+    {
+      "name": "student_menu_cannot_restart",
+      "pass_": true
+    },
+    {
+      "name": "student_grade_scale_preserved",
+      "pass_": true
+    },
+    {
+      "name": "student_suspend_no_transcript",
+      "pass_": true
+    },
+    {
+      "name": "student_no_uncaught_errors",
+      "pass_": true,
+      "errors": []
+    },
+    {
+      "name": "preview_close_returns_menu",
+      "pass_": true
+    },
+    {
+      "name": "preview_no_grade_writes",
+      "pass_": true
+    },
+    {
+      "name": "preview_allows_new_attempt",
+      "pass_": true
+    },
+    {
+      "name": "preview_no_uncaught_errors",
+      "pass_": true,
+      "errors": []
+    },
+    {
+      "name": "mobile_dialog_inside_viewport",
+      "pass_": true,
+      "bounds": {
+        "x": 7,
+        "y": 7,
+        "width": 376,
+        "height": 830
+      }
+    },
+    {
+      "name": "mobile_no_horizontal_overflow",
+      "pass_": true
+    },
+    {
+      "name": "mobile_returns_to_game_menu",
+      "pass_": true
+    },
+    {
+      "name": "mobile_no_uncaught_errors",
+      "pass_": true,
+      "errors": []
+    }
+  ]
+}

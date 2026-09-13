@@ -1,0 +1,14 @@
+{
+  "manifest_files": 103,
+  "missing_manifest_files": [],
+  "flow_checks": {
+    "hint_enabled_preanswer": true,
+    "submit_allowed_independent_or_genie": true,
+    "submit_starts_transfer": true,
+    "genius_ready_returns_to_answer": true,
+    "hint_opens_preanswer_genius": true,
+    "formula_coach_loaded": true,
+    "manifest_formula_coach": true
+  },
+  "pass": true
+}

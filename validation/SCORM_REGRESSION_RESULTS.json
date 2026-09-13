@@ -1,0 +1,409 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "AGGREGATED_EXISTING_API_AND_DOM_FIXTURE_EVIDENCE_NOT_NEW_RUNS",
+  "executed": true,
+  "realBrightspaceExecuted": false,
+  "liveInferenceExecuted": false,
+  "totalReferencedChecks": 78,
+  "passedReferencedChecks": 78,
+  "failed": [],
+  "scormSourceSHA256": "03e0fbe3b3f69ac36297087b92420285ece0cba5957e9d4663468a5ee77edadf",
+  "gradeScale": [
+    0,
+    5
+  ],
+  "checks": [
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "initialize_returns_success",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "initialization_once",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "name_from_api",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "id_from_api",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "profile_tracked_student",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "new_activity_incomplete",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "initial_commit",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "begin_attempt",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "suspend_save_committed",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "suspend_load_roundtrip",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "resume_does_not_complete",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "score_clamped_low",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "score_clamped_high",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "scale_0_5",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "finish_pass",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "status_passed",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "final_score",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "completed_attempt_recognized",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "finish_once",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "session_time_format",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "finish_failed_grade_closes",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "status_failed",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "preview_initializes_readonly",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "without_profile",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "preview_no_writes_commits_finish",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "preview_not_completed",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "init_failure_reported",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "no_writes_when_init_failed",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "save_reports_commit_failure",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "commit_status_failure",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "finish_failure_not_completed_flag",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "finish_retry",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "oversize_optional_event_compacted",
+      "pass": true
+    },
+    {
+      "source": "SCORM_API_TEST_RESULTS_V721.json",
+      "name": "oversize_required_state_not_silently_truncated",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Single_attempt_blocks_new_on_resume",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Resume_current_question",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Resume_answer_draft",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Conversation_not_in_suspend",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Compact_local_history_fallback",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Transition_to_transfer",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Transfer_no_tutor",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Suspend_under_3800",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Transfer_phase_survives_LMS_hydration",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Transfer_complete",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Grade_unchanged_by_tutor_and_transfer",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "500_suspend_payloads_bounded",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "All_504_used_questions_suspend_bounded",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Late_reply_dropped_on_transfer",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "HTML_report_generated",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Report_excludes_system_prompt",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Safe_finish_report_first",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "SCORM_final_score_sent",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Single_attempt_final_lock",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Teacher_preview_no_writes",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_INTEGRATION_RESULTS.json",
+      "name": "Teacher_preview_not_locked",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "report_before_local_closure",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "local_close_action_named",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "report_viewer_is_sandboxed",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "report_viewer_received_generated_html",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "report_viewer_exposes_all_sections_without_scripts",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "report_viewer_blocks_external_requests",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "report_viewer_returns_to_result",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "report_evidence_in_storage",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "pending_resume_action_visible",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "pending_report_restored",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "local_close_returns_menu_without_reload",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "local_close_did_not_delete_reports",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "local_history_preserved",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "student_scorm_finished",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "student_single_attempt_locked",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "student_menu_cannot_restart",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "student_grade_scale_preserved",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "student_suspend_no_transcript",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "student_no_uncaught_errors",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "preview_close_returns_menu",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "preview_no_grade_writes",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "preview_allows_new_attempt",
+      "pass": true
+    },
+    {
+      "source": "BROWSER_RUNTIME_TEST_RESULTS.json",
+      "name": "preview_no_uncaught_errors",
+      "pass": true
+    }
+  ],
+  "realLMSStatus": "not_run",
+  "scope": "These checks refer to source suites and must not be added again to a global total. The gradebook, real iframe, cross-device resume and actual learner identity remain institutional tests."
+}

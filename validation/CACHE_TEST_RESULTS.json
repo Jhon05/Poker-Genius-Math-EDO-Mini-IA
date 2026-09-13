@@ -1,0 +1,24 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "MODEL_CACHE_TWO_SEPARATE_RUNS",
+  "executed": false,
+  "liveInferenceExecuted": false,
+  "status": "not_run_environment_blocked",
+  "coldStart": {
+    "executed": false,
+    "modelReadyTimeMs": null,
+    "cacheBefore": null
+  },
+  "warmStartAfterReload": {
+    "executed": false,
+    "modelReadyTimeMs": null,
+    "cacheBefore": null
+  },
+  "cacheHit": null,
+  "cacheMiss": null,
+  "cacheReloadMs": null,
+  "bytesDownloaded": null,
+  "measurementUnavailableReason": "Chromium navigation to localhost was blocked by ERR_BLOCKED_BY_ADMINISTRATOR. Remote runtime fetch failed with temporary DNS resolution failure. No usable authorized WebGPU/LLM execution was obtained. Opaque-context capability results do not identify the physical host GPU.",
+  "infrastructureOnly": "IndexedDB transaction and provider cache metadata branches were tested with explicit unit fixtures; these do not prove a model cache hit.",
+  "targetInstrument": "validation/benchmark.html sections 3 and 4"
+}

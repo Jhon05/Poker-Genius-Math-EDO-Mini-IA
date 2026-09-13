@@ -1,0 +1,152 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "EXACT_ADAPTER_WITH_EXPLICIT_LMS_API_FIXTURES",
+  "executed": true,
+  "realBrightspaceExecuted": false,
+  "liveInferenceExecuted": false,
+  "total": 34,
+  "passed": 34,
+  "failed": [],
+  "results": [
+    {
+      "name": "initialize_returns_success",
+      "pass": true
+    },
+    {
+      "name": "initialization_once",
+      "pass": true
+    },
+    {
+      "name": "name_from_api",
+      "pass": true
+    },
+    {
+      "name": "id_from_api",
+      "pass": true
+    },
+    {
+      "name": "profile_tracked_student",
+      "pass": true
+    },
+    {
+      "name": "new_activity_incomplete",
+      "pass": true
+    },
+    {
+      "name": "initial_commit",
+      "pass": true
+    },
+    {
+      "name": "begin_attempt",
+      "pass": true
+    },
+    {
+      "name": "suspend_save_committed",
+      "pass": true
+    },
+    {
+      "name": "suspend_load_roundtrip",
+      "pass": true
+    },
+    {
+      "name": "resume_does_not_complete",
+      "pass": true
+    },
+    {
+      "name": "score_clamped_low",
+      "pass": true
+    },
+    {
+      "name": "score_clamped_high",
+      "pass": true
+    },
+    {
+      "name": "scale_0_5",
+      "pass": true
+    },
+    {
+      "name": "finish_pass",
+      "pass": true
+    },
+    {
+      "name": "status_passed",
+      "pass": true
+    },
+    {
+      "name": "final_score",
+      "pass": true
+    },
+    {
+      "name": "completed_attempt_recognized",
+      "pass": true
+    },
+    {
+      "name": "finish_once",
+      "pass": true
+    },
+    {
+      "name": "session_time_format",
+      "pass": true
+    },
+    {
+      "name": "finish_failed_grade_closes",
+      "pass": true
+    },
+    {
+      "name": "status_failed",
+      "pass": true
+    },
+    {
+      "name": "preview_initializes_readonly",
+      "pass": true
+    },
+    {
+      "name": "without_profile",
+      "pass": true
+    },
+    {
+      "name": "preview_no_writes_commits_finish",
+      "pass": true
+    },
+    {
+      "name": "preview_not_completed",
+      "pass": true
+    },
+    {
+      "name": "init_failure_reported",
+      "pass": true
+    },
+    {
+      "name": "no_writes_when_init_failed",
+      "pass": true
+    },
+    {
+      "name": "save_reports_commit_failure",
+      "pass": true
+    },
+    {
+      "name": "commit_status_failure",
+      "pass": true
+    },
+    {
+      "name": "finish_failure_not_completed_flag",
+      "pass": true
+    },
+    {
+      "name": "finish_retry",
+      "pass": true
+    },
+    {
+      "name": "oversize_optional_event_compacted",
+      "pass": true
+    },
+    {
+      "name": "oversize_required_state_not_silently_truncated",
+      "pass": true
+    }
+  ],
+  "limitations": [
+    "SetValue/Commit/Finish acknowledgements are fixture values. No institutional gradebook was queried.",
+    "No SCORM 1.2 XSD or certification suite was available."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": "7.1.2-alpha",
+  "normalQuestions": 458,
+  "formulaProfiles": 458,
+  "formulaRequestClassified": 458,
+  "initialHints": 458,
+  "progressiveSequences": 458,
+  "uniqueProgressiveResponses": 458,
+  "offTopicNoPenalty": 458,
+  "offTopicHelpNotConsumed": 458,
+  "transfersChecked": 9160,
+  "transfersValid": 9160,
+  "pseudoCycles": 10000,
+  "pseudoCyclesValid": 10000,
+  "exactScreenshotCase": {
+    "questionId": "EDO-C3-130",
+    "classification": "formula_request",
+    "helpLevel": 1,
+    "penalty": 0,
+    "text": "Sí. La fórmula o propiedad que necesitas recordar es: \\(\\mathcal L\\{e^{at}f(t)\\}=F(s-a)\\) Identifica primero qué función elemental o propiedad de Laplace aparece y compara su forma con la tabla antes de sustituir parámetros. Compárala con lo que aparece en el ejercicio y luego decide cómo aplicarla.",
+    "containsShiftFormula": true
+  },
+  "errors": [],
+  "pass": true
+}

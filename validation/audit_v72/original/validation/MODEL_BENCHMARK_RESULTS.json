@@ -1,0 +1,74 @@
+{
+  "version": "7.2.0-rc1",
+  "status": "not_run_environment_blocked",
+  "liveInferenceExecuted": false,
+  "reason": [
+    "No hardware WebGPU adapter in this container",
+    "Outbound downloads fail DNS",
+    "Managed Chromium blocks navigation and module Workers on offline opaque-origin page"
+  ],
+  "casePlan": {
+    "studentProfiles": 20,
+    "families": 8,
+    "conversationsPerModel": 160,
+    "longConversationTurns": 22
+  },
+  "candidates": [
+    {
+      "profile": "light",
+      "model": "Qwen3-0.6B-q4f16_1-MLC",
+      "status": "not_run",
+      "selectionBasis": "Available WebLLM registry, three memory/parameter budgets; provisional candidates, not pedagogical winners",
+      "registryVramMB": 1403.34,
+      "registrySource": "https://raw.githubusercontent.com/mlc-ai/web-llm/main/src/config.ts",
+      "registryNotMeasurement": true,
+      "measuredDownloadBytes": null,
+      "measuredRAMMB": null,
+      "measuredVRAMMB": null,
+      "p50LatencyMs": null,
+      "p95LatencyMs": null,
+      "mathematicalAccuracy": null,
+      "followupCoherence": null,
+      "semanticRepetitionRate": null,
+      "transferLearningGain": null
+    },
+    {
+      "profile": "standard",
+      "model": "Qwen3-1.7B-q4f16_1-MLC",
+      "status": "not_run",
+      "selectionBasis": "Available WebLLM registry, three memory/parameter budgets; provisional candidates, not pedagogical winners",
+      "registryVramMB": 2036.66,
+      "registrySource": "https://raw.githubusercontent.com/mlc-ai/web-llm/main/src/config.ts",
+      "registryNotMeasurement": true,
+      "measuredDownloadBytes": null,
+      "measuredRAMMB": null,
+      "measuredVRAMMB": null,
+      "p50LatencyMs": null,
+      "p95LatencyMs": null,
+      "mathematicalAccuracy": null,
+      "followupCoherence": null,
+      "semanticRepetitionRate": null,
+      "transferLearningGain": null
+    },
+    {
+      "profile": "advanced",
+      "model": "Qwen3-4B-q4f16_1-MLC",
+      "status": "not_run",
+      "selectionBasis": "Available WebLLM registry, three memory/parameter budgets; provisional candidates, not pedagogical winners",
+      "registryVramMB": 3431.59,
+      "registrySource": "https://raw.githubusercontent.com/mlc-ai/web-llm/main/src/config.ts",
+      "registryNotMeasurement": true,
+      "measuredDownloadBytes": null,
+      "measuredRAMMB": null,
+      "measuredVRAMMB": null,
+      "p50LatencyMs": null,
+      "p95LatencyMs": null,
+      "mathematicalAccuracy": null,
+      "followupCoherence": null,
+      "semanticRepetitionRate": null,
+      "transferLearningGain": null
+    }
+  ],
+  "acceptanceStatus": "not_established",
+  "benchmarksAreNotFixtureTests": true
+}

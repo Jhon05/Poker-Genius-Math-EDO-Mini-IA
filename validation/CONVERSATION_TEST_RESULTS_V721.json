@@ -1,0 +1,25 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "TRANSPORT_MEMORY_AND_POLICY_WITH_EXPLICIT_FIXTURES",
+  "executed": true,
+  "liveInferenceExecuted": false,
+  "instrumentalConversationTurns": 22,
+  "sourceCheck": {
+    "name": "22_turn_transport_fixture",
+    "pass": true,
+    "kind": "fixture_not_model_quality"
+  },
+  "pedagogicalQuality": null,
+  "followupUnderstandingMeasured": false,
+  "liveConversationalTestsExecuted": 0,
+  "targetRegressionPrepared": [
+    "No recuerdo la fórmula.",
+    "¿por qué?",
+    "No entendí.",
+    "Más fácil.",
+    "Ponme un ejemplo.",
+    "Entonces, ¿qué hago aquí?",
+    "dame la formula que se me pide"
+  ],
+  "scope": "The 22-turn fixture exercises real application code but is not a generative conversation."
+}

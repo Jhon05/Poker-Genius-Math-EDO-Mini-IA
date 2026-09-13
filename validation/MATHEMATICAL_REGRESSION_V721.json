@@ -1,0 +1,133 @@
+{
+  "version": "7.2.1-rc1",
+  "tool": "sympy 1.14.0",
+  "kind": "EXACT_SYMBOLIC_CERTIFICATES_NOT_LLM",
+  "executed": true,
+  "liveInferenceExecuted": false,
+  "total": 24,
+  "passed": 24,
+  "failed": [],
+  "results": [
+    {
+      "name": "linear_first_order_exp(-2*t)",
+      "passed": true,
+      "scope": "first_order"
+    },
+    {
+      "name": "linear_first_order_3*exp(-2*t)",
+      "passed": true,
+      "scope": "first_order"
+    },
+    {
+      "name": "variable_coefficient_integrating_factor",
+      "passed": true,
+      "scope": "first_order"
+    },
+    {
+      "name": "distinct_characteristic_roots_exp(t)",
+      "passed": true,
+      "scope": "second_order"
+    },
+    {
+      "name": "distinct_characteristic_roots_exp(2*t)",
+      "passed": true,
+      "scope": "second_order"
+    },
+    {
+      "name": "repeated_root_exp(-t)",
+      "passed": true,
+      "scope": "second_order"
+    },
+    {
+      "name": "repeated_root_t*exp(-t)",
+      "passed": true,
+      "scope": "second_order"
+    },
+    {
+      "name": "complex_roots_exp(-t)*cos(2*t)",
+      "passed": true,
+      "scope": "second_order"
+    },
+    {
+      "name": "complex_roots_exp(-t)*sin(2*t)",
+      "passed": true,
+      "scope": "second_order"
+    },
+    {
+      "name": "Cauchy_Euler_indicial_identity",
+      "passed": true,
+      "scope": "Cauchy_Euler_t_positive"
+    },
+    {
+      "name": "Cauchy_Euler_repeated_root_t",
+      "passed": true,
+      "scope": "Cauchy_Euler_t_positive"
+    },
+    {
+      "name": "Cauchy_Euler_repeated_root_t*log(t)",
+      "passed": true,
+      "scope": "Cauchy_Euler_t_positive"
+    },
+    {
+      "name": "Laplace_exp(2*t)*cos(3*t)",
+      "passed": true,
+      "scope": "Laplace_region_of_convergence_required"
+    },
+    {
+      "name": "Laplace_t**2",
+      "passed": true,
+      "scope": "Laplace_region_of_convergence_required"
+    },
+    {
+      "name": "Laplace_(t - 2)*Heaviside(t - 2)",
+      "passed": true,
+      "scope": "Laplace_region_of_convergence_required"
+    },
+    {
+      "name": "Laplace_DiracDelta(t - 3)",
+      "passed": true,
+      "scope": "Laplace_region_of_convergence_required"
+    },
+    {
+      "name": "Laplace_second_derivative_initial_signs",
+      "passed": true,
+      "scope": "initial_conditions"
+    },
+    {
+      "name": "partial_fraction_repeated_pole_inverse",
+      "passed": true,
+      "scope": "partial_fractions_and_inverse"
+    },
+    {
+      "name": "matrix_exponential_IVP_Matrix([[-1, 1], [0, -1]])",
+      "passed": true,
+      "scope": "systems"
+    },
+    {
+      "name": "matrix_exponential_IVP_Matrix([[0, -1], [1, 0]])",
+      "passed": true,
+      "scope": "systems"
+    },
+    {
+      "name": "matrix_exponential_IVP_Matrix([[-1, 0], [0, -2]])",
+      "passed": true,
+      "scope": "systems"
+    },
+    {
+      "name": "spectral_classification_stable",
+      "passed": true,
+      "scope": "linear_system_stability"
+    },
+    {
+      "name": "spectral_classification_saddle",
+      "passed": true,
+      "scope": "linear_system_stability"
+    },
+    {
+      "name": "spectral_classification_center",
+      "passed": true,
+      "scope": "linear_system_stability"
+    }
+  ],
+  "limitations": "These supplementary certificates do not independently certify all 500 questions, graphics or all alternative orderings. No bank content changed."
+}

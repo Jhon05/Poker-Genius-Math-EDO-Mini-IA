@@ -1,0 +1,22 @@
+{
+  "version": "7.2.1-rc1",
+  "kind": "SEPARATE_WORKER_EVIDENCE_LEVELS",
+  "providerProtocolTests": {
+    "executed": true,
+    "source": "RUNTIME_UNIT_RESULTS_V721.json",
+    "kind": "explicit_worker_message_fixtures_not_browser_gpu"
+  },
+  "actualBrowserWorkerPing": {
+    "status": "blocked",
+    "message": null
+  },
+  "actualBrowserWorkerPingSource": "MATHJAX_WORKER_RESULTS.json",
+  "liveInferenceInWorkerExecuted": false,
+  "uiResponsivenessDuringRealGenerationMeasured": false,
+  "realCancelDuringInferenceExecuted": false,
+  "limitations": [
+    "Chromium navigation to localhost was blocked by ERR_BLOCKED_BY_ADMINISTRATOR. Remote runtime fetch failed with temporary DNS resolution failure. No usable authorized WebGPU/LLM execution was obtained. Opaque-context capability results do not identify the physical host GPU.",
+    "The Blob Worker ping was blocked; no successful real browser Worker execution is claimed."
+  ],
+  "targetInstrument": "validation/benchmark.html cancellation and recovery test"
+}

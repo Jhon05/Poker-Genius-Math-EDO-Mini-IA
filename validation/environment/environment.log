@@ -1,0 +1,12 @@
+{
+  "navigationError": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://localhost:8000/\nCall log:\n  - navigating to \"http://localhost:8000/\", waiting until \"load\"\n",
+  "environment": {
+    "origin": "null",
+    "secureContext": false,
+    "gpu": false,
+    "adapter": false,
+    "worker": "function",
+    "storage": "object",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/144.0.0.0 Safari/537.36"
+  }
+}
