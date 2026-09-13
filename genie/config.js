@@ -1,5 +1,5 @@
 (()=>{'use strict'; const G=window.GeniusMath=window.GeniusMath||{};
-G.config={version:'7.2.1-rc1',productName:'Genius Math',language:'es',provider:'local',
+G.config={version:'7.2.1.1-rc2',productName:'Genius Math',language:'es',provider:'local',
  noPenaltyForOffTopic:true,revealAnswer:false,maxMessageChars:2400,maxRecentMessages:10,
  maxToolRounds:3,maxRegenerations:2,maxOutputTokens:850,contextCharBudget:10500,
  localModel:{enabled:true,worker:'genie/GenieWorker.js',runtimeURL:'https://esm.run/@mlc-ai/web-llm@0.2.85',
