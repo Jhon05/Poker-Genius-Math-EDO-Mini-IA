@@ -1,0 +1,2 @@
+/* Local module handshake: no model or remote import, no student data. */
+self.onmessage=async({data})=>{if(data?.type!=='probe')return;const result={probeVersion:'7.2.1',worker:true,secureContext:!!self.isSecureContext,webgpu:!!self.navigator.gpu,adapterObtained:false};try{const a=await self.navigator.gpu?.requestAdapter();result.adapterObtained=!!a;if(a)result.f16=a.features.has('shader-f16')}catch(e){result.error=String(e.message||e)}self.postMessage(result)};

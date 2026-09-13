@@ -1,0 +1,10 @@
+(()=>{'use strict';const G=window.GeniusMath;
+class CloudModelProvider{
+ constructor(config){this.kind='cloud';this.generative=true;this.config={...config};this.ready=false;this.consent=false;this.controller=null;}
+ async initialize({consent=false}={}){const c=this.config;if(!c.enabled||!c.endpoint)throw Error('El docente no ha configurado un servicio remoto.');const url=new URL(c.endpoint,document.baseURI);if(url.protocol!=='https:'&&url.hostname!=='localhost'&&url.hostname!=='127.0.0.1')throw Error('El servicio remoto requiere HTTPS.');if(!consent)throw Error('Debes autorizar el envío de la consulta al servicio institucional.');this.consent=true;this.ready=true;return{model:c.model||'institucional'};}
+ async complete(messages,{schema,signal,temperature,maxTokens}={}){if(!this.ready||!this.consent)throw Error('Servicio remoto no autorizado.');const controller=new AbortController();this.controller=controller;const abort=()=>controller.abort();if(signal?.aborted)throw G.util.abortError();signal?.addEventListener('abort',abort,{once:true});const timer=setTimeout(abort,this.config.timeoutMs||90000);
+  try{const r=await fetch(this.config.endpoint,{method:'POST',credentials:'include',headers:{'Content-Type':'application/json','X-Genius-Client':'7.2'},body:JSON.stringify({messages,response_format:{type:'json_object',schema:JSON.stringify(schema)},temperature:temperature??.45,max_tokens:maxTokens||850,model:this.config.model||undefined}),signal:controller.signal});if(!r.ok)throw Error(`El servicio institucional respondió HTTP ${r.status}.`);const data=await r.json();const content=data.choices?.[0]?.message?.content??data.content;if(typeof content!=='string')throw Error('Respuesta remota no compatible.');return{content,usage:data.usage||null,latencyMs:data.latencyMs||null};}finally{clearTimeout(timer);signal?.removeEventListener('abort',abort);this.controller=null;}}
+ cancel(){this.controller?.abort();}dispose(){this.cancel();this.ready=false;this.consent=false;}
+}
+G.CloudModelProvider=CloudModelProvider;
+})();

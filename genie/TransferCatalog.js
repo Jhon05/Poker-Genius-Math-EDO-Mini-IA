@@ -1,0 +1,17 @@
+/* Transfer-only supplements. PokerQuestions.all() remains the original 500 questions. */
+(()=>{'use strict';const G=window.GeniusMath,Q=window.PokerQuestions,extras=[];
+function add(id,baseId,prompt,options,answer,explanation,decision){const base=Q.get(baseId),q={...base,id,prompt,context:'',options,answer,type:'mcq',sourceType:'mcq',level:2,difficulty:'normal',family:id,hint:'',solution:explanation,explanation,hasGraphic:false,graphic:null,sourceGame:'Transferencia complementaria v72 · fuera del banco de 500'};extras.push(q);G.QuestionMetadata[id]={...G.QuestionMetadata[baseId],family:id,sourceFamily:id,decision,objective:'Aplicar el mismo concepto a una decisión distinta de la pregunta base.'};}
+add('EDO-T72-E1','EDO-C3-001','Para \\(f(t)=e^{3t}\\), considere la integral de Laplace con \\(s\\) real. ¿Qué afirmación distingue correctamente la expresión algebraica de su dominio de convergencia?',[
+'La integral converge para todo s distinto de 3.','La integral converge solo para s>3; que 1/(s−3) exista algebraicamente no basta.','La integral converge solo para s<3.','La integral converge para s=3.'],
+'La integral converge solo para s>3; que 1/(s−3) exista algebraicamente no basta.','El integrando es \\(e^{-(s-3)t}\\). Su integral en el semieje converge exactamente cuando \\(s-3>0\\).','distinguir dominio de convergencia y expresión formal');
+add('EDO-T72-E2','EDO-C3-001','Un estudiante escribe \\(\\mathcal L\\{e^{-2t}\\}=1/(s-2)\\). ¿Cuál es la corrección justificada por la definición?',[
+'Es correcto porque el signo menos se conserva siempre.','Debe ser 1/(s+2), pues e^(−st)e^(−2t)=e^(−(s+2)t).','Debe ser −1/(s−2), por linealidad.','No existe transformada para una exponencial decreciente.'],
+'Debe ser 1/(s+2), pues e^(−st)e^(−2t)=e^(−(s+2)t).','La suma de exponentes es \\(-(s+2)t\\); para \\(s>-2\\), la integral vale \\(1/(s+2)\\).','localizar un error de signo mediante la integral');
+add('EDO-T72-R1','EDO-C3-265','Dos tanques perfectamente mezclados tienen el mismo volumen constante. El caudal del segundo es el doble del primero. ¿Cómo cambian el tiempo de residencia y la rapidez de lavado de un trazador, sin entrada de trazador?',[
+'El tiempo se duplica y el lavado se hace más lento.','El tiempo se reduce a la mitad y la tasa exponencial de lavado se duplica.','Ni el tiempo ni el lavado cambian.','El tiempo y la tasa de lavado se duplican.'],
+'El tiempo se reduce a la mitad y la tasa exponencial de lavado se duplica.','Como \\(\\tau=V/q\\) y \\(m^\\prime=-(q/V)m\\), duplicar \\(q\\) divide \\(\\tau\\) por dos y duplica la tasa de decaimiento.','vincular residencia con tasa de decaimiento');
+add('EDO-T72-R2','EDO-C3-265','Para un tanque perfectamente mezclado de volumen constante, la masa de un trazador satisface \\(m(t)=m(0)e^{-t/\\tau}\\) durante el lavado. Al transcurrir un tiempo de residencia \\(t=\\tau\\), ¿qué interpretación es correcta?',[
+'Ha salido necesariamente todo el trazador inicial.','Permanece una fracción e^(−1) del trazador inicial; residencia no significa vaciado completo.','Permanece exactamente la mitad del trazador inicial.','No ha salido trazador antes de ese instante.'],
+'Permanece una fracción e^(−1) del trazador inicial; residencia no significa vaciado completo.','Al sustituir \\(t=\\tau\\), resulta \\(m(\\tau)/m(0)=e^{-1}\\). La mezcla sale gradualmente.','interpretar físicamente el tiempo de residencia');
+const originalGet=Q.get;const map=new Map(extras.map(q=>[q.id,q]));Q.get=id=>map.get(id)||originalGet(id);G.TransferCatalog={all:()=>extras.slice()};
+})();

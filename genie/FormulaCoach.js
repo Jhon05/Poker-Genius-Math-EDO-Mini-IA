@@ -1,0 +1,1 @@
+(()=>{'use strict';const G=window.GeniusMath;G.FormulaCoach={forQuestion(q){const m=G.QuestionMetadata[q?.id]||{};const formulas=(m.formulaIds||[]).map(id=>G.FormulaCatalog.get(id)).filter(Boolean);return{primary:formulas[0]?`\\[${formulas[0].latex}\\]`:'',formulas:formulas.map(f=>`\\[${f.latex}\\] ${f.conditions}`),firstStep:m.objective||'',records:formulas}}};})();
