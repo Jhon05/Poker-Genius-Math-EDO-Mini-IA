@@ -1,0 +1,205 @@
+{
+  "version": "7.2.2-safe-audited",
+  "releaseKind": "safe_audited_dual_github_brightspace_rc",
+  "builtAt": "2026-09-14T00:06:43.409106+00:00",
+  "liveInferenceExecutedInThisAuditEnvironment": false,
+  "realBrightspaceExecutedInThisAuditEnvironment": false,
+  "knownPriorRealWorldEvidence": {
+    "qwen06bSmokeGenerationOnGithubPagesPreviouslySucceeded": true,
+    "subsequentRealConversationPreviouslyCausedBlackScreenAndRequiredReboot": true,
+    "note": "The current v7.2.2 safe build has materially lower context/output/load and was not live-WebGPU-tested in this audit environment."
+  },
+  "safetyPolicy": {
+    "onlyLocalModel": "Qwen3-0.6B-q4f16_1-MLC",
+    "largerModelsExposed": false,
+    "requireShaderF16PageAndWorker": true,
+    "contextWindowSize": 1280,
+    "maxOutputTokens": 128,
+    "hardMaxOutputTokens": 144,
+    "maxRecentMessages": 2,
+    "maxToolRounds": 0,
+    "maxRegenerations": 0,
+    "oneInferencePerStudentTurn": true,
+    "semanticLoopSecondInference": false,
+    "backgroundGenerationCancelled": true,
+    "hiddenReadyModelDisposedAfterMs": 45000
+  },
+  "stressEvidence": [
+    {
+      "name": "context_fuzz_10000",
+      "pass": true,
+      "contexts": 10000,
+      "maxChars": 2481,
+      "budget": 2600,
+      "budgetViol": 0,
+      "jsonViol": 0,
+      "hiddenViol": 0
+    },
+    {
+      "name": "transfer_stress_10000",
+      "pass": true,
+      "transferRuns": 10000,
+      "transferFail": 0
+    },
+    {
+      "name": "malformed_protocol_rejected",
+      "pass": true,
+      "malformedRejected": 1000
+    },
+    {
+      "name": "one_inference_per_turn_all_500",
+      "pass": true,
+      "calls": 500,
+      "oneCallFail": 0,
+      "askFail": 0
+    },
+    {
+      "name": "protocol_failure_no_retry_100",
+      "pass": true,
+      "badCalls": 100,
+      "badFail": 0
+    }
+  ],
+  "deepAuditEvidence": {
+    "bankQuestions": 500,
+    "strictTransferCount": 500,
+    "emergencyFallbackCount": 0,
+    "sourceTypeDistribution": {
+      "graphic": 75,
+      "multiple_choice": 125,
+      "numeric": 75,
+      "ordering": 75,
+      "statements": 75,
+      "true_false": 75
+    },
+    "all500ContextJsonValid": true,
+    "all500ContextWithinBudget": true,
+    "all500HiddenAnswerFieldsAbsent": true,
+    "all500DirectAnswerLeakFixturesBlocked": true
+  },
+  "suites": [
+    {
+      "name": "core",
+      "file": "validation/CORE_TEST_RESULTS.json",
+      "kind": "infrastructure_and_exact_math",
+      "executed": true,
+      "total": 2686,
+      "passed": 2686,
+      "failedCount": 0
+    },
+    {
+      "name": "runtime",
+      "file": "validation/RUNTIME_UNIT_RESULTS_V721.json",
+      "kind": "UNIT_API_FIXTURES_ONLY",
+      "executed": true,
+      "total": 88,
+      "passed": 88,
+      "failedCount": 0
+    },
+    {
+      "name": "scorm",
+      "file": "validation/SCORM_API_TEST_RESULTS_V721.json",
+      "kind": "EXACT_ADAPTER_WITH_EXPLICIT_LMS_API_FIXTURES",
+      "executed": true,
+      "total": 34,
+      "passed": 34,
+      "failedCount": 0
+    },
+    {
+      "name": "deep",
+      "file": "validation/DEEP_AUDIT_V722_RESULTS.json",
+      "kind": "DEEP_STATIC_STRUCTURAL_PEDAGOGICAL_AUDIT_NOT_LIVE_LLM",
+      "executed": true,
+      "total": 28,
+      "passed": 28,
+      "failedCount": 0
+    },
+    {
+      "name": "stress",
+      "file": "validation/STRESS_AUDIT_V722_RESULTS.json",
+      "kind": "DETERMINISTIC_STRESS_NOT_LIVE_LLM",
+      "executed": true,
+      "total": 5,
+      "passed": 5,
+      "failedCount": 0
+    },
+    {
+      "name": "dual",
+      "file": "validation/DUAL_HOSTING_RESULTS.json",
+      "kind": "DUAL_GITHUB_PAGES_AND_SCORM_STATIC_VALIDATION",
+      "executed": true,
+      "total": 13,
+      "passed": 13,
+      "failedCount": 0
+    },
+    {
+      "name": "math",
+      "file": "validation/MATHEMATICAL_REGRESSION_V721.json",
+      "kind": "EXACT_SYMBOLIC_CERTIFICATES_NOT_LLM",
+      "executed": true,
+      "total": 24,
+      "passed": 24,
+      "failedCount": 0
+    },
+    {
+      "name": "mathjax",
+      "file": "validation/MATHJAX_WORKER_RESULTS.json",
+      "kind": "MathJax_parse_only_not_mathematical_proof",
+      "executed": true,
+      "total": 889,
+      "passed": 889,
+      "failedCount": 0
+    },
+    {
+      "name": "review",
+      "file": "validation/REVIEW_SERVER_TEST_RESULTS_V721.json",
+      "kind": "REVIEW_DOM_EXPLICIT_FIXTURE_AND_LOOPBACK_HTTP",
+      "executed": true,
+      "total": 17,
+      "passed": 17,
+      "failedCount": 0
+    },
+    {
+      "name": "browser_runtime",
+      "file": "validation/BROWSER_RUNTIME_TEST_RESULTS.json",
+      "kind": "BROWSER_DOM_WITH_EXPLICIT_STORAGE_AND_LMS_FIXTURES",
+      "executed": true,
+      "total": 64,
+      "passed": 64,
+      "failedCount": 0
+    },
+    {
+      "name": "browser_integration",
+      "file": "validation/BROWSER_INTEGRATION_RESULTS.json",
+      "kind": "Chromium offline DOM injection. localStorage and LMS are explicit fixtures. No navigation/reload on a real origin, no real model, no real Brightspace.",
+      "executed": true,
+      "total": 541,
+      "passed": 541,
+      "failedCount": 0
+    }
+  ],
+  "keySourceSHA256": {
+    "genie/config.js": "5b2c4ae4dc31fc2f1ad987fce1c05ed8acd96ab399fc4f73194e58815911618a",
+    "genie/ContextBridge.js": "ee5e4f90a63eb1872f0f65597bc0df63de642ced75699231e84af90ab148485c",
+    "genie/PromptContract.js": "ef9c42302a022cf387a41a91316f33666cedc472e0858ab32813d5ec1f04e6dc",
+    "genie/GenieEngine.js": "2a6f78b98052395dfd16cb6c8f0571075f33be27cd90dbb8bc6dd3e741370881",
+    "genie/GenieWorker.js": "dafd778988543c97914cececbf16d6f08debd7901872da58bb97e6da50abfcea",
+    "genie/LocalModelProvider.js": "c58c2319da9e31463bab489f4d7227c15c990da583c3c215130b4040c1657844",
+    "genie/GenieCapabilityProbe.js": "8b50d24bd9df8f502c558bbb80740035c1ccdce254959065bb62499f43b86838",
+    "genie/TutorPanel.js": "24eb30805fa5b043f7a8dcb63bba903ed7e19bc3b4dcc6e69bdd2977066b66a9",
+    "genie/OutputGuard.js": "a39d8a79bf12a05b4ea9dd347b791f526076211fd9dcb0e0f350cbd11302868f",
+    "app.js": "0fb5c0fa2b3e539a71d8381016d3bfb033b47b36b2988d0527974643a7fe7a00",
+    "scorm.js": "03e0fbe3b3f69ac36297087b92420285ece0cba5957e9d4663468a5ee77edadf",
+    "imsmanifest.xml": "33493cd437d0ddce8e9d23557a2f0508526e95a46072c2abb243b3bec13d9afe",
+    "index.html": "4ccf6054acc26a70b7b16b03ddbe9d0f3afbe3659c7db64f127e147753350c24"
+  },
+  "remainingLimitations": [
+    "No live WebGPU inference was executed on the current v7.2.2 safe build in this audit environment.",
+    "No real institutional Brightspace learner attempt/grade/resume was executed in this audit environment.",
+    "The user previously observed a black-screen/reboot during a real local-LLM query; the current reductions mitigate but cannot guarantee against GPU/driver instability.",
+    "Independent first-principles mathematical audit does not cover all 500 answers; structural/evaluator checks and targeted symbolic certificates are broader but not equivalent to a full independent proof audit.",
+    "Ordering items are structurally validated; this does not prove that no alternative pedagogically valid ordering exists.",
+    "WebLLM runtime/model resources remain external and require network on first preparation.",
+    "Client-side SCORM cannot provide absolute secrecy for embedded bank data."
+  ]
+}

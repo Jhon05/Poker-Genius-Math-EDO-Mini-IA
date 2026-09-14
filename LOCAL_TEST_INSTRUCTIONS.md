@@ -1,8 +1,8 @@
-# Prueba local en Windows — v7.2.1 RC
+# Prueba local en Windows — v7.2.2 modo seguro auditado
 
 ## 1. Preparar la carpeta
 
-Guarda `Poker_Math_EDO_v721_GENIUS_RUNTIME_RC_SCORM12.zip` y usa **Extraer todo**. Trabaja en la carpeta extraída, no dentro del explorador del ZIP. Deben quedar juntos `index.html`, `imsmanifest.xml`, `serve_local.bat`, `serve_local.py`, `genie/`, `bank/` y `assets/`.
+Guarda `Poker_Math_EDO_v722_SAFE_AUDITADA_GITHUB_BRIGHTSPACE_SCORM12.zip` y usa **Extraer todo**. Trabaja en la carpeta extraída, no dentro del explorador del ZIP. Deben quedar juntos `index.html`, `imsmanifest.xml`, `serve_local.bat`, `serve_local.py`, `genie/`, `bank/` y `assets/`.
 
 Se necesita Python 3 para el servidor de prueba. La aplicación del estudiante no requiere Python cuando está publicada en Brightspace. En una terminal comprueba:
 
@@ -38,7 +38,7 @@ En el menú, pulsa **PREPARAR GENIUS**. El panel comprueba contexto, GPU/adaptad
 
 Lee el motivo cuando una comprobación falle. Cada fallo muestra impacto y una acción sugerida; **CONTINUAR SIN IA LOCAL** permite regresar al juego. El modo de respaldo se llama **Guía compatible — sin IA**. No cambia la nota.
 
-Elige un perfil de prueba y pulsa **PREPARAR GENIUS**. Las cifras de descarga son estimaciones y los datos de memoria del registro de modelos no miden tu VRAM libre. No existe un modelo declarado ganador. La sugerencia inicial es conservadora y puede cambiarse manualmente.
+Esta compilación ofrece únicamente **Ligero seguro · Qwen3 0.6B q4f16**. No pruebes 1.7B/4B ni una variante f32. Si este equipo ya mostró pantalla negra, reinicio o pérdida del controlador con Genius local, usa la Guía compatible y no fuerces WebGPU. Si decides continuar una prueba controlada, haz primero una sola consulta breve y espera a que termine.
 
 Durante la descarga y compilación, observa las etapas. Solo hay porcentaje cuando lo comunica el runtime; puede ser progreso global y no porcentaje de bytes. **Cancelar** detiene o termina el Worker; después puede ser necesario volver a preparar. La etiqueta **Genius listo** exige una respuesta interna no vacía y válida del modelo, no solo que termine la descarga.
 
@@ -60,9 +60,9 @@ Con el servidor abierto, entra en:
 http://localhost:8000/validation/benchmark.html
 ```
 
-El benchmark no carga SCORM ni inicia Poker ni envía notas. Activa un candidato y ejecuta **A: 24 conversaciones**. Guarda el JSON. Abre `validation/review.html` y revisa las diez dimensiones de cada caso con la rúbrica. Guarda el archivo revisado y cárgalo nuevamente en el benchmark. Solo una etapa A completa, del mismo modelo, con revisión aprobada habilita B; B aprobada habilita C.
+El benchmark no carga SCORM ni inicia Poker ni envía notas. En v7.2.2 seguro, la interfaz limita la etapa A a **3 conversaciones breves** y bloquea B/C y la cancelación intensiva. Es una sonda, no una certificación. Guarda el JSON. Abre `validation/review.html` y revisa las diez dimensiones de cada caso con la rúbrica. Guarda el archivo revisado y cárgalo nuevamente en el benchmark. Las etapas B/C se conservan en el código histórico de validación, pero están deshabilitadas en esta compilación segura.
 
-B contiene 160 conversaciones. C contiene 20 de 24 turnos; puede tardar bastante. No hay duración prometida: depende de hardware y modelo. La opción de regresión de fórmula prueba explícitamente «No recuerdo la fórmula», «¿por qué?», «No entendí», «Más fácil», «Ponme un ejemplo» y la conexión con el ejercicio.
+Comienza únicamente por una conversación manual corta o por la muestra segura A. La regresión extensa queda deshabilitada en esta compilación; los casos históricos incluían «No recuerdo la fórmula», «¿por qué?», «No entendí», «Más fácil», «Ponme un ejemplo» y la conexión con el ejercicio.
 
 La revisión humana no autentica por sí sola al evaluador; hay que conservar su procedencia y contrastar sus conclusiones. No uses una autoevaluación del mismo modelo como aprobación independiente.
 
@@ -72,7 +72,7 @@ En el benchmark, activa el modelo y guarda **ejecución 1**. Un arranque frío r
 
 Recarga la página, elige exactamente el mismo candidato, vuelve a prepararlo y pulsa **Comparar ejecución 2 tras recarga**. Guarda su JSON. Una carga más rápida no demuestra por sí sola reutilización: el resultado conserva el indicador del runtime, solicitudes observadas y limitaciones de medición.
 
-Ejecuta **Probar cancelación real**. El instrumento intenta una respuesta larga, mide respuesta del hilo principal, cancela y consulta de nuevo. Si termina antes de cancelar, el resultado es inconcluso, no aprobado. Conserva el JSON junto con el de caché y conversaciones. Repite manualmente el botón de interacción y el desplazamiento mientras genera.
+La prueba intensiva **Probar cancelación real** está deshabilitada en v7.2.2 seguro porque provoca carga sostenida. La cancelación normal sigue disponible en el chat y en el panel de preparación.
 
 ## 7. Cuando algo falla
 

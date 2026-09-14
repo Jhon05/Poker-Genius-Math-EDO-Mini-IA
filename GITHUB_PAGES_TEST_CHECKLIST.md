@@ -1,32 +1,14 @@
-# Prueba en GitHub Pages — Poker Math EDO v7.2.1 RC
+# Prueba en GitHub Pages — v7.2.2 seguro auditado
 
-Este mismo paquete puede usarse como **SCORM 1.2 en Brightspace** y como **sitio estático de prueba en GitHub Pages**. En GitHub Pages no existe la API SCORM del LMS: el juego entra deliberadamente en modo **MODO WEB · SIN LMS**, con intentos de práctica locales y sin envío de nota.
+1. Descomprime el ZIP.
+2. Reemplaza el contenido del repositorio manteniendo `index.html`, `.nojekyll`, `genie/`, `bank/`, `assets/`, `validation/` y demás recursos en sus rutas.
+3. Espera el despliegue de Pages y usa la URL HTTPS.
+4. Haz recarga fuerte (`Ctrl+Shift+R`).
+5. Pulsa **PREPARAR GENIUS** y revisa diagnóstico: HTTPS, contexto seguro, WebGPU, adaptador, f16, Worker, IndexedDB y almacenamiento.
+6. Solo está disponible **Ligero seguro · Qwen3 0.6B**.
+7. Si el equipo ya volvió a mostrar pantalla negra/reinicio con esta versión segura, no insistas con WebGPU local.
+8. Si dice **Genius listo**, inicia una partida y realiza **una sola consulta breve**. Espera a que termine.
+9. Si el equipo permanece estable, prueba un segundo turno corto como `¿por qué?`.
+10. Si hay pantalla negra, congelamiento, reinicio o pérdida del controlador: detén la vía local en ese equipo. No pruebes modelos mayores.
 
-## Publicar
-
-1. Extrae todo el ZIP. No subas el ZIP cerrado como contenido del sitio.
-2. Crea un repositorio de prueba en GitHub.
-3. Sube **el contenido extraído manteniendo la estructura y `index.html` en la raíz**. Deben quedar, entre otros: `index.html`, `imsmanifest.xml`, `app.js`, `genie/`, `bank/`, `assets/`, `validation/` y `.nojekyll`.
-4. En **Settings → Pages**, selecciona **Deploy from a branch**, rama `main` y carpeta `/ (root)`.
-5. Abre la URL HTTPS de Pages. No uses una URL `raw.githubusercontent.com` ni el visor de archivos del repositorio.
-
-## Qué debe ocurrir
-
-- La pantalla inicial debe mostrar **MODO WEB · SIN LMS**.
-- `PREPARAR GENIUS` debe reconocer un origen HTTPS seguro.
-- El diagnóstico debe comprobar WebGPU, adaptador, Worker e IndexedDB.
-- Si el dispositivo es compatible, la primera preparación intentará descargar las dependencias externas y el modelo configurado.
-- El temporizador académico no debe comenzar durante la preparación previa.
-- El juego debe funcionar también si Genius local no puede iniciarse, usando la guía compatible sin IA.
-
-## Benchmark
-
-Abre `validation/benchmark.html` bajo la misma URL de Pages, por ejemplo:
-
-`https://USUARIO.github.io/REPOSITORIO/validation/benchmark.html`
-
-Guarda los JSON reales antes de cambiar de modelo o dispositivo.
-
-## Lo que GitHub Pages NO valida
-
-GitHub Pages no valida la API SCORM, intento único institucional, identidad LMS, envío de nota, `Finish` ni comportamiento del iframe de Brightspace. Para ello sube **este mismo ZIP sin modificar** como paquete SCORM 1.2 a una actividad de prueba en Brightspace y sigue `BRIGHTSPACE_TEST_CHECKLIST.md`.
+GitHub Pages no valida API SCORM, identidad LMS, intento único institucional, nota ni `Finish`.

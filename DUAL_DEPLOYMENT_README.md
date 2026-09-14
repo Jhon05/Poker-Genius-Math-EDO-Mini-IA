@@ -1,15 +1,10 @@
-# Paquete dual: GitHub Pages + Brightspace SCORM 1.2
+# Despliegue dual — Poker Math EDO v7.2.2
 
-## Un solo ZIP, dos formas de prueba
+El mismo código sirve para dos pruebas:
 
-### GitHub Pages
-Extrae el ZIP y publica **su contenido** en la raíz del sitio. GitHub Pages lanza `index.html` por HTTPS y el juego opera en modo web sin LMS. Consulta `GITHUB_PAGES_TEST_CHECKLIST.md`.
+- **GitHub Pages:** publicar contenido extraído. Se ejecuta en modo web sin LMS y permite validar HTTPS/WebGPU/runtime sin escribir notas.
+- **Brightspace:** subir el ZIP completo como SCORM 1.2. Detecta la API LMS y conserva identidad, intento, reanudación, nota, informe y cierre.
 
-### Brightspace
-Sube **el ZIP completo tal como se entrega**, sin recomprimir una subcarpeta interior. `imsmanifest.xml` está en la raíz y lanza `index.html` como SCO. Consulta `BRIGHTSPACE_TEST_CHECKLIST.md`.
+`.nojekyll` se conserva deliberadamente para GitHub Pages y también está incluido en el paquete; no interfiere con SCORM.
 
-## Importante
-
-- El mismo código detecta si existe una API SCORM. Si existe, usa el perfil LMS; si no, queda en práctica web/local sin envío de nota.
-- Los pesos del modelo no están incluidos. La RC sigue necesitando acceso a las dependencias externas descritas en `EXTERNAL_DEPENDENCIES.md` para la primera preparación.
-- La versión continúa siendo **release candidate**: inferencia local real y Brightspace real siguen requiriendo prueba en el dispositivo/institución objetivo.
+La IA local es experimental y en esta compilación solo expone Qwen3 0.6B q4f16. No hay escalado automático a modelos mayores.

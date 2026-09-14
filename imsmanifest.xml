@@ -1,19 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
-<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="POKER_MATH_EDO_V721_GENIUS_RUNTIME_RC_SCORM12" version="7.2.1">
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="POKER_MATH_EDO_V722_SAFE_AUDITADA_GITHUB_BRIGHTSPACE_SCORM12" version="7.2.2">
   <metadata>
     <schema>ADL SCORM</schema>
     <schemaversion>1.2</schemaversion>
   </metadata>
   <organizations default="ORG1">
     <organization identifier="ORG1">
-      <title>Poker Math EDO v7.2.1 RC · Genius Runtime · Corte 3 · Banco 500</title>
+      <title>Poker Math EDO v7.2.2 · Genius Math seguro auditado · Corte 3 · Banco 500</title>
       <item identifier="ITEM1" identifierref="RES1">
-        <title>Poker Math EDO · Diagnóstico y tutor generativo · Prueba controlada</title>
+        <title>Poker Math EDO · Genius Math seguro · GitHub Pages y Brightspace</title>
       </item>
     </organization>
   </organizations>
   <resources>
     <resource identifier="RES1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href=".nojekyll" />
       <file href="BANCO_EDO_CORTE3_500_README.md" />
       <file href="BANK_AUDIT_EDO_CORTE3_500.json" />
       <file href="BRIGHTSPACE_TEST_CHECKLIST.md" />
@@ -21,14 +22,19 @@
       <file href="DUAL_DEPLOYMENT_README.md" />
       <file href="EXTERNAL_DEPENDENCIES.md" />
       <file href="GITHUB_PAGES_TEST_CHECKLIST.md" />
+      <file href="GPU_SAFETY_NOTES_V722.md" />
       <file href="INTEGRACION_EDO_CORTE3_500.json" />
       <file href="LOCAL_TEST_INSTRUCTIONS.md" />
       <file href="MODEL_SELECTION_REPORT.md" />
       <file href="README.md" />
       <file href="TEST_RESULTS_V721_GENIUS_RUNTIME.json" />
+      <file href="TEST_RESULTS_V722_DEEP_AUDIT.json" />
       <file href="TEST_RESULTS_V72_GENIUS_GENERATIVE.json" />
       <file href="VALIDACION_DUAL_GITHUB_BRIGHTSPACE.md" />
+      <file href="VALIDACION_V7211_SMOKE_JSON_FIX.md" />
+      <file href="VALIDACION_V7212_SAFE_GPU_HOTFIX.md" />
       <file href="VALIDACION_V721_GENIUS_RUNTIME.md" />
+      <file href="VALIDACION_V722_DEEP_AUDIT.md" />
       <file href="VALIDACION_V72_GENIUS_GENERATIVE.md" />
       <file href="app.js" />
       <file href="assets/chips/chip_0_10.webp" />
@@ -164,17 +170,20 @@
       <file href="validation/CACHE_TEST_RESULTS.json" />
       <file href="validation/CONVERSATION_TEST_RESULTS_V721.json" />
       <file href="validation/CORE_TEST_RESULTS.json" />
+      <file href="validation/DEEP_AUDIT_V722_RESULTS.json" />
       <file href="validation/DUAL_HOSTING_RESULTS.json" />
       <file href="validation/FILE_INVENTORY_V72.json" />
       <file href="validation/FILE_INVENTORY_V721.json" />
       <file href="validation/GENIUS_CAPABILITY_TEST_RESULTS.json" />
       <file href="validation/LIVE_INFERENCE_RESULTS.json" />
+      <file href="validation/LIVE_INFERENCE_RESULTS_V722.json" />
       <file href="validation/LOOP_TEST_RESULTS_V721.json" />
       <file href="validation/MATHEMATICAL_REGRESSION_V721.json" />
       <file href="validation/MATHJAX_WORKER_RESULTS.json" />
       <file href="validation/MATH_AUDIT_RESULTS.json" />
       <file href="validation/MODEL_BENCHMARK_RESULTS.json" />
       <file href="validation/MODEL_BENCHMARK_RESULTS_V721.json" />
+      <file href="validation/MODEL_BENCHMARK_RESULTS_V722.json" />
       <file href="validation/PACKAGE_TEST_RESULTS.json" />
       <file href="validation/PACKAGE_TEST_RESULTS_V721.json" />
       <file href="validation/RELEASE_SOURCE_HASHES_V721.json" />
@@ -183,6 +192,7 @@
       <file href="validation/SAMPLE_REPORT_TEST_FIXTURE.html" />
       <file href="validation/SCORM_API_TEST_RESULTS_V721.json" />
       <file href="validation/SCORM_REGRESSION_RESULTS.json" />
+      <file href="validation/STRESS_AUDIT_V722_RESULTS.json" />
       <file href="validation/WORKER_TEST_RESULTS_V721.json" />
       <file href="validation/audit_math.py" />
       <file href="validation/audit_v72/AUDIT_BEFORE_CHANGE.md" />
@@ -218,6 +228,7 @@
       <file href="validation/test_browser_integration.py" />
       <file href="validation/test_browser_runtime_v721.py" />
       <file href="validation/test_core.cjs" />
+      <file href="validation/test_deep_audit_v722.cjs" />
       <file href="validation/test_dual_hosting.py" />
       <file href="validation/test_math_runtime_v721.py" />
       <file href="validation/test_mathjax.py" />
@@ -226,6 +237,7 @@
       <file href="validation/test_review_server_v721.py" />
       <file href="validation/test_runtime_v721.cjs" />
       <file href="validation/test_scorm_v721.cjs" />
+      <file href="validation/test_stress_v722.cjs" />
     </resource>
   </resources>
 </manifest>

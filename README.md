@@ -1,44 +1,36 @@
-# Despliegue dual de esta entrega
+# Poker Math EDO v7.2.2 — Genius Math seguro auditado
 
-Este mismo proyecto puede probarse de dos maneras: **GitHub Pages (HTTPS, sin LMS)** publicando el contenido extraído, o **Brightspace SCORM 1.2** subiendo el ZIP completo. Consulta `DUAL_DEPLOYMENT_README.md`, `GITHUB_PAGES_TEST_CHECKLIST.md` y `BRIGHTSPACE_TEST_CHECKLIST.md`.
+Paquete dual para **GitHub Pages (HTTPS, sin LMS)** y **Brightspace SCORM 1.2**. Conserva Poker Math EDO, banco de 500 preguntas, portada roja, gráficas, calculadora, guardado/reanudación, intento único LMS, historial, informe y nota original.
 
-# Poker Math EDO v7.2.1 — Genius Runtime RC
+## Por qué existe v7.2.2
 
-**Paquete completo para pruebas controladas.** Conserva el juego, las 500 preguntas, el adaptador SCORM 1.2 y la nota original. Añade diagnóstico, preparación integrada, comprobación de generación real, cancelación controlada y cierre claro de pruebas locales.
+Una prueba real anterior consiguió cargar el LLM ligero local, pero una consulta posterior fue seguida por pantalla negra y reinicio del equipo. La causa no pudo atribuirse con certeza. Esta versión reduce radicalmente la presión del runtime y bloquea perfiles mayores. Consulta `GPU_SAFETY_NOTES_V722.md` y `VALIDACION_V722_DEEP_AUDIT.md`.
 
-No es una certificación de un modelo ni una validación institucional. En la construcción no se ejecutó inferencia real, caché de pesos ni una sesión en Brightspace. Las pruebas con proveedores o LMS instrumentales están identificadas como tales. `recommendedDefault = null`.
+## IA local
 
-## Empezar en Windows
+- Único modelo expuesto: `Qwen3-0.6B-q4f16_1-MLC`.
+- WebGPU + `shader-f16` obligatorios.
+- Una sola inferencia por turno.
+- Sin regeneraciones ni segunda inferencia para antibucles.
+- Contexto y salida limitados.
+- Watchdog, cancelación y liberación de GPU en segundo plano.
+- La guía determinista existe como **Guía compatible — sin IA** y nunca se presenta como LLM.
 
-Extrae **todo** el ZIP en una carpeta. Con Python 3 instalado, ejecuta `serve_local.bat`. Abre `http://localhost:8000/`; no abras `index.html` mediante doble clic. La preparación desde el menú no crea un intento ni inicia la hora. Consulta **LOCAL_TEST_INSTRUCTIONS.md**.
+La primera carga todavía necesita recursos externos; no hay pesos dentro del ZIP. `recommendedDefault` continúa sin ser una certificación pedagógica.
 
-La descarga del runtime JavaScript sigue siendo externa y está fijada a WebLLM 0.2.85. La biblioteca WASM, el tokenizador y los pesos también son externos. **No hay pesos dentro del ZIP.** El intento de incorporar el runtime al paquete falló por resolución de nombres en el entorno de construcción; no se ocultó esta dependencia. Véase **EXTERNAL_DEPENDENCIES.md**.
+## GitHub Pages
 
-## Documentos de esta entrega
+Extrae el contenido del ZIP y publícalo con `index.html` y `.nojekyll` en la raíz. Usa HTTPS. Sigue `GITHUB_PAGES_TEST_CHECKLIST.md`.
 
-| Archivo | Contenido |
-|---|---|
-| `VALIDACION_V721_GENIUS_RUNTIME.md` | Cambios, evidencia, alcance y límites. |
-| `TEST_RESULTS_V721_GENIUS_RUNTIME.json` | Resumen automático de las suites y pruebas pendientes. |
-| `LOCAL_TEST_INSTRUCTIONS.md` | Preparación, prueba y cierre local en Windows. |
-| `BRIGHTSPACE_TEST_CHECKLIST.md` | Publicación y verificación real en el LMS. |
-| `MODEL_SELECTION_REPORT.md` | Candidatos; ninguna selección pedagógica declarada sin datos. |
-| `validation/BENCHMARK_RUBRIC.md` | Protocolo por etapas y evaluación humana. |
-| `validation/benchmark.html` | Ejecución real en el dispositivo objetivo, independiente de las notas. |
-| `validation/review.html` | Formulario local para revisar y conservar transcripciones. |
-| `validation/*RESULTS*.json` | Resultados detallados, clasificados por tipo de evidencia. |
-| `validation/audit_v72/` | Auditoría de la base y evidencia histórica identificada. |
+## Brightspace
 
-Los archivos que llevan **V72**, `legacy_validation/` y `validation/audit_v72/original/` son antecedentes, no resultados actuales de v7.2.1. Los informes originales se conservaron por trazabilidad.
+Sube **el ZIP completo sin recomprimir** como SCORM 1.2 a una actividad nueva de prueba. Sigue `BRIGHTSPACE_TEST_CHECKLIST.md`.
 
-## Publicación
+## Evidencia
 
-El `imsmanifest.xml` está en la raíz. Sube el ZIP como **una actividad nueva de prueba**; no sustituyas una evaluación activa. Para el estudiante LMS se conserva un solo intento. Las prácticas locales, la vista previa y los perfiles sin seguimiento permiten cerrar un intento conservando su informe y volver al menú.
+- `VALIDACION_V722_DEEP_AUDIT.md`
+- `GPU_SAFETY_NOTES_V722.md`
+- `validation/DEEP_AUDIT_V722_RESULTS.json`
+- resultados de suites bajo `validation/`
 
-## Desarrollo y reproducción
-
-`genie/config.js` centraliza modelo, perfiles y configuración. Las pruebas de desarrollo usan Node.js, Python, Playwright/Chromium y SymPy según cada suite; estas herramientas no son necesarias para el estudiante. `tools/package_scorm.py` regenera el manifiesto y el ZIP sin bibliotecas externas. `tools/vendor_runtime.py` permite incorporar el runtime solo después de descargar y verificar sus archivos reales y su licencia. No incluye claves privadas.
-
-
-## v7.2.1.1 RC2 — smoke JSON fix
-Se corrigió el parámetro `enable_thinking` de WebLLM y se robusteció el parser de salida estructurada tras una prueba real en GitHub Pages donde Qwen3 0.6B alcanzó el smoke test pero devolvió JSON no parseable. Ver `VALIDACION_V7211_SMOKE_JSON_FIX.md`.
+Los documentos V72/V721 anteriores se conservan como antecedentes y no sustituyen esta auditoría.

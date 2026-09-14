@@ -227,14 +227,14 @@
       <p id="genieEngineNote" class="genius-engine-note"></p>
       <details id="genieModeDetails" class="genius-model-details" open><summary>Modelo y conexión</summary>
         <p>El tutor local genera respuestas en este equipo. Su primera activación descarga el programa y los pesos desde servidores externos; requiere HTTPS, WebGPU y memoria suficiente. La caché puede ser eliminada por el navegador.</p>
-        <label for="genieProfile">Perfil del modelo</label><select id="genieProfile"><option value="light">Ligero · Qwen3 0.6B</option><option value="standard">Estándar · Qwen3 1.7B</option><option value="advanced">Avanzado · Qwen3 4B</option></select>
+        <label for="genieProfile">Perfil del modelo</label><select id="genieProfile" aria-label="Perfil seguro de Genius"></select>
         <p class="genius-download-note">Descarga orientativa, no medida: 0,5 / 1,2 / 2,6 GB. No está incluida en este ZIP. Elegir un modelo mayor no garantiza mayor exactitud.</p>
         <button id="genieLoadBtn" type="button" class="primary-btn">ACTIVAR IA LOCAL</button><button id="genieCloudBtn" type="button" class="secondary-btn hidden">CONECTAR IA REMOTA</button>
       </details>
       <div class="genius-reference-toggle"><button id="genieGuideBtn" type="button" class="secondary-btn">Consultar fórmulas sin IA</button></div>
       <div id="genieReference" class="genius-reference hidden"></div>
       <div id="genieChat" class="genius-chat" role="log" aria-live="polite" aria-relevant="additions" aria-label="Conversación con Genius"></div>
-      <form id="genieForm" class="genius-form"><label for="genieInput">Tu duda o procedimiento</label><textarea id="genieInput" rows="3" maxlength="2400" placeholder="Puedes empezar con: no sé cómo comenzar…" aria-describedby="genieKeyboardNote"></textarea><small id="genieKeyboardNote">Enter envía · Shift+Enter añade una línea</small><div class="genius-form-actions"><button id="genieSendBtn" type="submit" class="primary-btn">ENVIAR</button><button id="genieCancelBtn" type="button" class="secondary-btn hidden">CANCELAR</button></div></form>
+      <form id="genieForm" class="genius-form"><label for="genieInput">Tu duda o procedimiento</label><textarea id="genieInput" rows="3" maxlength="900" placeholder="Puedes empezar con: no sé cómo comenzar…" aria-describedby="genieKeyboardNote"></textarea><small id="genieKeyboardNote">Enter envía · Shift+Enter añade una línea</small><div class="genius-form-actions"><button id="genieSendBtn" type="submit" class="primary-btn">ENVIAR</button><button id="genieCancelBtn" type="button" class="secondary-btn hidden">CANCELAR</button></div></form>
       <div id="genieStatus" class="genius-status" role="status"></div><button id="genieReadyBtn" type="button" class="secondary-btn">VOLVER A MI RESPUESTA</button>
     </section>
 

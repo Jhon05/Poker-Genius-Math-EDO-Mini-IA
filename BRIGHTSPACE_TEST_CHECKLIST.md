@@ -26,6 +26,11 @@
 
 No borres almacenamiento ni reutilices la misma cuenta evaluada para forzar intentos. Usa cuentas y actividades de prueba. La seguridad absoluta contra manipular código cliente no es una propiedad de SCORM; para evaluación de alto impacto se requiere control institucional y, si procede, validación de servidor.
 
+
+## Seguridad GPU de v7.2.2
+
+Esta compilación solo expone `Qwen3-0.6B-q4f16_1-MLC`, exige `shader-f16` y no escala a modelos mayores. Primero valida el mismo equipo en GitHub Pages/HTTPS con una consulta corta. Si ese equipo presenta pantalla negra, reinicio, pérdida del controlador o congelamiento gráfico, **no pruebes el LLM local dentro de Brightspace**; usa la Guía compatible. La disponibilidad de WebGPU no garantiza estabilidad bajo carga sostenida.
+
 ## Genius dentro del reproductor
 
 Abre el panel y exporta el diagnóstico **dentro del iframe real**. Revisa origen, `isSecureContext`, disponibilidad de WebGPU, resultado de `requestAdapter()`, Worker del paquete, capacidad GPU en el Worker, IndexedDB transaccional y cuota estimada. El éxito fuera del LMS no asegura el éxito dentro de su reproductor.
