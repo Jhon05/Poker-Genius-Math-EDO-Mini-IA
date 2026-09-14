@@ -3,7 +3,7 @@
 const node=(tag,attrs={},text)=>{const e=document.createElement(tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,v);if(text!==undefined)e.textContent=text;return e};
 const root=node('div',{id:'geniusCapabilityOverlay',class:'genius-cap-overlay',hidden:''});
 root.innerHTML=`<section class="genius-cap-dialog" role="dialog" aria-modal="true" aria-labelledby="geniusCapTitle" aria-describedby="geniusCapIntro" tabindex="-1">
-<header class="genius-cap-header"><div><p class="genius-eyebrow">POKER EDO · GENIUS MATH · v7.2.2.1 SAFE</p><h2 id="geniusCapTitle">Prepara tu tutor</h2></div><button id="geniusCapClose" class="genius-icon-btn" aria-label="Cerrar panel de compatibilidad">×</button></header>
+<header class="genius-cap-header"><div><p class="genius-eyebrow">POKER EDO · GENIUS MATH · v7.2.2.2 SAFE</p><h2 id="geniusCapTitle">Prepara tu tutor</h2></div><button id="geniusCapClose" class="genius-icon-btn" aria-label="Cerrar panel de compatibilidad">×</button></header>
 <div class="genius-cap-scroll"><p id="geniusCapIntro">Comprueba este equipo antes de descargar el modelo. La preparación desde el menú no consume la hora de juego.</p>
 <div id="geniusCapabilitySummary" class="genius-cap-summary" role="status" aria-live="polite">Comprobando el dispositivo…</div>
 <div class="genius-cap-columns"><section><h3>Comprobación del dispositivo</h3><ul id="geniusCapabilityChecks" class="genius-checks" aria-label="Pruebas de compatibilidad"></ul></section>

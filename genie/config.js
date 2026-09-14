@@ -1,5 +1,5 @@
 (()=>{'use strict'; const G=window.GeniusMath=window.GeniusMath||{};
-G.config={version:'7.2.2-safe-audited',productName:'Genius Math',language:'es',provider:'local',
+G.config={version:'7.2.2.2-safe-workerfix',productName:'Genius Math',language:'es',provider:'local',
  noPenaltyForOffTopic:true,revealAnswer:false,maxMessageChars:700,maxRecentMessages:2,
  maxToolRounds:0,maxRegenerations:0,maxOutputTokens:128,firstTurnMaxOutputTokens:112,contextCharBudget:2600,safeMode:true,
  localModel:{enabled:true,worker:'genie/GenieWorker.js',runtimeURL:'https://esm.run/@mlc-ai/web-llm@0.2.85',
@@ -14,8 +14,10 @@ G.config={version:'7.2.2-safe-audited',productName:'Genius Math',language:'es',p
 let scriptURL='http://localhost/genie/config.js';
 try{if(typeof document!=='undefined')scriptURL=document.currentScript?.src||new URL('genie/config.js',document.baseURI).href}catch(_){}
 G.config.packageRoot=new URL('../',scriptURL).href;
-G.config.localModel.worker=new URL('genie/GenieWorker.js',G.config.packageRoot).href;
-G.config.localModel.probeWorker=new URL('genie/CapabilityWorker.js',G.config.packageRoot).href;
+G.config.buildId='72222safe';
+G.config.workerProbeVersion='7.2.2.2';
+G.config.localModel.worker=new URL('genie/GenieWorker.js?v='+G.config.buildId,G.config.packageRoot).href;
+G.config.localModel.probeWorker=new URL('genie/CapabilityWorker.js?v='+G.config.buildId,G.config.packageRoot).href;
 G.config.localModel.runtimeVersion='0.2.85';
 G.config.localModel.runtimeBundled=false;
 G.config.localModel.smokeTimeoutMs=30000;
