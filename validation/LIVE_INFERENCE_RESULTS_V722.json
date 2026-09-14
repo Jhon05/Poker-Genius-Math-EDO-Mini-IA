@@ -1,0 +1,8 @@
+{
+  "version": "7.2.2-safe-audited",
+  "executed": false,
+  "liveInferenceExecuted": false,
+  "realBrowserGPU": false,
+  "realBrightspaceExecuted": false,
+  "reason": "This audit environment did not execute authorized WebGPU inference. A prior user-side build had a successful real smoke generation, followed by a later black-screen/reboot during a real query; the present safer build still requires target-device validation."
+}

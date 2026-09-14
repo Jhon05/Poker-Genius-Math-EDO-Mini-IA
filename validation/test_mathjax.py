@@ -10,6 +10,6 @@ async def main():
   # Evaluate the original module worker in a Blob solely to test its real ping handler.
   worker_code=(ROOT/'genie/GenieWorker.js').read_text()
   ping=await page.evaluate('''async(code)=>{try{return await new Promise(resolve=>{const url=URL.createObjectURL(new Blob([code],{type:'text/javascript'}));const w=new Worker(url,{type:'module'});const timeout=setTimeout(()=>{w.terminate();URL.revokeObjectURL(url);resolve({status:'timeout'})},3000);w.onmessage=e=>{clearTimeout(timeout);w.terminate();URL.revokeObjectURL(url);resolve({status:'passed',reply:e.data})};w.onerror=e=>{clearTimeout(timeout);w.terminate();resolve({status:'blocked',message:e.message})};w.postMessage({id:1,type:'ping'})})}catch(e){return{status:'blocked',message:e.message}}}''',worker_code)
-  out={'version':'7.2.1-rc1','kind':'MathJax_parse_only_not_mathematical_proof','mathjax':r,'worker_ping':ping,'pageErrors':errors,'liveModelInference':False}
+  out={'version':'7.2.2-safe-audited','kind':'MathJax_parse_only_not_mathematical_proof','mathjax':r,'worker_ping':ping,'pageErrors':errors,'liveModelInference':False}
   (ROOT/'validation/MATHJAX_WORKER_RESULTS.json').write_text(json.dumps(out,ensure_ascii=False,indent=2));print(json.dumps(out,ensure_ascii=False,indent=2));await b.close()
 asyncio.run(main())

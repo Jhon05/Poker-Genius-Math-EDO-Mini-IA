@@ -1,15 +1,15 @@
 {
-  "version": "7.2.1-rc1",
+  "version": "7.2.2-safe-audited",
   "kind": "STATIC_PACKAGE_AND_SOURCE_REGRESSION",
   "executed": true,
   "liveInferenceExecuted": false,
   "realBrightspaceExecuted": false,
   "xmlSchemaXSDValidation": "not_run_no_official_local_xsd_supplied",
-  "total": 470,
-  "passed": 470,
+  "total": 484,
+  "passed": 484,
   "failed": [],
   "preservedResourceCount": 76,
-  "packageFileCount": 213,
+  "packageFileCount": 225,
   "results": [
     {
       "name": "one_SCORM12_sco",
@@ -42,6 +42,10 @@
       "extra": []
     },
     {
+      "name": "manifest_resource:.nojekyll",
+      "pass": true
+    },
+    {
       "name": "manifest_resource:BANCO_EDO_CORTE3_500_README.md",
       "pass": true
     },
@@ -70,6 +74,10 @@
       "pass": true
     },
     {
+      "name": "manifest_resource:GPU_SAFETY_NOTES_V722.md",
+      "pass": true
+    },
+    {
       "name": "manifest_resource:INTEGRACION_EDO_CORTE3_500.json",
       "pass": true
     },
@@ -90,6 +98,10 @@
       "pass": true
     },
     {
+      "name": "manifest_resource:TEST_RESULTS_V722_DEEP_AUDIT.json",
+      "pass": true
+    },
+    {
       "name": "manifest_resource:TEST_RESULTS_V72_GENIUS_GENERATIVE.json",
       "pass": true
     },
@@ -98,7 +110,19 @@
       "pass": true
     },
     {
+      "name": "manifest_resource:VALIDACION_V7211_SMOKE_JSON_FIX.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:VALIDACION_V7212_SAFE_GPU_HOTFIX.md",
+      "pass": true
+    },
+    {
       "name": "manifest_resource:VALIDACION_V721_GENIUS_RUNTIME.md",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:VALIDACION_V722_DEEP_AUDIT.md",
       "pass": true
     },
     {
@@ -642,6 +666,10 @@
       "pass": true
     },
     {
+      "name": "manifest_resource:validation/DEEP_AUDIT_V722_RESULTS.json",
+      "pass": true
+    },
+    {
       "name": "manifest_resource:validation/DUAL_HOSTING_RESULTS.json",
       "pass": true
     },
@@ -659,6 +687,10 @@
     },
     {
       "name": "manifest_resource:validation/LIVE_INFERENCE_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/LIVE_INFERENCE_RESULTS_V722.json",
       "pass": true
     },
     {
@@ -683,6 +715,10 @@
     },
     {
       "name": "manifest_resource:validation/MODEL_BENCHMARK_RESULTS_V721.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/MODEL_BENCHMARK_RESULTS_V722.json",
       "pass": true
     },
     {
@@ -715,6 +751,10 @@
     },
     {
       "name": "manifest_resource:validation/SCORM_REGRESSION_RESULTS.json",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/STRESS_AUDIT_V722_RESULTS.json",
       "pass": true
     },
     {
@@ -858,6 +898,10 @@
       "pass": true
     },
     {
+      "name": "manifest_resource:validation/test_deep_audit_v722.cjs",
+      "pass": true
+    },
+    {
       "name": "manifest_resource:validation/test_dual_hosting.py",
       "pass": true
     },
@@ -887,6 +931,10 @@
     },
     {
       "name": "manifest_resource:validation/test_scorm_v721.cjs",
+      "pass": true
+    },
+    {
+      "name": "manifest_resource:validation/test_stress_v722.cjs",
       "pass": true
     },
     {
@@ -1505,12 +1553,22 @@
       "error": null
     },
     {
+      "name": "javascript_parse:validation/test_deep_audit_v722.cjs",
+      "pass": true,
+      "error": null
+    },
+    {
       "name": "javascript_parse:validation/test_runtime_v721.cjs",
       "pass": true,
       "error": null
     },
     {
       "name": "javascript_parse:validation/test_scorm_v721.cjs",
+      "pass": true,
+      "error": null
+    },
+    {
+      "name": "javascript_parse:validation/test_stress_v722.cjs",
       "pass": true,
       "error": null
     },
@@ -1631,283 +1689,11 @@
       "pass": true
     },
     {
-      "name": "preserved_sha256:assets/chips/chip_0_10.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/chips/chip_0_20.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/chips/chip_0_50.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/chips/chip_1_00.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/flop_01.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/flop_02.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/flop_03.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/flop_04.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/flop_05.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/flop_06.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/flop_07.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/flop_08.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/flop_09.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/flop_10.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/preflop_01.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/preflop_02.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/preflop_03.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/preflop_04.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/preflop_05.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/preflop_06.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/preflop_07.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/preflop_08.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/preflop_09.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/preflop_10.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/recovery_01.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/recovery_02.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/recovery_03.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/recovery_04.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/recovery_05.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/river_01.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/river_02.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/river_03.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/river_04.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/river_05.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/showdown_01.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/showdown_02.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/showdown_03.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/showdown_04.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/showdown_05.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/special_41.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/turn_01.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/turn_02.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/turn_03.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/turn_04.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/emotions/turn_05.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/poker_ecomat_logo.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/poker_ecomat_red_table.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/roles/big_blind_blue.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/roles/dealer_white.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/roles/small_blind_yellow.webp",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_CENTER.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_CIRCUIT_DECAY.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_COUPLED_MODES.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_DUHAMEL_FORCED.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_IMPULSE_RESPONSE.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_LAP_PERIODIC.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_LAP_PIECEWISE.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_NODE_STABLE.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_SADDLE.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_SPIRAL_STABLE.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_SPIRAL_UNSTABLE.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_STEP_RESPONSE.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_SYSTEM_IMPULSE.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_SYSTEM_RESPONSE.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:assets/tikz/svg/G_TWO_TANKS.svg",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:bank/base_bank.js",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:bank/extended_bank.js",
-      "pass": true
-    },
-    {
       "name": "preserved_sha256:interactive_graphs.js",
       "pass": true
     },
     {
-      "name": "preserved_sha256:mathjax/LICENSE",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:mathjax/tex-svg-full.js",
+      "name": "preserved_sha256:reino_calculator_bridge.js",
       "pass": true
     },
     {
@@ -1919,19 +1705,291 @@
       "pass": true
     },
     {
-      "name": "preserved_sha256:reino_calculator/calculator.html",
-      "pass": true
-    },
-    {
-      "name": "preserved_sha256:reino_calculator_bridge.js",
-      "pass": true
-    },
-    {
       "name": "preserved_sha256:scorm.js",
       "pass": true
     },
     {
       "name": "preserved_sha256:styles.css",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:mathjax/LICENSE",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:mathjax/tex-svg-full.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:reino_calculator/calculator.html",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/poker_ecomat_red_table.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/poker_ecomat_logo.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:bank/base_bank.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:bank/extended_bank.js",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/roles/dealer_white.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/roles/big_blind_blue.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/roles/small_blind_yellow.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/chips/chip_0_50.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/chips/chip_0_20.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/chips/chip_1_00.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/chips/chip_0_10.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/showdown_04.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/showdown_02.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_08.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_02.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/turn_05.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_06.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/recovery_01.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_09.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/showdown_03.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_10.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/recovery_02.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/river_05.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_04.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/recovery_05.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/recovery_03.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_10.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/river_04.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/river_03.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_08.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_02.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/recovery_04.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_05.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_06.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/turn_01.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_01.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_03.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_03.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_01.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_07.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/river_02.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/river_01.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_05.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_07.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/showdown_05.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/flop_09.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/special_41.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/turn_02.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/showdown_01.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/preflop_04.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/turn_04.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/emotions/turn_03.webp",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_TWO_TANKS.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_LAP_PERIODIC.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_SYSTEM_IMPULSE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_SADDLE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_STEP_RESPONSE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_CENTER.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_IMPULSE_RESPONSE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_SPIRAL_UNSTABLE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_SYSTEM_RESPONSE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_NODE_STABLE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_DUHAMEL_FORCED.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_LAP_PIECEWISE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_CIRCUIT_DECAY.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_SPIRAL_STABLE.svg",
+      "pass": true
+    },
+    {
+      "name": "preserved_sha256:assets/tikz/svg/G_COUPLED_MODES.svg",
       "pass": true
     },
     {

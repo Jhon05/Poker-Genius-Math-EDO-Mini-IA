@@ -1,5 +1,5 @@
 {
-  "version": "7.2.1-rc1",
+  "version": "7.2.2-safe-audited",
   "kind": "BROWSER_DOM_WITH_EXPLICIT_STORAGE_AND_LMS_FIXTURES",
   "executed": true,
   "liveInferenceExecuted": false,
@@ -49,11 +49,11 @@
       "pass_": true
     },
     {
-      "name": "all_profiles_selectable",
+      "name": "only_safe_light_profile_exposed",
       "pass_": true
     },
     {
-      "name": "not_blind_standard",
+      "name": "no_large_model_options_in_safe_build",
       "pass_": true
     },
     {
@@ -65,7 +65,7 @@
       "pass_": true
     },
     {
-      "name": "manual_model_switch",
+      "name": "safe_model_is_06b",
       "pass_": true
     },
     {

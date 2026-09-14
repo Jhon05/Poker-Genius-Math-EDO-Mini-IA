@@ -1,5 +1,5 @@
 {
-  "version": "7.2.1-rc1",
+  "version": "7.2.2-safe-audited",
   "kind": "EXACT_ADAPTER_WITH_EXPLICIT_LMS_API_FIXTURES",
   "executed": true,
   "realBrightspaceExecuted": false,

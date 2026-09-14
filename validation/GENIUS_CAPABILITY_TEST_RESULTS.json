@@ -1,8 +1,8 @@
 {
-  "version": "7.2.1-rc1",
+  "version": "7.2.2-safe-audited",
   "kind": "actual_browser_capability_probe",
   "executed": true,
-  "at": "2026-09-13T22:16:35.226Z",
+  "at": "2026-09-14T00:04:18.317Z",
   "environment": {
     "protocol": "about:",
     "origin": "null",
@@ -25,7 +25,7 @@
       "code": "UNSUPPORTED_ORIGIN",
       "value": null,
       "impact": "El runtime modular y el almacenamiento del modelo necesitan un origen web válido.",
-      "remedy": "Usa un origen web válido: HTTPS (por ejemplo GitHub Pages o Brightspace) o localhost. Para prueba local, extrae el ZIP y abre http://localhost:8000/ mediante serve_local.py; no abras index.html con doble clic.",
+      "remedy": "Usa HTTPS (GitHub Pages/Brightspace) o localhost. No abras index.html con doble clic.",
       "continueWithoutAI": true
     },
     {
@@ -37,7 +37,19 @@
       "code": "SECURECONTEXT",
       "value": null,
       "impact": "",
-      "remedy": "Usa HTTPS o localhost; el administrador debe comprobar también el contexto del iframe.",
+      "remedy": "Usa HTTPS o localhost; en Brightspace revisa también el contexto del iframe.",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "systemMemory",
+      "label": "Memoria del equipo",
+      "status": "warning",
+      "message": "El navegador no expone navigator.deviceMemory; no se puede estimar RAM disponible.",
+      "required": false,
+      "code": "SYSTEM_MEMORY_UNKNOWN",
+      "value": null,
+      "impact": "",
+      "remedy": "La prueba seguirá con límites conservadores; si el equipo ya mostró pantalla negra, no uses IA local.",
       "continueWithoutAI": true
     },
     {
@@ -48,8 +60,8 @@
       "required": true,
       "code": "WEBGPU_UNAVAILABLE",
       "value": null,
-      "impact": "No se puede ejecutar este proveedor local sin WebGPU.",
-      "remedy": "Prueba un navegador actualizado con aceleración gráfica habilitada. Consulta el diagnóstico GPU del navegador; también puedes jugar con la Guía compatible.",
+      "impact": "No se puede ejecutar el proveedor local WebGPU.",
+      "remedy": "Usa un navegador actualizado con aceleración gráfica habilitada o continúa con la Guía compatible.",
       "continueWithoutAI": true
     },
     {
@@ -61,7 +73,19 @@
       "code": "ADAPTER_UNAVAILABLE",
       "value": null,
       "impact": "",
-      "remedy": "Revisa aceleración gráfica, controladores y políticas del navegador. No hay información suficiente para atribuirlo a una GPU concreta.",
+      "remedy": "Revisa aceleración gráfica, controladores y políticas del navegador.",
+      "continueWithoutAI": true
+    },
+    {
+      "id": "f16",
+      "label": "Precisión f16 segura",
+      "status": "fail",
+      "message": "Este modo seguro no cargará la variante f32, que consume más memoria.",
+      "required": true,
+      "code": "F16_REQUIRED_SAFE_MODE",
+      "value": null,
+      "impact": "Se evita una ruta de mayor consumo en un equipo sin shader-f16.",
+      "remedy": "Continúa con la Guía compatible o prueba otro equipo con shader-f16.",
       "continueWithoutAI": true
     },
     {
@@ -73,7 +97,7 @@
       "code": "WORKER_UNAVAILABLE",
       "value": null,
       "impact": "",
-      "remedy": "Revisa worker-src/CSP, rutas y archivos .js servidos correctamente. El iframe debe permitir cargar el Worker de este origen.",
+      "remedy": "Revisa worker-src/CSP, rutas y archivos .js servidos correctamente.",
       "continueWithoutAI": true
     },
     {
@@ -85,7 +109,7 @@
       "code": "INDEXEDDB_BLOCKED",
       "value": null,
       "impact": "No se puede garantizar almacenamiento de pesos y conversación.",
-      "remedy": "Permite almacenamiento para este origen. Revisa modo privado y restricciones del iframe. No borres el historial de Poker.",
+      "remedy": "Permite almacenamiento para este origen. Revisa modo privado y restricciones del iframe.",
       "continueWithoutAI": true
     },
     {
@@ -97,7 +121,7 @@
       "code": "STORAGE_ESTIMATE_UNAVAILABLE",
       "value": null,
       "impact": "",
-      "remedy": "La carga seguirá sujeta al espacio que realmente conceda el navegador.",
+      "remedy": "La carga seguirá sujeta al espacio que conceda el navegador.",
       "continueWithoutAI": true
     },
     {
@@ -121,7 +145,7 @@
       "code": "OFFLINE",
       "value": true,
       "impact": "",
-      "remedy": "Para la primera descarga necesitas red. Una caché parcial no garantiza funcionamiento sin conexión.",
+      "remedy": "La primera descarga necesita red. Una caché parcial no garantiza ejecución sin conexión.",
       "continueWithoutAI": true
     },
     {
@@ -141,14 +165,14 @@
         "parentOrigin": "null"
       },
       "impact": "",
-      "remedy": "Compara el diagnóstico en una pestaña de prueba y en el reproductor LMS. El administrador debe revisar políticas y almacenamiento de terceros.",
+      "remedy": "Compara el diagnóstico en una pestaña y en el reproductor LMS.",
       "continueWithoutAI": true
     },
     {
       "id": "policy",
       "label": "Políticas detectables",
       "status": "unknown",
-      "message": "CSP completa y políticas del padre no siempre son legibles; se registrarán los bloqueos observados.",
+      "message": "CSP y políticas del padre no siempre son legibles; se registrarán los bloqueos observados.",
       "required": false,
       "code": "POLICY",
       "value": {
@@ -157,7 +181,7 @@
         "sandbox": null
       },
       "impact": "",
-      "remedy": "Revisa consola, CSP connect-src/script-src/worker-src, WebAssembly y permisos efectivos; no se presupone una directiva WebGPU universal.",
+      "remedy": "Revisa consola, CSP, WebAssembly y permisos efectivos si la preparación falla.",
       "continueWithoutAI": true
     },
     {
@@ -176,7 +200,7 @@
       "id": "modelConfig",
       "label": "Servidor y configuración del modelo",
       "status": "unknown",
-      "message": "El acceso a configuración, registro y servidor de pesos se comprobará durante la preparación.",
+      "message": "El acceso a configuración y servidor de pesos se comprobará durante la preparación.",
       "required": false,
       "code": "MODEL_RESOURCES_PENDING",
       "value": null,
@@ -193,7 +217,7 @@
   "supported": false,
   "recommendation": {
     "profile": "light",
-    "rule": "unknown_or_conservative",
+    "rule": "safe_mode_only_available_profile",
     "kind": "conservative_hardware_trial_not_quality_selection",
     "recommendedDefault": null,
     "inputs": {
@@ -201,8 +225,8 @@
       "limits": {},
       "availableBytes": null
     },
-    "reason": "Prueba conservadora: memoria GPU libre no medible o recursos limitados. Puedes elegir otro perfil.",
-    "policy": "PROFILE_POLICY.md"
+    "reason": "Modo de estabilidad: solo se ofrece el perfil ligero auditado; no se escalan modelos automáticamente.",
+    "policy": "SAFE_GPU_POLICY_V722"
   },
   "durationMs": 3,
   "measurementUnavailableReason": {

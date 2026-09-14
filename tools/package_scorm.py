@@ -14,7 +14,7 @@ def included_paths():
         rel=p.relative_to(ROOT)
         if p.is_symlink():
             raise ValueError(f'No se permiten enlaces simbólicos: {rel}')
-        if not p.is_file() or any(x.startswith('.') or x=='__pycache__' for x in rel.parts):
+        if not p.is_file() or any((x.startswith('.') and x!='.nojekyll') or x=='__pycache__' for x in rel.parts):
             continue
         if p.suffix.lower() in {'.pyc','.pyo','.zip'}:
             continue
@@ -23,11 +23,11 @@ def included_paths():
 def manifest():
     path=ROOT/'imsmanifest.xml'
     tree=ET.parse(path);root=tree.getroot()
-    root.set('identifier','POKER_MATH_EDO_V721_GENIUS_RUNTIME_RC_SCORM12');root.set('version','7.2.1')
+    root.set('identifier','POKER_MATH_EDO_V722_SAFE_AUDITADA_GITHUB_BRIGHTSPACE_SCORM12');root.set('version','7.2.2')
     org=tree.find(f'.//{{{CP}}}organization/{{{CP}}}title')
-    org.text='Poker Math EDO v7.2.1 RC · Genius Runtime · Corte 3 · Banco 500'
+    org.text='Poker Math EDO v7.2.2 · Genius Math seguro auditado · Corte 3 · Banco 500'
     item=tree.find(f'.//{{{CP}}}item/{{{CP}}}title')
-    item.text='Poker Math EDO · Diagnóstico y tutor generativo · Prueba controlada'
+    item.text='Poker Math EDO · Genius Math seguro · GitHub Pages y Brightspace'
     res=tree.find(f'.//{{{CP}}}resource')
     if res is None or res.get('href')!='index.html':raise ValueError('El lanzamiento debe ser index.html.')
     for child in list(res):
@@ -39,7 +39,7 @@ def manifest():
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--manifest-only',action='store_true')
-    ap.add_argument('--output',type=Path,default=ROOT.parent/'Poker_Math_EDO_v721_GENIUS_RUNTIME_RC_SCORM12.zip')
+    ap.add_argument('--output',type=Path,default=ROOT.parent/'Poker_Math_EDO_v722_SAFE_AUDITADA_GITHUB_BRIGHTSPACE_SCORM12.zip')
     args=ap.parse_args();manifest()
     if args.manifest_only:print('Manifiesto actualizado.');return
     dest=args.output.expanduser().resolve()

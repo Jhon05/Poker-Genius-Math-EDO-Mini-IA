@@ -1,5 +1,5 @@
 {
-  "version": "7.2.1-rc1",
+  "version": "7.2.2-safe-audited",
   "tool": "sympy 1.14.0",
   "kind": "EXACT_SYMBOLIC_CERTIFICATES_NOT_LLM",
   "executed": true,

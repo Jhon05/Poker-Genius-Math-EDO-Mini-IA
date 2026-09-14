@@ -1,5 +1,5 @@
 {
-  "version": "7.2.1-rc1",
+  "version": "7.2.2-safe-audited",
   "kind": "infrastructure_and_exact_math",
   "executed": true,
   "liveModelInference": false,
@@ -14408,7 +14408,7 @@
       "category": "unit"
     },
     {
-      "name": "strategy_after_two_failures",
+      "name": "strategy_changes_after_failed_explanation",
       "pass": true,
       "category": "unit"
     },
@@ -14418,7 +14418,7 @@
       "category": "unit"
     },
     {
-      "name": "loop_semantic_rpc_fixture",
+      "name": "safe_mode_has_no_second_semantic_inference",
       "pass": true,
       "category": "provider_fixture_not_inference"
     },
@@ -14438,7 +14438,7 @@
       "category": "unit"
     },
     {
-      "name": "loop_regenerate_transport_fixture",
+      "name": "loop_uses_single_inference_then_safe_fallback",
       "pass": true,
       "category": "provider_fixture_not_inference"
     },

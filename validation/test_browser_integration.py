@@ -105,6 +105,6 @@ async def main():
   await mobile.locator('#genieGuideBtn').click();await mobile.wait_for_timeout(150);await mobile.screenshot(path=str(EVIDENCE/'mobile_guide.png'));await mobile.locator('#genieCloseBtn').click();record('Mobile_panel_closes',not await mobile.locator('#geniePanel').is_visible())
   record('Mobile_no_errors',not merrors,errors=merrors)
   await b.close()
- out={'version':'7.2.1-rc1','environment':'Chromium offline DOM injection. localStorage and LMS are explicit fixtures. No navigation/reload on a real origin, no real model, no real Brightspace.','executed':True,'liveInference':False,'total':len(results),'passed':sum(r['pass'] for r in results),'failed':[r for r in results if not r['pass']],'results':results}
+ out={'version':'7.2.2-safe-audited','environment':'Chromium offline DOM injection. localStorage and LMS are explicit fixtures. No navigation/reload on a real origin, no real model, no real Brightspace.','executed':True,'liveInference':False,'total':len(results),'passed':sum(r['pass'] for r in results),'failed':[r for r in results if not r['pass']],'results':results}
  (OUT/'BROWSER_INTEGRATION_RESULTS.json').write_text(json.dumps(out,ensure_ascii=False,indent=2));print(json.dumps({k:v for k,v in out.items() if k!='results'},ensure_ascii=False,indent=2))
 asyncio.run(main())

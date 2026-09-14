@@ -1,5 +1,5 @@
 {
-  "version": "7.2.1-rc1",
+  "version": "7.2.2-safe-audited",
   "kind": "REVIEW_DOM_EXPLICIT_FIXTURE_AND_LOOPBACK_HTTP",
   "executed": true,
   "liveInferenceExecuted": false,

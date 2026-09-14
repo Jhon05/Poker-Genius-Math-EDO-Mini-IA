@@ -25,7 +25,7 @@ def main():
  check('one_SCORM12_sco',len(res)==1 and res[0].get('{'+ns['adlcp']+'}scormtype')=='sco')
  check('launch_index_root',res[0].get('href')=='index.html' and 'index.html' in paths)
  check('scorm12_metadata',tree.find('.//cp:schemaversion',ns).text=='1.2')
- check('manifest_version',tree.getroot().get('version')=='7.2.1' and 'V721' in tree.getroot().get('identifier','') and '_RC_' in tree.getroot().get('identifier',''))
+ check('manifest_version',tree.getroot().get('version')=='7.2.2' and 'V722' in tree.getroot().get('identifier','') and 'SAFE_AUDITADA' in tree.getroot().get('identifier',''))
  check('organization_links_one_sco',tree.find('.//cp:item',ns).get('identifierref')==res[0].get('identifier'))
  names=[x.get('href') for x in tree.findall('.//cp:file',ns)]
  check('manifest_unique',len(names)==len(set(names)))
@@ -77,9 +77,9 @@ def main():
   if a and b:check('unchanged_rule_function:'+n,a.group()==b.group());rules.append(n)
  a=re.search(r'function answerCorrect\([\s\S]*?\n}\n',oa);b=re.search(r'function answerCorrect\([\s\S]*?\n}\n',app);check('unchanged_entire_answerCorrect',bool(a and b) and a.group()==b.group())
  check('unchanged_final_grade_expression',all(t in oa and t in app for t in ['state.pokerGrade=round2(state.grade);state.finalGrade=round2(clamp(state.grade,0,5));state.grade=state.finalGrade','function money(n){return round2(n).toFixed(2)}']))
- inventory={'version':'7.2.1-rc1','baseArchiveName':Path(args.original).name,'baseArchiveSHA256':digest(Path(args.original).read_bytes()),'unchanged':sorted(same),'modified':sorted(modified),'removed':sorted(removed),'added':sorted(set(paths)-set(old)),'comparedRuleFunctions':rules,'preservedResources':preserved}
+ inventory={'version':'7.2.2-safe-audited','baseArchiveName':Path(args.original).name,'baseArchiveSHA256':digest(Path(args.original).read_bytes()),'unchanged':sorted(same),'modified':sorted(modified),'removed':sorted(removed),'added':sorted(set(paths)-set(old)),'comparedRuleFunctions':rules,'preservedResources':preserved}
  (ROOT/'validation/FILE_INVENTORY_V721.json').write_text(json.dumps(inventory,ensure_ascii=False,indent=2))
- out={'version':'7.2.1-rc1','kind':'STATIC_PACKAGE_AND_SOURCE_REGRESSION','executed':True,'liveInferenceExecuted':False,'realBrightspaceExecuted':False,'xmlSchemaXSDValidation':'not_run_no_official_local_xsd_supplied','total':len(checks),'passed':sum(c['pass'] for c in checks),'failed':[c for c in checks if not c['pass']],'preservedResourceCount':len(preserved),'packageFileCount':len(paths),'results':checks}
+ out={'version':'7.2.2-safe-audited','kind':'STATIC_PACKAGE_AND_SOURCE_REGRESSION','executed':True,'liveInferenceExecuted':False,'realBrightspaceExecuted':False,'xmlSchemaXSDValidation':'not_run_no_official_local_xsd_supplied','total':len(checks),'passed':sum(c['pass'] for c in checks),'failed':[c for c in checks if not c['pass']],'preservedResourceCount':len(preserved),'packageFileCount':len(paths),'results':checks}
  (ROOT/'validation/PACKAGE_TEST_RESULTS_V721.json').write_text(json.dumps(out,ensure_ascii=False,indent=2))
  print(json.dumps({k:v for k,v in out.items() if k!='results'},ensure_ascii=False,indent=2));raise SystemExit(bool(out['failed']))
 if __name__=='__main__':main()

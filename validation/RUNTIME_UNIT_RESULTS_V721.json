@@ -1,11 +1,11 @@
 {
-  "version": "7.2.1-rc1",
+  "version": "7.2.2-safe-audited",
   "executed": true,
   "kind": "UNIT_API_FIXTURES_ONLY",
   "liveInferenceExecuted": false,
   "realBrowserGPU": false,
-  "total": 87,
-  "passed": 87,
+  "total": 88,
+  "passed": 88,
   "failed": [],
   "results": [
     {
@@ -184,7 +184,7 @@
       "kind": "unit_api_fixture_not_live_inference"
     },
     {
-      "name": "moderate_hardware_profile",
+      "name": "moderate_hardware_safe_profile",
       "pass": true,
       "kind": "unit_api_fixture_not_live_inference"
     },
@@ -194,7 +194,7 @@
       "kind": "unit_api_fixture_not_live_inference"
     },
     {
-      "name": "high_hardware_trial",
+      "name": "high_hardware_still_safe_light",
       "pass": true,
       "kind": "unit_api_fixture_not_live_inference"
     },
@@ -329,7 +329,12 @@
       "kind": "unit_api_fixture_not_live_inference"
     },
     {
-      "name": "f32_fallback_selected",
+      "name": "f16_required_rejects_f32_fallback",
+      "pass": true,
+      "kind": "unit_api_fixture_not_live_inference"
+    },
+    {
+      "name": "safe_f16_model_selected",
       "pass": true,
       "kind": "unit_api_fixture_not_live_inference"
     },

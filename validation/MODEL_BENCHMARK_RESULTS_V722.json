@@ -1,0 +1,16 @@
+{
+  "version": "7.2.2-safe-audited",
+  "executed": false,
+  "liveInferenceExecuted": false,
+  "recommendedDefault": null,
+  "safeMode": true,
+  "candidatesExposed": [
+    {
+      "profile": "light",
+      "modelId": "Qwen3-0.6B-q4f16_1-MLC",
+      "status": "not_benchmarked_in_this_environment"
+    }
+  ],
+  "largerModelsDisabled": true,
+  "reason": "Safety policy after a reported black-screen/reboot during a prior real local inference test. No automatic escalation is permitted."
+}

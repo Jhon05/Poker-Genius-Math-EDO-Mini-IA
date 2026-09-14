@@ -1,0 +1,46 @@
+{
+  "version": "7.2.2-safe-audited",
+  "kind": "DETERMINISTIC_STRESS_NOT_LIVE_LLM",
+  "executed": true,
+  "liveInferenceExecuted": false,
+  "realBrightspaceExecuted": false,
+  "total": 5,
+  "passed": 5,
+  "failed": [],
+  "results": [
+    {
+      "name": "context_fuzz_10000",
+      "pass": true,
+      "contexts": 10000,
+      "maxChars": 2481,
+      "budget": 2600,
+      "budgetViol": 0,
+      "jsonViol": 0,
+      "hiddenViol": 0
+    },
+    {
+      "name": "transfer_stress_10000",
+      "pass": true,
+      "transferRuns": 10000,
+      "transferFail": 0
+    },
+    {
+      "name": "malformed_protocol_rejected",
+      "pass": true,
+      "malformedRejected": 1000
+    },
+    {
+      "name": "one_inference_per_turn_all_500",
+      "pass": true,
+      "calls": 500,
+      "oneCallFail": 0,
+      "askFail": 0
+    },
+    {
+      "name": "protocol_failure_no_retry_100",
+      "pass": true,
+      "badCalls": 100,
+      "badFail": 0
+    }
+  ]
+}
